@@ -1,0 +1,39 @@
+# Differences, exclusions and limits
+
+The following rows are expression-level differences, not additional assertions. Manual notes are preserved verbatim. A debugger difference is not automatically a semantic-rule defect.
+
+| Expression | Analysis | Evidence | 人工备注 |
+| --- | --- | --- | --- |
+| `lldb-22.1.8-L392-single` | LLDB preserves a 64-bit constu with a 32-bit reader; K truncates the literal to address width (DWARF 5 2.5.1.1). | [check](../../output/evidence/lldb/lldb-22.1.8-L392-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L392-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L395-single` | LLDB preserves a wide consts; K truncates only this literal-class value to address width, not all typed stack values. | [check](../../output/evidence/lldb/lldb-22.1.8-L395-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L395-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L530-single` | Generic32 to signed64: LLDB expects -1122868; K returns 4293844428. Generic source interpretation is unsigned by the documented project choice. | [check](../../output/evidence/lldb/lldb-22.1.8-L530-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L530-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L563-single` | The original expects an LLDB API failure caused by missing Module. K receives type metadata and does not model Module object existence (auxiliary). | [check](../../output/evidence/lldb/lldb-22.1.8-L563-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L563-single/k/stdout.txt) | 是预期失败，不做处理 |
+| `lldb-22.1.8-L601-single` | Constants followed by piece, without stack_value: LLDB copies Scalar bytes in the old no-delegate API; K treats them as memory locations and preserves unavailable bits. | [check](../../output/evidence/lldb/lldb-22.1.8-L601-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L601-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L604-single` | LLDB zero-fills an empty piece; K preserves unknown bits. Debugger zero-fill is not treated as a normative requirement. | [check](../../output/evidence/lldb/lldb-22.1.8-L604-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L604-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L615-single` | A 32-bit direct value cannot supply the requested 40-byte piece in K; LLDB zero-extends it. This is a supported-source-size boundary, not proof of invalid input. | [check](../../output/evidence/lldb/lldb-22.1.8-L615-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L615-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L629-single` | The original requires diagnostic text for unregistered opcode ff. Safe stopping does not verify LLDB diagnostic text (auxiliary; not extension support). | [check](../../output/evidence/lldb/lldb-22.1.8-L629-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L629-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L1247-single` | A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0. | [check](../../output/evidence/lldb/lldb-22.1.8-L1247-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L1247-single/k/stdout.txt) | 扩展规则，保留 |
+| `lldb-22.1.8-L1259-single` | A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0. | [check](../../output/evidence/lldb/lldb-22.1.8-L1259-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L1259-single/k/stdout.txt) | 扩展规则，保留 |
+| `lldb-22.1.8-L1254-single` | A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0. | [check](../../output/evidence/lldb/lldb-22.1.8-L1254-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L1254-single/k/stdout.txt) | 扩展规则，保留 |
+| `lldb-22.1.8-L1267-single` | A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0. | [check](../../output/evidence/lldb/lldb-22.1.8-L1267-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L1267-single/k/stdout.txt) | 扩展规则，保留 |
+| `lldb-22.1.8-L1303-single` | A nonterminal stack_value is followed by deref/deref_size. LLDB continues; K enforces the terminal value-location restriction and preserves the stopped stack. | [check](../../output/evidence/lldb/lldb-22.1.8-L1303-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L1303-single/k/stdout.txt) |  |
+| `lldb-22.1.8-L1309-single` | A nonterminal stack_value is followed by deref/deref_size. LLDB continues; K enforces the terminal value-location restriction and preserves the stopped stack. | [check](../../output/evidence/lldb/lldb-22.1.8-L1309-single/acceptance.json) / [configuration](../../output/evidence/lldb/lldb-22.1.8-L1309-single/k/stdout.txt) |  |
+| `gdb-fixed-dw2-entry-value-2-e10-argc` | entry_value{regx5}, without stack_value: K returns memory address 1, while independent GDB evidence identifies RDI (DWARF register 5). A suspected GDB issue remains unadjudicated. | [check](../../output/evidence/gdb/gdb-fixed-dw2-entry-value-2-e10-argc/acceptance.json) / [configuration](../../output/evidence/gdb/gdb-fixed-dw2-entry-value-2-e10-argc/k/stdout.txt) |  |
+| `gdb-fixed-dw2-entry-value-2-e17-foo` | The original expects optimized out; K obtains value 2 using a separately captured entry snapshot. The available historical context differs. | [check](../../output/evidence/gdb/gdb-fixed-dw2-entry-value-2-e17-foo/acceptance.json) / [configuration](../../output/evidence/gdb/gdb-fixed-dw2-entry-value-2-e17-foo/k/stdout.txt) | 适配流程导致，不做处理 |
+
+Two LLDB API/diagnostic checks are auxiliary and are not counted as semantic passes. Core selection excludes extension operations (including required dependencies), non-expression C evaluation, robustness-only checks, unmodelled debugger interface failures and attribute-form extensions. Missing K rules or differing outcomes alone are not grounds for exclusion.
+
+| Excluded expression | Recorded reason | 人工备注 |
+| --- | --- | --- |
+| `gdb-native-shortpiece-e2-s2` | 原预期检查 GDB 对象越界诊断；片段总长12字节超过8字节对象。K 因32位来源不能供应8字节片段，在pc=8提前停止，不能将不同停止原因当作原错误已验证。 |  |
+| `gdb-native-shortpiece-e6-s3` | 原查询 p (int []) s3 检查 C 数组转换及警告，超出本轮表达式语义测试范围；直接 p s3 的字段检查保留。 |  |
+| `gdb-fixed-dw2-ref-missing-frame-e15-func_loopfb_var` | 原预期检查 frame-base 属性自引用循环；固定 framebase 接口无法忠实表达递归依赖和循环检测，按用户决定排除并记录无法检测。 |  |
+| `gdb-fixed-dw2-regno-invalid-e10-bregx` | 原 gdb_test p bregx 没有明确结果 matcher，主要验证巨大寄存器编号不引发内部崩溃；健壮性检查不计核心语义测试。 |  |
+| `gdb-fixed-dynamic-bit-offset-e2-value` | 原测试明确将表达式形式 DW_AT_data_bit_offset 标为 DWARF 扩展；DWARF 5 该属性允许 constant，扩展的是属性形式而非新增 opcode。 |  |
+| `gdb-fixed-symbol_needs_eval_fail-e2-a` | 原预期 No frame selected 检查尚未运行时的调试器选中帧接口，不是 DWARF expression 执行结果。 |  |
+| `gdb-fixed-dw2-entry-value-2-e12-argc` | 按用户决定排除单步后的argc。人工DWARF以entry_value{regx5}作位置描述但未追加stack_value；K用保存入口RDI=1返回内存位置1，原查询要求optimized out且GDB无法提供单一位置oracle。该fixture与对象值/可用性预期不能形成可比的位置检查；不据此宣称表达式结构非法，不将排除记为通过。 |  |
+| `gdb-expanded-var-access-e35-t2` | 原断言求值 C 表达式 t2.x + t2.y + t2.z，而不是独立 DWARF expression 的位置或对象结果；按用户明确要求，从当前核心语义选集中排除，保留原输入、预期和历史执行证据。 |  |
+
+[Final selection decisions](../reference/selection/review.json) · [Excluded assertions and source evidence](../reference/selection/excluded.json)
+
+Selection and oracle mapping involved human/AI review. Frozen replay is deterministic code; no AI produces expected answers during execution. Entry snapshots, sparse memory, supported layouts and source-selected observations bound the conclusions.

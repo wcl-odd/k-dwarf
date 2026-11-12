@@ -1,0 +1,18 @@
+{
+  "lldb-22.1.8-L392-single": "LLDB preserves a 64-bit constu with a 32-bit reader; K truncates the literal to address width (DWARF 5 2.5.1.1).",
+  "lldb-22.1.8-L395-single": "LLDB preserves a wide consts; K truncates only this literal-class value to address width, not all typed stack values.",
+  "lldb-22.1.8-L530-single": "Generic32 to signed64: LLDB expects -1122868; K returns 4293844428. Generic source interpretation is unsigned by the documented project choice.",
+  "lldb-22.1.8-L601-single": "Constants followed by piece, without stack_value: LLDB copies Scalar bytes in the old no-delegate API; K treats them as memory locations and preserves unavailable bits.",
+  "lldb-22.1.8-L604-single": "LLDB zero-fills an empty piece; K preserves unknown bits. Debugger zero-fill is not treated as a normative requirement.",
+  "lldb-22.1.8-L615-single": "A 32-bit direct value cannot supply the requested 40-byte piece in K; LLDB zero-extends it. This is a supported-source-size boundary, not proof of invalid input.",
+  "gdb-fixed-dw2-entry-value-2-e10-argc": "entry_value{regx5}, without stack_value: K returns memory address 1, while independent GDB evidence identifies RDI (DWARF register 5). A suspected GDB issue remains unadjudicated.",
+  "gdb-fixed-dw2-entry-value-2-e17-foo": "The original expects optimized out; K obtains value 2 using a separately captured entry snapshot. The available historical context differs.",
+  "lldb-22.1.8-L563-single": "The original expects an LLDB API failure caused by missing Module. K receives type metadata and does not model Module object existence (auxiliary).",
+  "lldb-22.1.8-L629-single": "The original requires diagnostic text for unregistered opcode ff. Safe stopping does not verify LLDB diagnostic text (auxiliary; not extension support).",
+  "lldb-22.1.8-L1247-single": "A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.",
+  "lldb-22.1.8-L1254-single": "A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.",
+  "lldb-22.1.8-L1259-single": "A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.",
+  "lldb-22.1.8-L1267-single": "A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.",
+  "lldb-22.1.8-L1303-single": "A nonterminal stack_value is followed by deref/deref_size. LLDB continues; K enforces the terminal value-location restriction and preserves the stopped stack.",
+  "lldb-22.1.8-L1309-single": "A nonterminal stack_value is followed by deref/deref_size. LLDB continues; K enforces the terminal value-location restriction and preserves the stopped stack."
+}

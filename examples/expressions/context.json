@@ -1,0 +1,9 @@
+{
+  "address_width": 64,
+  "endianness": "little",
+  "registers": {"1": 4104},
+  "memory": {"4096": 42, "4097": 0, "4098": 0, "4099": 0},
+  "types": {
+    "12": {"id": "cu0:int32", "encoding": "DW_ATE_signed", "bit_width": 32, "byte_size": 4}
+  }
+}

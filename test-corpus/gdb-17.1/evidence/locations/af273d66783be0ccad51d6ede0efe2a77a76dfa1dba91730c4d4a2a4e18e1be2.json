@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "event": 30,
+  "suite": "dw2-noloc",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/snapshots/30.json",
+  "snapshot_sha256": "1177f1304c0e320e221ffa8c5e2209d5d2e77a43d0c66159f40f53b6aee26cf4",
+  "before": {
+    "pid": 3405303,
+    "pc": "4198662",
+    "level": 0
+  },
+  "registers_before": {
+    "0": "4198662",
+    "1": "140737488340248",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340232",
+    "5": "1",
+    "6": "1",
+    "7": "140737488339960",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340232",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198662"
+  },
+  "observations": [
+    {
+      "id": "gdb-fixed-dw2-noloc-e30-file_locaddr_resolvable",
+      "variable": "file_locaddr_resolvable",
+      "role": "root",
+      "expression": "file_locaddr_resolvable",
+      "queries": [],
+      "address_expression": "file_locaddr_resolvable",
+      "address": "4210712"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3405303,
+    "pc": "4198662",
+    "level": 0
+  },
+  "registers_after": {
+    "0": "4198662",
+    "1": "140737488340248",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340232",
+    "5": "1",
+    "6": "1",
+    "7": "140737488339960",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340232",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198662"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}

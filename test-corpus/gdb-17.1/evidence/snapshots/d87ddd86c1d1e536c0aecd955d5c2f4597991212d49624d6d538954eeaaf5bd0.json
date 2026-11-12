@@ -1,0 +1,63 @@
+{
+  "protocol": 1,
+  "event": 5,
+  "suite": "dw2-stack-boundary",
+  "command": "p overflow",
+  "variables": [
+    "overflow"
+  ],
+  "selected_level": 0,
+  "registers": {},
+  "memory": {},
+  "register_evidence": [],
+  "memory_evidence": [],
+  "capture_errors": [],
+  "object": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-stack-boundary/dw2-stack-boundary/captured/outputs/gdb.dwarf2/dw2-stack-boundary/dw2-stack-boundary",
+  "object_snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-stack-boundary/dw2-stack-boundary/captured/objects/59d93b87f0e77f65617c26b58ace1ab55c9332cbc51b161a6455b4ff11d1bcc8/dw2-stack-boundary",
+  "object_sha256": "59d93b87f0e77f65617c26b58ace1ab55c9332cbc51b161a6455b4ff11d1bcc8",
+  "pid": 0,
+  "sections": "Exec file: `/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-stack-boundary/dw2-stack-boundary/captured/outputs/gdb.dwarf2/dw2-stack-boundary/dw2-stack-boundary', file type elf64-x86-64.\n [0]      0x00000000->0x00000000 at 0x00000040: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [1]      0x00000000->0x00000000 at 0x00000040: .data ALLOC LOAD DATA HAS_CONTENTS\n [2]      0x00000000->0x00000000 at 0x00000040: .bss ALLOC\n [3]      0x00000000->0x0000009d at 0x00000040: .debug_info RELOC READONLY HAS_CONTENTS\n [4]      0x00000000->0x00000015 at 0x00000094: .debug_abbrev READONLY HAS_CONTENTS\n [5]      0x00000000->0x00000000 at 0x000000a9: .note.GNU-stack READONLY HAS_CONTENTS\n [6]      0x00000000->0x00000030 at 0x000000b0: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x00000000->0x0000001d at 0x000000e0: .debug_line READONLY HAS_CONTENTS\n",
+  "memory_demand": {
+    "protocol": 1,
+    "action": "done",
+    "status": "collected",
+    "cases": [
+      {
+        "id": "gdb-native-dw2-stack-boundary-e5-overflow",
+        "status": "completed",
+        "observation_gap": null
+      }
+    ],
+    "mapping": [
+      {
+        "suite": "dw2-stack-boundary",
+        "inputs": 2
+      }
+    ],
+    "diagnostics": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-stack-boundary-demand-diagnostics/dw2-stack-boundary/5",
+    "probes": [
+      {
+        "case": "gdb-native-dw2-stack-boundary-e5-overflow",
+        "directory": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-stack-boundary-demand-diagnostics/dw2-stack-boundary/5/probes/probe-0001",
+        "iterations": 1,
+        "status": "completed"
+      }
+    ]
+  },
+  "memory_capture": {
+    "mode": "on-demand",
+    "known_bytes": 0,
+    "attempted_bytes": 0,
+    "limit_bytes": 1048576,
+    "read_calls": 0,
+    "requests": [],
+    "attempted_ranges": [],
+    "unavailable_ranges": [],
+    "errors": [],
+    "seconds": 8.253859911113977,
+    "same_stop": true,
+    "protocol_log": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-stack-boundary-demand-diagnostics/dw2-stack-boundary/5-memory-protocol.json",
+    "protocol_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "historical_limitations": []
+  }
+}

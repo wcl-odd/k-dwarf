@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "event": 40,
+  "suite": "dynarr-ptr",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "03a9dfbbdfd78ca28685ea56d134b5aa5a8074a42a058d28ecc56cbe3e903b06",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native-long-and-base/dynarr-ptr/dynarr-ptr/captured/snapshots/40.json",
+  "snapshot_sha256": "8edffa614f77c1d6e388986caf72e5745cf3bd7000dd62e40dab6eb1e0b96029",
+  "before": {
+    "pid": 3692635,
+    "pc": "4198666",
+    "level": 0
+  },
+  "registers_before": {
+    "0": "4198662",
+    "1": "140737488340056",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340040",
+    "5": "1",
+    "6": "140737488339760",
+    "7": "140737488339760",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340040",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198666"
+  },
+  "observations": [
+    {
+      "id": "gdb-fixed-dynarr-ptr-e40-foo__five_ptr",
+      "variable": "foo__five_ptr",
+      "role": "element",
+      "expression": "foo.five_ptr.all(4)",
+      "queries": [],
+      "address_expression": "foo.five_ptr.all(4)",
+      "address": "4210752"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3692635,
+    "pc": "4198666",
+    "level": 0
+  },
+  "registers_after": {
+    "0": "4198662",
+    "1": "140737488340056",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340040",
+    "5": "1",
+    "6": "140737488339760",
+    "7": "140737488339760",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340040",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198666"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}

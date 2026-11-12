@@ -1,0 +1,83 @@
+{
+  "protocol": 1,
+  "event": 19,
+  "suite": "dw2-noloc",
+  "command": "print file_extern_locaddr_unresolvable",
+  "variables": [
+    "file_extern_locaddr_unresolvable"
+  ],
+  "selected_level": 0,
+  "registers": {},
+  "memory": {
+    "4210736": 210,
+    "4210737": 2,
+    "4210738": 150,
+    "4210739": 73
+  },
+  "register_evidence": [],
+  "memory_evidence": [],
+  "capture_errors": [],
+  "object": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/outputs/gdb.dwarf2/dw2-noloc/dw2-noloc",
+  "object_snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/objects/666fb076ccf8392d54ee3049c893e93ceddc4c88d4e4d21c492e3fbcb6ab5717/dw2-noloc",
+  "object_sha256": "666fb076ccf8392d54ee3049c893e93ceddc4c88d4e4d21c492e3fbcb6ab5717",
+  "pid": 0,
+  "sections": "Exec file: `/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/outputs/gdb.dwarf2/dw2-noloc/dw2-noloc', file type elf64-x86-64.\n [0]      0x00400318->0x00400334 at 0x00000318: .interp ALLOC LOAD READONLY DATA HAS_CONTENTS\n [1]      0x00400338->0x00400350 at 0x00000338: .hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [2]      0x00400350->0x0040036c at 0x00000350: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [3]      0x00400370->0x004003b8 at 0x00000370: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS\n [4]      0x004003b8->0x004003f9 at 0x000003b8: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [5]      0x004003fa->0x00400400 at 0x000003fa: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS\n [6]      0x00400400->0x00400420 at 0x00000400: .gnu.version_r ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x00400420->0x00400450 at 0x00000420: .rela.dyn ALLOC LOAD READONLY DATA HAS_CONTENTS\n [8]      0x00401000->0x0040101b at 0x00001000: .init ALLOC LOAD READONLY CODE HAS_CONTENTS\n [9]      0x00401020->0x00401111 at 0x00001020: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [10]     0x00401114->0x00401121 at 0x00001114: .fini ALLOC LOAD READONLY CODE HAS_CONTENTS\n [11]     0x00402000->0x00402004 at 0x00002000: .rodata ALLOC LOAD READONLY DATA HAS_CONTENTS\n [12]     0x00402004->0x00402028 at 0x00002004: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [13]     0x00402028->0x0040208c at 0x00002028: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS\n [14]     0x00402090->0x004020b0 at 0x00002090: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [15]     0x004020b0->0x004020d0 at 0x000020b0: .note.ABI-tag ALLOC LOAD READONLY DATA HAS_CONTENTS\n [16]     0x00403e18->0x00403e20 at 0x00002e18: .init_array ALLOC LOAD DATA HAS_CONTENTS\n [17]     0x00403e20->0x00403e28 at 0x00002e20: .fini_array ALLOC LOAD DATA HAS_CONTENTS\n [18]     0x00403e28->0x00403fd8 at 0x00002e28: .dynamic ALLOC LOAD DATA HAS_CONTENTS\n [19]     0x00403fd8->0x00403fe8 at 0x00002fd8: .got ALLOC LOAD DATA HAS_CONTENTS\n [20]     0x00403fe8->0x00404000 at 0x00002fe8: .got.plt ALLOC LOAD DATA HAS_CONTENTS\n [21]     0x00404000->0x00404040 at 0x00003000: .data ALLOC LOAD DATA HAS_CONTENTS\n [22]     0x00404040->0x00404048 at 0x00003040: .bss ALLOC\n [23]     0x00000000->0x0000002a at 0x00003040: .comment READONLY HAS_CONTENTS\n [24]     0x00000000->0x00000040 at 0x0000306a: .debug_aranges READONLY HAS_CONTENTS\n [25]     0x00000000->0x000003f8 at 0x000030aa: .debug_info READONLY HAS_CONTENTS\n [26]     0x00000000->0x00000140 at 0x000034a2: .debug_abbrev READONLY HAS_CONTENTS\n [27]     0x00000000->0x0000004f at 0x000035e2: .debug_line READONLY HAS_CONTENTS\n [28]     0x00000000->0x00000084 at 0x00003631: .debug_line_str READONLY HAS_CONTENTS\n",
+  "memory_demand": {
+    "protocol": 1,
+    "action": "done",
+    "status": "collected",
+    "cases": [
+      {
+        "id": "gdb-fixed-dw2-noloc-e19-file_extern_locaddr_unresolvable",
+        "status": "completed",
+        "observation_gap": null
+      }
+    ],
+    "mapping": [
+      {
+        "suite": "dw2-noloc",
+        "inputs": 6
+      }
+    ],
+    "diagnostics": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc-demand-diagnostics/dw2-noloc/19",
+    "probes": [
+      {
+        "case": "gdb-fixed-dw2-noloc-e19-file_extern_locaddr_unresolvable",
+        "directory": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc-demand-diagnostics/dw2-noloc/19/probes/probe-0001",
+        "iterations": 1,
+        "status": "completed"
+      }
+    ]
+  },
+  "memory_capture": {
+    "mode": "on-demand",
+    "known_bytes": 4,
+    "attempted_bytes": 4,
+    "limit_bytes": 1048576,
+    "read_calls": 1,
+    "requests": [
+      {
+        "address": "4210736",
+        "size": 4,
+        "reason": "object at K-produced location",
+        "new_attempted_bytes": 4,
+        "known_bytes": 4,
+        "read_calls": 1,
+        "seconds": 8.971616625785828e-05
+      }
+    ],
+    "attempted_ranges": [
+      {
+        "address": "4210736",
+        "size": 4
+      }
+    ],
+    "unavailable_ranges": [],
+    "errors": [],
+    "seconds": 5.491713512688875,
+    "same_stop": true,
+    "protocol_log": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc-demand-diagnostics/dw2-noloc/19-memory-protocol.json",
+    "protocol_sha256": "c15eea499a44f0cd8c0bf8286a3fc55541208256c6973d9e4f5e0dc0db65eb9a",
+    "historical_limitations": []
+  }
+}

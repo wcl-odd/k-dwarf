@@ -1,0 +1,7 @@
+{
+  "address_width": 64,
+  "endianness": "little",
+  "debug_addr": {"0": 4096, "1": 42},
+  "debug_addr_load_bias": 8192,
+  "object_address": 7
+}

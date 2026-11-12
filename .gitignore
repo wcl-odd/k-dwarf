@@ -1,0 +1,46 @@
+# Generated K definitions, parser caches and local verification runs.
+/build/
+*-kompiled/
+input-parse-cache/
+.kompile-*/
+.krun-*/
+.kprove-*/
+.kparse-*/
+
+# Python bytecode, tool caches and coverage output.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local Python environments and environment-specific secrets.
+/.venv/
+/venv/
+/env/
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+/.aws/
+
+# Local editor settings, swap files and operating-system metadata.
+/.vscode/
+/.idea/
+.history/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Complete experiment results stay local; artifact bundles include them explicitly.
+/output/
+
+# Keep rules, tools, frozen test-corpus/, examples and docs/ versionable.

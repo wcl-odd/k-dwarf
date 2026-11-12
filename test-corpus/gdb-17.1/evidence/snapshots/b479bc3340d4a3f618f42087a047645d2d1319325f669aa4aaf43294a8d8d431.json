@@ -1,0 +1,63 @@
+{
+  "protocol": 1,
+  "event": 2,
+  "suite": "dw2-op-stack-value",
+  "command": "p/x stack8",
+  "variables": [
+    "stack8"
+  ],
+  "selected_level": 0,
+  "registers": {},
+  "memory": {},
+  "register_evidence": [],
+  "memory_evidence": [],
+  "capture_errors": [],
+  "object": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-stack-value/dw2-op-stack-value/captured/outputs/gdb.dwarf2/dw2-op-stack-value/dw2-op-stack-value",
+  "object_snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-stack-value/dw2-op-stack-value/captured/objects/681812728a133006ef691fe1185c23efc9d5f30c6db2b819387364fc4768f53d/dw2-op-stack-value",
+  "object_sha256": "681812728a133006ef691fe1185c23efc9d5f30c6db2b819387364fc4768f53d",
+  "pid": 0,
+  "sections": "Exec file: `/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-stack-value/dw2-op-stack-value/captured/outputs/gdb.dwarf2/dw2-op-stack-value/dw2-op-stack-value', file type elf64-x86-64.\n [0]      0x00000000->0x00000000 at 0x00000040: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [1]      0x00000000->0x00000004 at 0x00000040: .data ALLOC LOAD DATA HAS_CONTENTS\n [2]      0x00000004->0x00000004 at 0x00000044: .bss ALLOC\n [3]      0x00000000->0x0000008f at 0x00000048: .debug_info RELOC READONLY HAS_CONTENTS\n [4]      0x00000000->0x00000023 at 0x000000c9: .debug_abbrev READONLY HAS_CONTENTS\n [5]      0x00000000->0x00000000 at 0x000000ec: .note.GNU-stack READONLY HAS_CONTENTS\n [6]      0x00000008->0x00000038 at 0x000000f0: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x00000000->0x0000001d at 0x00000120: .debug_line READONLY HAS_CONTENTS\n",
+  "memory_demand": {
+    "protocol": 1,
+    "action": "done",
+    "status": "collected",
+    "cases": [
+      {
+        "id": "gdb-native-dw2-op-stack-value-e2-stack8",
+        "status": "completed",
+        "observation_gap": null
+      }
+    ],
+    "mapping": [
+      {
+        "suite": "dw2-op-stack-value",
+        "inputs": 2
+      }
+    ],
+    "diagnostics": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-stack-value-demand-diagnostics/dw2-op-stack-value/2",
+    "probes": [
+      {
+        "case": "gdb-native-dw2-op-stack-value-e2-stack8",
+        "directory": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-stack-value-demand-diagnostics/dw2-op-stack-value/2/probes/probe-0001",
+        "iterations": 1,
+        "status": "completed"
+      }
+    ]
+  },
+  "memory_capture": {
+    "mode": "on-demand",
+    "known_bytes": 0,
+    "attempted_bytes": 0,
+    "limit_bytes": 1048576,
+    "read_calls": 0,
+    "requests": [],
+    "attempted_ranges": [],
+    "unavailable_ranges": [],
+    "errors": [],
+    "seconds": 4.736478757113218,
+    "same_stop": true,
+    "protocol_log": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-stack-value-demand-diagnostics/dw2-op-stack-value/2-memory-protocol.json",
+    "protocol_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "historical_limitations": []
+  }
+}

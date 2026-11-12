@@ -1,0 +1,173 @@
+{
+  "protocol": 1,
+  "event": 56,
+  "suite": "dw2-noloc",
+  "command": "print main_local_locempty_resolvable",
+  "variables": [
+    "main_local_locempty_resolvable"
+  ],
+  "selected_level": 0,
+  "registers": {
+    "0": "4198662",
+    "1": "140737488340248",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340232",
+    "5": "1",
+    "6": "1",
+    "7": "140737488339960",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340232",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198662"
+  },
+  "memory": {},
+  "register_evidence": [
+    {
+      "dwarf": "0",
+      "name": "rax",
+      "bits": "4198662"
+    },
+    {
+      "dwarf": "1",
+      "name": "rdx",
+      "bits": "140737488340248"
+    },
+    {
+      "dwarf": "2",
+      "name": "rcx",
+      "bits": "4210208"
+    },
+    {
+      "dwarf": "3",
+      "name": "rbx",
+      "bits": "0"
+    },
+    {
+      "dwarf": "4",
+      "name": "rsi",
+      "bits": "140737488340232"
+    },
+    {
+      "dwarf": "5",
+      "name": "rdi",
+      "bits": "1"
+    },
+    {
+      "dwarf": "6",
+      "name": "rbp",
+      "bits": "1"
+    },
+    {
+      "dwarf": "7",
+      "name": "rsp",
+      "bits": "140737488339960"
+    },
+    {
+      "dwarf": "8",
+      "name": "r8",
+      "bits": "140737352154896"
+    },
+    {
+      "dwarf": "9",
+      "name": "r9",
+      "bits": "140737353912384"
+    },
+    {
+      "dwarf": "10",
+      "name": "r10",
+      "bits": "140737353890056"
+    },
+    {
+      "dwarf": "11",
+      "name": "r11",
+      "bits": "140737353999968"
+    },
+    {
+      "dwarf": "12",
+      "name": "r12",
+      "bits": "140737488340232"
+    },
+    {
+      "dwarf": "13",
+      "name": "r13",
+      "bits": "4198662"
+    },
+    {
+      "dwarf": "14",
+      "name": "r14",
+      "bits": "4210208"
+    },
+    {
+      "dwarf": "15",
+      "name": "r15",
+      "bits": "140737354125376"
+    },
+    {
+      "dwarf": "16",
+      "name": "rip",
+      "bits": "4198662"
+    }
+  ],
+  "memory_evidence": [],
+  "capture_errors": [],
+  "object": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/outputs/gdb.dwarf2/dw2-noloc/dw2-noloc",
+  "object_snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/objects/666fb076ccf8392d54ee3049c893e93ceddc4c88d4e4d21c492e3fbcb6ab5717/dw2-noloc",
+  "object_sha256": "666fb076ccf8392d54ee3049c893e93ceddc4c88d4e4d21c492e3fbcb6ab5717",
+  "pid": 3405303,
+  "frame": {
+    "name": "main",
+    "pc": "4198662",
+    "lookup_pc": "4198662",
+    "level": 0
+  },
+  "sections": "Exec file: `/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/outputs/gdb.dwarf2/dw2-noloc/dw2-noloc', file type elf64-x86-64.\n [0]      0x00400318->0x00400334 at 0x00000318: .interp ALLOC LOAD READONLY DATA HAS_CONTENTS\n [1]      0x00400338->0x00400350 at 0x00000338: .hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [2]      0x00400350->0x0040036c at 0x00000350: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [3]      0x00400370->0x004003b8 at 0x00000370: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS\n [4]      0x004003b8->0x004003f9 at 0x000003b8: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [5]      0x004003fa->0x00400400 at 0x000003fa: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS\n [6]      0x00400400->0x00400420 at 0x00000400: .gnu.version_r ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x00400420->0x00400450 at 0x00000420: .rela.dyn ALLOC LOAD READONLY DATA HAS_CONTENTS\n [8]      0x00401000->0x0040101b at 0x00001000: .init ALLOC LOAD READONLY CODE HAS_CONTENTS\n [9]      0x00401020->0x00401111 at 0x00001020: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [10]     0x00401114->0x00401121 at 0x00001114: .fini ALLOC LOAD READONLY CODE HAS_CONTENTS\n [11]     0x00402000->0x00402004 at 0x00002000: .rodata ALLOC LOAD READONLY DATA HAS_CONTENTS\n [12]     0x00402004->0x00402028 at 0x00002004: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [13]     0x00402028->0x0040208c at 0x00002028: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS\n [14]     0x00402090->0x004020b0 at 0x00002090: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [15]     0x004020b0->0x004020d0 at 0x000020b0: .note.ABI-tag ALLOC LOAD READONLY DATA HAS_CONTENTS\n [16]     0x00403e18->0x00403e20 at 0x00002e18: .init_array ALLOC LOAD DATA HAS_CONTENTS\n [17]     0x00403e20->0x00403e28 at 0x00002e20: .fini_array ALLOC LOAD DATA HAS_CONTENTS\n [18]     0x00403e28->0x00403fd8 at 0x00002e28: .dynamic ALLOC LOAD DATA HAS_CONTENTS\n [19]     0x00403fd8->0x00403fe8 at 0x00002fd8: .got ALLOC LOAD DATA HAS_CONTENTS\n [20]     0x00403fe8->0x00404000 at 0x00002fe8: .got.plt ALLOC LOAD DATA HAS_CONTENTS\n [21]     0x00404000->0x00404040 at 0x00003000: .data ALLOC LOAD DATA HAS_CONTENTS\n [22]     0x00404040->0x00404048 at 0x00003040: .bss ALLOC\n [23]     0x00000000->0x0000002a at 0x00003040: .comment READONLY HAS_CONTENTS\n [24]     0x00000000->0x00000040 at 0x0000306a: .debug_aranges READONLY HAS_CONTENTS\n [25]     0x00000000->0x000003f8 at 0x000030aa: .debug_info READONLY HAS_CONTENTS\n [26]     0x00000000->0x00000140 at 0x000034a2: .debug_abbrev READONLY HAS_CONTENTS\n [27]     0x00000000->0x0000004f at 0x000035e2: .debug_line READONLY HAS_CONTENTS\n [28]     0x00000000->0x00000084 at 0x00003631: .debug_line_str READONLY HAS_CONTENTS\nObject file: `/lib64/ld-linux-x86-64.so.2', file type elf64-x86-64.\n [0]      0x7ffff7fc32a8->0x7ffff7fc32c8 at 0x000002a8: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [1]      0x7ffff7fc32c8->0x7ffff7fc32ec at 0x000002c8: .note.gnu.build-id ALLOC LOAD READONLY DATA HAS_CONTENTS\n [2]      0x7ffff7fc32f0->0x7ffff7fc342c at 0x000002f0: .hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [3]      0x7ffff7fc3430->0x7ffff7fc3590 at 0x00000430: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [4]      0x7ffff7fc3590->0x7ffff7fc3950 at 0x00000590: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS\n [5]      0x7ffff7fc3950->0x7ffff7fc3c11 at 0x00000950: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [6]      0x7ffff7fc3c12->0x7ffff7fc3c62 at 0x00000c12: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x7ffff7fc3c68->0x7ffff7fc3d54 at 0x00000c68: .gnu.version_d ALLOC LOAD READONLY DATA HAS_CONTENTS\n [8]      0x7ffff7fc3d58->0x7ffff7fc4af0 at 0x00000d58: .rela.dyn ALLOC LOAD READONLY DATA HAS_CONTENTS\n [9]      0x7ffff7fc4af0->0x7ffff7fc4b50 at 0x00001af0: .rela.plt ALLOC LOAD READONLY DATA HAS_CONTENTS\n [10]     0x7ffff7fc5000->0x7ffff7fc5050 at 0x00002000: .plt ALLOC LOAD READONLY CODE HAS_CONTENTS\n [11]     0x7ffff7fc5050->0x7ffff7fc5090 at 0x00002050: .plt.sec ALLOC LOAD READONLY CODE HAS_CONTENTS\n [12]     0x7ffff7fc5090->0x7ffff7fee315 at 0x00002090: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [13]     0x7ffff7fef000->0x7ffff7ff5fc0 at 0x0002c000: .rodata ALLOC LOAD READONLY DATA HAS_CONTENTS\n [14]     0x7ffff7ff5fc0->0x7ffff7ff5fc1 at 0x00032fc0: .stapsdt.base ALLOC LOAD READONLY DATA HAS_CONTENTS\n [15]     0x7ffff7ff5fc4->0x7ffff7ff6908 at 0x00032fc4: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [16]     0x7ffff7ff6908->0x7ffff7ff9f34 at 0x00033908: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS\n [17]     0x7ffff7ffb620->0x7ffff7ffce80 at 0x00037620: .data.rel.ro ALLOC LOAD DATA HAS_CONTENTS\n [18]     0x7ffff7ffce80->0x7ffff7ffcff0 at 0x00038e80: .dynamic ALLOC LOAD DATA HAS_CONTENTS\n [19]     0x7ffff7ffcff0->0x7ffff7ffd000 at 0x00038ff0: .got ALLOC LOAD DATA HAS_CONTENTS\n [20]     0x7ffff7ffd000->0x7ffff7ffd038 at 0x00039000: .got.plt ALLOC LOAD DATA HAS_CONTENTS\n [21]     0x7ffff7ffd040->0x7ffff7ffe110 at 0x00039040: .data ALLOC LOAD DATA HAS_CONTENTS\n [22]     0x7ffff7ffe110->0x7ffff7ffe2d8 at 0x0003a110: .bss ALLOC\n [23]     0x00000000->0x00000420 at 0x0003a110: .note.stapsdt READONLY HAS_CONTENTS\n [24]     0x00000000->0x00000034 at 0x0003a530: .gnu_debuglink READONLY HAS_CONTENTS\nObject file: `system-supplied DSO at 0x7ffff7fc1000', file type elf64-x86-64.\n [0]      0x7ffff7fc1120->0x7ffff7fc1168 at 0x00000120: .hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [1]      0x7ffff7fc1168->0x7ffff7fc11c4 at 0x00000168: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [2]      0x7ffff7fc11c8->0x7ffff7fc1300 at 0x000001c8: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS\n [3]      0x7ffff7fc1300->0x7ffff7fc138b at 0x00000300: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [4]      0x7ffff7fc138c->0x7ffff7fc13a6 at 0x0000038c: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS\n [5]      0x7ffff7fc13a8->0x7ffff7fc13e0 at 0x000003a8: .gnu.version_d ALLOC LOAD READONLY DATA HAS_CONTENTS\n [6]      0x7ffff7fc13e0->0x7ffff7fc1500 at 0x000003e0: .dynamic ALLOC LOAD DATA HAS_CONTENTS\n [7]      0x7ffff7fc1500->0x7ffff7fc1554 at 0x00000500: .note ALLOC LOAD READONLY DATA HAS_CONTENTS\n [8]      0x7ffff7fc1554->0x7ffff7fc15b0 at 0x00000554: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [9]      0x7ffff7fc15b0->0x7ffff7fc16f0 at 0x000005b0: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS\n [10]     0x7ffff7fc16f0->0x7ffff7fc1f9d at 0x000006f0: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [11]     0x7ffff7fc1f9d->0x7ffff7fc206f at 0x00000f9d: .altinstructions ALLOC LOAD READONLY DATA HAS_CONTENTS\n [12]     0x7ffff7fc206f->0x7ffff7fc20ab at 0x0000106f: .altinstr_replacement ALLOC LOAD READONLY CODE HAS_CONTENTS\n [13]     0x00000000->0x0000002d at 0x000010ab: .comment READONLY HAS_CONTENTS\nObject file: `/lib/x86_64-linux-gnu/libm.so.6', file type elf64-x86-64.\n [0]      0x7ffff7ebd2a8->0x7ffff7ebd2d8 at 0x000002a8: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [1]      0x7ffff7ebd2d8->0x7ffff7ebd2fc at 0x000002d8: .note.gnu.build-id ALLOC LOAD READONLY DATA HAS_CONTENTS\n [2]      0x7ffff7ebd2fc->0x7ffff7ebd31c at 0x000002fc: .note.ABI-tag ALLOC LOAD READONLY DATA HAS_CONTENTS\n [3]      0x7ffff7ebd320->0x7ffff7ebf964 at 0x00000320: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [4]      0x7ffff7ebf968->0x7ffff7ec6b08 at 0x00002968: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS\n [5]      0x7ffff7ec6b08->0x7ffff7ec9338 at 0x00009b08: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [6]      0x7ffff7ec9338->0x7ffff7ec9cb0 at 0x0000c338: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x7ffff7ec9cb0->0x7ffff7ec9ebc at 0x0000ccb0: .gnu.version_d ALLOC LOAD READONLY DATA HAS_CONTENTS\n [8]      0x7ffff7ec9ec0->0x7ffff7ec9f20 at 0x0000cec0: .gnu.version_r ALLOC LOAD READONLY DATA HAS_CONTENTS\n [9]      0x7ffff7ec9f20->0x7ffff7eca058 at 0x0000cf20: .rela.dyn ALLOC LOAD READONLY DATA HAS_CONTENTS\n [10]     0x7ffff7eca058->0x7ffff7eca2e0 at 0x0000d058: .rela.plt ALLOC LOAD READONLY DATA HAS_CONTENTS\n [11]     0x7ffff7ecb000->0x7ffff7ecb01b at 0x0000e000: .init ALLOC LOAD READONLY CODE HAS_CONTENTS\n [12]     0x7ffff7ecb020->0x7ffff7ecb1e0 at 0x0000e020: .plt ALLOC LOAD READONLY CODE HAS_CONTENTS\n [13]     0x7ffff7ecb1e0->0x7ffff7ecb1f0 at 0x0000e1e0: .plt.got ALLOC LOAD READONLY CODE HAS_CONTENTS\n [14]     0x7ffff7ecb1f0->0x7ffff7ecb3a0 at 0x0000e1f0: .plt.sec ALLOC LOAD READONLY CODE HAS_CONTENTS\n [15]     0x7ffff7ecb3a0->0x7ffff7f468c8 at 0x0000e3a0: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [16]     0x7ffff7f468c8->0x7ffff7f468d5 at 0x000898c8: .fini ALLOC LOAD READONLY CODE HAS_CONTENTS\n [17]     0x7ffff7f47000->0x7ffff7f95490 at 0x0008a000: .rodata ALLOC LOAD READONLY DATA HAS_CONTENTS\n [18]     0x7ffff7f95490->0x7ffff7f96fac at 0x000d8490: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [19]     0x7ffff7f96fb0->0x7ffff7f9f54c at 0x000d9fb0: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS\n [20]     0x7ffff7f9f550->0x7ffff7fa17e4 at 0x000e2550: .hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [21]     0x7ffff7fa2d80->0x7ffff7fa2d88 at 0x000e4d80: .init_array ALLOC LOAD DATA HAS_CONTENTS\n [22]     0x7ffff7fa2d88->0x7ffff7fa2d90 at 0x000e4d88: .fini_array ALLOC LOAD DATA HAS_CONTENTS\n [23]     0x7ffff7fa2d90->0x7ffff7fa2fb0 at 0x000e4d90: .dynamic ALLOC LOAD DATA HAS_CONTENTS\n [24]     0x7ffff7fa2fb0->0x7ffff7fa3000 at 0x000e4fb0: .got ALLOC LOAD DATA HAS_CONTENTS\n [25]     0x7ffff7fa3000->0x7ffff7fa30f0 at 0x000e5000: .got.plt ALLOC LOAD DATA HAS_CONTENTS\n [26]     0x7ffff7fa30f0->0x7ffff7fa30fc at 0x000e50f0: .data ALLOC LOAD DATA HAS_CONTENTS\n [27]     0x7ffff7fa30fc->0x7ffff7fa3108 at 0x000e50fc: .bss ALLOC\n [28]     0x00000000->0x00000034 at 0x000e50fc: .gnu_debuglink READONLY HAS_CONTENTS\nObject file: `/lib/x86_64-linux-gnu/libc.so.6', file type elf64-x86-64.\n [0]      0x7ffff7c00350->0x7ffff7c00380 at 0x00000350: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [1]      0x7ffff7c00380->0x7ffff7c003a4 at 0x00000380: .note.gnu.build-id ALLOC LOAD READONLY DATA HAS_CONTENTS\n [2]      0x7ffff7c003a4->0x7ffff7c003c4 at 0x000003a4: .note.ABI-tag ALLOC LOAD READONLY DATA HAS_CONTENTS\n [3]      0x7ffff7c003c8->0x7ffff7c04acc at 0x000003c8: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [4]      0x7ffff7c04ad0->0x7ffff7c16650 at 0x00004ad0: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS\n [5]      0x7ffff7c16650->0x7ffff7c1e565 at 0x00016650: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [6]      0x7ffff7c1e566->0x7ffff7c1fd06 at 0x0001e566: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x7ffff7c1fd08->0x7ffff7c2022c at 0x0001fd08: .gnu.version_d ALLOC LOAD READONLY DATA HAS_CONTENTS\n [8]      0x7ffff7c20230->0x7ffff7c20270 at 0x00020230: .gnu.version_r ALLOC LOAD READONLY DATA HAS_CONTENTS\n [9]      0x7ffff7c20270->0x7ffff7c27ad0 at 0x00020270: .rela.dyn ALLOC LOAD READONLY DATA HAS_CONTENTS\n [10]     0x7ffff7c27ad0->0x7ffff7c27fe0 at 0x00027ad0: .rela.plt ALLOC LOAD READONLY DATA HAS_CONTENTS\n [11]     0x7ffff7c28000->0x7ffff7c28370 at 0x00028000: .plt ALLOC LOAD READONLY CODE HAS_CONTENTS\n [12]     0x7ffff7c28370->0x7ffff7c28390 at 0x00028370: .plt.got ALLOC LOAD READONLY CODE HAS_CONTENTS\n [13]     0x7ffff7c28390->0x7ffff7c286f0 at 0x00028390: .plt.sec ALLOC LOAD READONLY CODE HAS_CONTENTS\n [14]     0x7ffff7c28700->0x7ffff7dba9fd at 0x00028700: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [15]     0x7ffff7dbaa00->0x7ffff7dbc401 at 0x001baa00: __libc_freeres_fn ALLOC LOAD READONLY CODE HAS_CONTENTS\n [16]     0x7ffff7dbd000->0x7ffff7de3e68 at 0x001bd000: .rodata ALLOC LOAD READONLY DATA HAS_CONTENTS\n [17]     0x7ffff7de3e68->0x7ffff7de3e69 at 0x001e3e68: .stapsdt.base ALLOC LOAD READONLY DATA HAS_CONTENTS\n [18]     0x7ffff7de3e70->0x7ffff7de3e8c at 0x001e3e70: .interp ALLOC LOAD READONLY DATA HAS_CONTENTS\n [19]     0x7ffff7de3e8c->0x7ffff7deaf60 at 0x001e3e8c: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [20]     0x7ffff7deaf60->0x7ffff7e10468 at 0x001eaf60: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS\n [21]     0x7ffff7e10468->0x7ffff7e10a72 at 0x00210468: .gcc_except_table ALLOC LOAD READONLY DATA HAS_CONTENTS\n [22]     0x7ffff7e10a78->0x7ffff7e149a4 at 0x00210a78: .hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [23]     0x7ffff7e168f0->0x7ffff7e16900 at 0x002158f0: .tdata ALLOC LOAD DATA HAS_CONTENTS\n [24]     0x7ffff7e16900->0x7ffff7e16980 at 0x00215900: .tbss ALLOC\n [25]     0x7ffff7e16900->0x7ffff7e16910 at 0x00215900: .init_array ALLOC LOAD DATA HAS_CONTENTS\n [26]     0x7ffff7e16910->0x7ffff7e169f8 at 0x00215910: __libc_subfreeres ALLOC LOAD DATA HAS_CONTENTS\n [27]     0x7ffff7e169f8->0x7ffff7e16a00 at 0x002159f8: __libc_atexit ALLOC LOAD DATA HAS_CONTENTS\n [28]     0x7ffff7e16a00->0x7ffff7e17768 at 0x00215a00: __libc_IO_vtables ALLOC LOAD DATA HAS_CONTENTS\n [29]     0x7ffff7e17780->0x7ffff7e19bc0 at 0x00216780: .data.rel.ro ALLOC LOAD DATA HAS_CONTENTS\n [30]     0x7ffff7e19bc0->0x7ffff7e19d90 at 0x00218bc0: .dynamic ALLOC LOAD DATA HAS_CONTENTS\n [31]     0x7ffff7e19d90->0x7ffff7e1a000 at 0x00218d90: .got ALLOC LOAD DATA HAS_CONTENTS\n [32]     0x7ffff7e1a000->0x7ffff7e1a1c8 at 0x00219000: .got.plt ALLOC LOAD DATA HAS_CONTENTS\n [33]     0x7ffff7e1a1e0->0x7ffff7e1b888 at 0x002191e0: .data ALLOC LOAD DATA HAS_CONTENTS\n [34]     0x7ffff7e1b8a0->0x7ffff7e28e50 at 0x0021a888: .bss ALLOC\n [35]     0x00000000->0x00001c6c at 0x0021a888: .note.stapsdt READONLY HAS_CONTENTS\n [36]     0x00000000->0x0000004d at 0x0021c500: .gnu.warning.sigstack READONLY HAS_CONTENTS\n [37]     0x00000000->0x00000032 at 0x0021c560: .gnu.warning.sigreturn READONLY HAS_CONTENTS\n [38]     0x00000000->0x00000039 at 0x0021c5a0: .gnu.warning.siggetmask READONLY HAS_CONTENTS\n [39]     0x00000000->0x00000037 at 0x0021c5e0: .gnu.warning.tmpnam READONLY HAS_CONTENTS\n [40]     0x00000000->0x00000039 at 0x0021c620: .gnu.warning.tmpnam_r READONLY HAS_CONTENTS\n [41]     0x00000000->0x00000038 at 0x0021c660: .gnu.warning.tempnam READONLY HAS_CONTENTS\n [42]     0x00000000->0x00000039 at 0x0021c6a0: .gnu.warning.gets READONLY HAS_CONTENTS\n [43]     0x00000000->0x00000052 at 0x0021c6e0: .gnu.warning.pthread_attr_getstackaddr READONLY HAS_CONTENTS\n [44]     0x00000000->0x00000052 at 0x0021c740: .gnu.warning.pthread_attr_setstackaddr READONLY HAS_CONTENTS\n [45]     0x00000000->0x0000003a at 0x0021c7a0: .gnu.warning.getpw READONLY HAS_CONTENTS\n [46]     0x00000000->0x0000003d at 0x0021c7e0: .gnu.warning.re_max_failures READONLY HAS_CONTENTS\n [47]     0x00000000->0x0000007a at 0x0021c820: .gnu.warning.getwd READONLY HAS_CONTENTS\n [48]     0x00000000->0x0000002f at 0x0021c8a0: .gnu.warning.revoke READONLY HAS_CONTENTS\n [49]     0x00000000->0x00000044 at 0x0021c8e0: .gnu.warning.mktemp READONLY HAS_CONTENTS\n [50]     0x00000000->0x0000002d at 0x0021c940: .gnu.warning.gtty READONLY HAS_CONTENTS\n [51]     0x00000000->0x0000002d at 0x0021c980: .gnu.warning.stty READONLY HAS_CONTENTS\n [52]     0x00000000->0x00000030 at 0x0021c9c0: .gnu.warning.chflags READONLY HAS_CONTENTS\n [53]     0x00000000->0x00000031 at 0x0021ca00: .gnu.warning.fchflags READONLY HAS_CONTENTS\n [54]     0x00000000->0x00000039 at 0x0021ca40: .gnu.warning.__compat_bdflush READONLY HAS_CONTENTS\n [55]     0x00000000->0x00000039 at 0x0021ca80: .gnu.warning.__gets_chk READONLY HAS_CONTENTS\n [56]     0x00000000->0x0000003c at 0x0021cac0: .gnu.warning.inet6_option_space READONLY HAS_CONTENTS\n [57]     0x00000000->0x0000003b at 0x0021cb00: .gnu.warning.inet6_option_init READONLY HAS_CONTENTS\n [58]     0x00000000->0x0000003d at 0x0021cb40: .gnu.warning.inet6_option_append READONLY HAS_CONTENTS\n [59]     0x00000000->0x0000003c at 0x0021cb80: .gnu.warning.inet6_option_alloc READONLY HAS_CONTENTS\n [60]     0x00000000->0x0000003b at 0x0021cbc0: .gnu.warning.inet6_option_next READONLY HAS_CONTENTS\n [61]     0x00000000->0x0000003b at 0x0021cc00: .gnu.warning.inet6_option_find READONLY HAS_CONTENTS\n [62]     0x00000000->0x00000031 at 0x0021cc40: .gnu.warning.setlogin READONLY HAS_CONTENTS\n [63]     0x00000000->0x00000034 at 0x0021cc74: .gnu_debuglink READONLY HAS_CONTENTS\n",
+  "memory_demand": {
+    "protocol": 1,
+    "action": "done",
+    "status": "collected",
+    "cases": [
+      {
+        "id": "gdb-fixed-dw2-noloc-e56-main_local_locempty_resolvable",
+        "status": "completed",
+        "observation_gap": null
+      }
+    ],
+    "mapping": [
+      {
+        "suite": "dw2-noloc",
+        "inputs": 19
+      }
+    ],
+    "diagnostics": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc-demand-diagnostics/dw2-noloc/56",
+    "probes": [
+      {
+        "case": "gdb-fixed-dw2-noloc-e56-main_local_locempty_resolvable",
+        "directory": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc-demand-diagnostics/dw2-noloc/56/probes/probe-0001",
+        "iterations": 1,
+        "status": "completed"
+      }
+    ]
+  },
+  "memory_capture": {
+    "mode": "on-demand",
+    "known_bytes": 0,
+    "attempted_bytes": 0,
+    "limit_bytes": 1048576,
+    "read_calls": 0,
+    "requests": [],
+    "attempted_ranges": [],
+    "unavailable_ranges": [],
+    "errors": [],
+    "seconds": 8.88309008255601,
+    "same_stop": true,
+    "protocol_log": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc-demand-diagnostics/dw2-noloc/56-memory-protocol.json",
+    "protocol_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "historical_limitations": []
+  }
+}

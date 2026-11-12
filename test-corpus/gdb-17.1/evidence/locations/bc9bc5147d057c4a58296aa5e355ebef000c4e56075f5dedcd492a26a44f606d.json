@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "event": 4,
+  "suite": "fission-loclists-pie",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/fission-loclists-pie/fission-loclists-pie/captured/snapshots/4.json",
+  "snapshot_sha256": "417159448076ab0d368afdfe8f10af8295eece6e207ff7e31ca5bd35e042248e",
+  "before": {
+    "pid": 3579388,
+    "pc": "93824992235823",
+    "level": 0
+  },
+  "registers_before": {
+    "0": "93824992235823",
+    "1": "140737488340040",
+    "2": "93824992247272",
+    "3": "0",
+    "4": "140737488340024",
+    "5": "1",
+    "6": "1",
+    "7": "140737488339752",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340024",
+    "13": "93824992235823",
+    "14": "93824992247272",
+    "15": "140737354125376",
+    "16": "93824992235823"
+  },
+  "observations": [
+    {
+      "id": "gdb-fixed-fission-loclists-pie-e4-argc",
+      "variable": "argc",
+      "role": "root",
+      "expression": "argc",
+      "queries": [
+        {
+          "command": "output/x &(argc)",
+          "output": "Address requested for identifier \"argc\" which is in register $rdi",
+          "error": true
+        },
+        {
+          "command": "info address argc",
+          "output": "Symbol \"argc\" is multi-location:\n  Range 0x55555555512f-0x555555555138: a variable in $rdi\n  Range 0x555555555138-0x555555555142: a complex DWARF expression:\n     0: DW_OP_GNU_entry_value\n       2: DW_OP_reg5 [$rdi]\n     3: DW_OP_stack_value\n\n.\n",
+          "error": false
+        }
+      ],
+      "address_expression": "argc",
+      "diagnostic": "native value has no address"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3579388,
+    "pc": "93824992235823",
+    "level": 0
+  },
+  "registers_after": {
+    "0": "93824992235823",
+    "1": "140737488340040",
+    "2": "93824992247272",
+    "3": "0",
+    "4": "140737488340024",
+    "5": "1",
+    "6": "1",
+    "7": "140737488339752",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340024",
+    "13": "93824992235823",
+    "14": "93824992247272",
+    "15": "140737354125376",
+    "16": "93824992235823"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}

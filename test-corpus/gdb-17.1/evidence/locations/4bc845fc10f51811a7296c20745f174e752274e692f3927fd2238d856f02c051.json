@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "event": 10,
+  "suite": "dw2-op-out-param",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-out-param/dw2-op-out-param/captured/snapshots/10.json",
+  "snapshot_sha256": "002bca798fd5829e6de472c55bb6d56993470d1ad286a918e5ccf045620de2e2",
+  "before": {
+    "pid": 3428774,
+    "pc": "4198780",
+    "level": 1
+  },
+  "registers_before": {
+    "0": "4198662",
+    "1": "16045689975516020229",
+    "2": null,
+    "3": "16045689958336151041",
+    "4": null,
+    "5": null,
+    "6": "1",
+    "7": "140737488339808",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340104",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198780"
+  },
+  "observations": [
+    {
+      "id": "gdb-native-dw2-op-out-param-e10-operand0",
+      "variable": "operand0",
+      "role": "root",
+      "expression": "operand0",
+      "queries": [
+        {
+          "command": "output/x &(operand0)",
+          "output": "Can't take address of \"operand0\" which isn't an lvalue.",
+          "error": true
+        },
+        {
+          "command": "info address operand0",
+          "output": "Symbol \"operand0\" is a variable in $rbx.\n",
+          "error": false
+        }
+      ],
+      "address_expression": "operand0",
+      "diagnostic": "native value has no address"
+    },
+    {
+      "id": "gdb-native-dw2-op-out-param-e10-operand1",
+      "variable": "operand1",
+      "role": "root",
+      "expression": "operand1",
+      "queries": [
+        {
+          "command": "output/x &(operand1)",
+          "output": "Can't take address of \"operand1\" which isn't an lvalue.",
+          "error": true
+        },
+        {
+          "command": "info address operand1",
+          "output": "Symbol \"operand1\" is a variable in $rcx.\n",
+          "error": false
+        }
+      ],
+      "address_expression": "operand1",
+      "diagnostic": "native value has no address"
+    },
+    {
+      "id": "gdb-native-dw2-op-out-param-e10-operand2",
+      "variable": "operand2",
+      "role": "root",
+      "expression": "operand2",
+      "queries": [
+        {
+          "command": "output/x &(operand2)",
+          "output": "Can't take address of \"operand2\" which isn't an lvalue.",
+          "error": true
+        },
+        {
+          "command": "info address operand2",
+          "output": "Symbol \"operand2\" is a variable in $rsi.\n",
+          "error": false
+        }
+      ],
+      "address_expression": "operand2",
+      "diagnostic": "native value has no address"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3428774,
+    "pc": "4198780",
+    "level": 1
+  },
+  "registers_after": {
+    "0": "4198662",
+    "1": "16045689975516020229",
+    "2": null,
+    "3": "16045689958336151041",
+    "4": null,
+    "5": null,
+    "6": "1",
+    "7": "140737488339808",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340104",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198780"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}

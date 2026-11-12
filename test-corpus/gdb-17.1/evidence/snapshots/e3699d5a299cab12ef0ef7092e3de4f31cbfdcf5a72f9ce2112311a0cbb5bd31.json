@@ -1,0 +1,81 @@
+{
+  "protocol": 1,
+  "event": 4,
+  "suite": "dw2-op-call",
+  "command": "p array3",
+  "variables": [
+    "array3"
+  ],
+  "selected_level": 0,
+  "registers": {},
+  "memory": {
+    "4210708": 3,
+    "4210709": 0
+  },
+  "register_evidence": [],
+  "memory_evidence": [],
+  "capture_errors": [],
+  "object": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-call/dw2-op-call/captured/outputs/gdb.dwarf2/dw2-op-call/dw2-op-call",
+  "object_snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-call/dw2-op-call/captured/objects/c64160bbde2176620f515c1cafb1f348136c803181e128f8027d814e236516fa/dw2-op-call",
+  "object_sha256": "c64160bbde2176620f515c1cafb1f348136c803181e128f8027d814e236516fa",
+  "pid": 0,
+  "sections": "Exec file: `/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-call/dw2-op-call/captured/outputs/gdb.dwarf2/dw2-op-call/dw2-op-call', file type elf64-x86-64.\n [0]      0x00400318->0x00400334 at 0x00000318: .interp ALLOC LOAD READONLY DATA HAS_CONTENTS\n [1]      0x00400338->0x00400350 at 0x00000338: .hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [2]      0x00400350->0x0040036c at 0x00000350: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS\n [3]      0x00400370->0x004003b8 at 0x00000370: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS\n [4]      0x004003b8->0x004003f9 at 0x000003b8: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [5]      0x004003fa->0x00400400 at 0x000003fa: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS\n [6]      0x00400400->0x00400420 at 0x00000400: .gnu.version_r ALLOC LOAD READONLY DATA HAS_CONTENTS\n [7]      0x00400420->0x00400450 at 0x00000420: .rela.dyn ALLOC LOAD READONLY DATA HAS_CONTENTS\n [8]      0x00401000->0x0040101b at 0x00001000: .init ALLOC LOAD READONLY CODE HAS_CONTENTS\n [9]      0x00401020->0x00401111 at 0x00001020: .text ALLOC LOAD READONLY CODE HAS_CONTENTS\n [10]     0x00401114->0x00401121 at 0x00001114: .fini ALLOC LOAD READONLY CODE HAS_CONTENTS\n [11]     0x00402000->0x00402004 at 0x00002000: .rodata ALLOC LOAD READONLY DATA HAS_CONTENTS\n [12]     0x00402004->0x00402028 at 0x00002004: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS\n [13]     0x00402028->0x0040208c at 0x00002028: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS\n [14]     0x00402090->0x004020b0 at 0x00002090: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS\n [15]     0x004020b0->0x004020d0 at 0x000020b0: .note.ABI-tag ALLOC LOAD READONLY DATA HAS_CONTENTS\n [16]     0x00403e18->0x00403e20 at 0x00002e18: .init_array ALLOC LOAD DATA HAS_CONTENTS\n [17]     0x00403e20->0x00403e28 at 0x00002e20: .fini_array ALLOC LOAD DATA HAS_CONTENTS\n [18]     0x00403e28->0x00403fd8 at 0x00002e28: .dynamic ALLOC LOAD DATA HAS_CONTENTS\n [19]     0x00403fd8->0x00403fe8 at 0x00002fd8: .got ALLOC LOAD DATA HAS_CONTENTS\n [20]     0x00403fe8->0x00404000 at 0x00002fe8: .got.plt ALLOC LOAD DATA HAS_CONTENTS\n [21]     0x00404000->0x00404016 at 0x00003000: .data ALLOC LOAD DATA HAS_CONTENTS\n [22]     0x00404016->0x00404018 at 0x00003016: .bss ALLOC\n [23]     0x00000000->0x0000002a at 0x00003016: .comment READONLY HAS_CONTENTS\n [24]     0x00000000->0x000000b7 at 0x00003040: .debug_info READONLY HAS_CONTENTS\n [25]     0x00000000->0x0000002e at 0x000030f7: .debug_abbrev READONLY HAS_CONTENTS\n [26]     0x00000000->0x0000001d at 0x00003125: .debug_line READONLY HAS_CONTENTS\n [27]     0x00000000->0x00000008 at 0x00003142: .debug_loc READONLY HAS_CONTENTS\n",
+  "memory_demand": {
+    "protocol": 1,
+    "action": "done",
+    "status": "collected",
+    "cases": [
+      {
+        "id": "gdb-operators-dw2-op-call-e4-array3",
+        "status": "completed",
+        "observation_gap": null
+      }
+    ],
+    "mapping": [
+      {
+        "suite": "dw2-op-call",
+        "inputs": 3
+      }
+    ],
+    "diagnostics": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-call-demand-diagnostics/dw2-op-call/4",
+    "probes": [
+      {
+        "case": "gdb-operators-dw2-op-call-e4-array3",
+        "directory": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-call-demand-diagnostics/dw2-op-call/4/probes/probe-0001",
+        "iterations": 1,
+        "status": "completed"
+      }
+    ]
+  },
+  "memory_capture": {
+    "mode": "on-demand",
+    "known_bytes": 2,
+    "attempted_bytes": 2,
+    "limit_bytes": 1048576,
+    "read_calls": 1,
+    "requests": [
+      {
+        "address": "4210708",
+        "size": 2,
+        "reason": "object at K-produced location",
+        "new_attempted_bytes": 2,
+        "known_bytes": 2,
+        "read_calls": 1,
+        "seconds": 0.00010212883353233337
+      }
+    ],
+    "attempted_ranges": [
+      {
+        "address": "4210708",
+        "size": 2
+      }
+    ],
+    "unavailable_ranges": [],
+    "errors": [],
+    "seconds": 8.297600485384464,
+    "same_stop": true,
+    "protocol_log": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-call-demand-diagnostics/dw2-op-call/4-memory-protocol.json",
+    "protocol_sha256": "495caf4a5ead5e5ec318de35f8bddd9d7f2a43f43c0a5e9afb2bcac396e90875",
+    "historical_limitations": []
+  }
+}

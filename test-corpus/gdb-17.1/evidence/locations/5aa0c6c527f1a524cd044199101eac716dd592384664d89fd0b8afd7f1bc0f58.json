@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "event": 4,
+  "suite": "dw2-op-call",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-op-call/dw2-op-call/captured/snapshots/4.json",
+  "snapshot_sha256": "e3699d5a299cab12ef0ef7092e3de4f31cbfdcf5a72f9ce2112311a0cbb5bd31",
+  "before": {
+    "pid": 0,
+    "pc": null,
+    "level": 0
+  },
+  "registers_before": {},
+  "observations": [
+    {
+      "id": "gdb-operators-dw2-op-call-e4-array3",
+      "variable": "array3",
+      "role": "root",
+      "expression": "array3",
+      "queries": [],
+      "address_expression": "array3",
+      "address": "4210708"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 0,
+    "pc": null,
+    "level": 0
+  },
+  "registers_after": {},
+  "same_stop": true,
+  "registers_unchanged": true
+}

@@ -1,0 +1,6 @@
+{
+  "address_width": 64,
+  "endianness": "little",
+  "architecture": "aarch64",
+  "registers": {"0": 17}
+}

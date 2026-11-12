@@ -1,0 +1,4 @@
+0: DW_OP_call_frame_cfa,
+1: DW_OP_fbreg -8,
+3: DW_OP_stack_value,
+4

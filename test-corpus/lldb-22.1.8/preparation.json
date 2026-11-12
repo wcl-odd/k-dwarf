@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "source": "lldb",
+  "path_format": "corpus-relative-v1",
+  "cases": 57,
+  "assertions": 57,
+  "corpus": {
+    "path": "cases.json",
+    "sha256": "4e50588b235f9a36a262163904cea6c8c66d53496afcf66d0c6ba7ce739300fe"
+  },
+  "source_roots": {
+    "lldb": "sources/lldb"
+  },
+  "source_files": [
+    {
+      "path": "sources/lldb/cmake/Modules/LLVMVersion.cmake",
+      "sha256": "a6f4c0b35f0db90d6617fc00a3b809b97dee6648d6322d5785b74f28ba180800"
+    },
+    {
+      "path": "sources/lldb/lldb/include/lldb/Expression/DWARFExpression.h",
+      "sha256": "1744ffe0b5ad8d5264a6565513e832089b237ac2b6f2c09acd6fad0a145ee129"
+    },
+    {
+      "path": "sources/lldb/lldb/source/Expression/DWARFExpression.cpp",
+      "sha256": "bce7f88a78e9bda0e18b6c3f288ad7945ca5c19b0a65c824bd32463af62ca881"
+    },
+    {
+      "path": "sources/lldb/lldb/unittests/Expression/CMakeLists.txt",
+      "sha256": "ed51548f646a14afe8147ec2d5feaeba15dbcc7c40a556e75b2ef03176009713"
+    },
+    {
+      "path": "sources/lldb/lldb/unittests/Expression/DWARFExpressionTest.cpp",
+      "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5"
+    },
+    {
+      "path": "sources/lldb/lldb/unittests/Expression/ValueMatcher.cpp",
+      "sha256": "00e7e907d4546240170d1b97d2af14e398cb98ee43fbd650dcc38511a06123b9"
+    },
+    {
+      "path": "sources/lldb/lldb/unittests/Expression/ValueMatcher.h",
+      "sha256": "6c8054a6e16746486c49c7981f9189ac0a846c210d1b1f365951aba3dd005cb7"
+    },
+    {
+      "path": "sources/lldb/lldb/unittests/TestingSupport/Symbol/YAMLModuleTester.cpp",
+      "sha256": "76d21bc9ca1517f019686d5a76c311269bf5405dbd65eda868d94f6d2717a68c"
+    },
+    {
+      "path": "sources/lldb/lldb/unittests/TestingSupport/Symbol/YAMLModuleTester.h",
+      "sha256": "04c1bdd58e234775b3c5984846e4a63cb522ce288d72d4c02970e643522e5026"
+    },
+    {
+      "path": "sources/lldb/llvm/include/llvm/BinaryFormat/Dwarf.def",
+      "sha256": "3926004c081e28c75144a9e739144a4062b547b82e5431e578cae451975a9452"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "evidence/selections/cb76d31649682c6766e0a4b32248b51e70fd13ab3e9a5298fc0464c38f4ef5df.json",
+      "sha256": "cb76d31649682c6766e0a4b32248b51e70fd13ab3e9a5298fc0464c38f4ef5df"
+    },
+    {
+      "path": "evidence/original-preparations/61f7173745a9bef3ff6e12882da7d67e9b8c216f3631347bb62776b04c88aff7.json",
+      "sha256": "61f7173745a9bef3ff6e12882da7d67e9b8c216f3631347bb62776b04c88aff7"
+    }
+  ],
+  "frozen_selection": {
+    "path": "evidence/selections/cb76d31649682c6766e0a4b32248b51e70fd13ab3e9a5298fc0464c38f4ef5df.json",
+    "sha256": "cb76d31649682c6766e0a4b32248b51e70fd13ab3e9a5298fc0464c38f4ef5df"
+  },
+  "original_archive": {
+    "directory": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/inputs/lldb",
+    "preparation_sha256": "61f7173745a9bef3ff6e12882da7d67e9b8c216f3631347bb62776b04c88aff7",
+    "cases_sha256": "4e50588b235f9a36a262163904cea6c8c66d53496afcf66d0c6ba7ce739300fe"
+  },
+  "provenance_only_paths": "Unresolved paths in snapshots/origin describe the original collection; only snapshot and location_oracle.path are runtime evidence references."
+}

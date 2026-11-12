@@ -1,0 +1,4307 @@
+{
+  "schema": 1,
+  "cases": [
+    {
+      "id": "lldb-22.1.8-L361-single",
+      "bytes": [
+        49,
+        48,
+        21,
+        0
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_pick",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 0}),\n                       ExpectScalar(0))",
+        "assertion_line": 361,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L361-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 361,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 0}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 0}),\n                       ExpectScalar(0))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "0"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L363-single",
+      "bytes": [
+        49,
+        48,
+        21,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_pick",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 1}),\n                       ExpectScalar(1))",
+        "assertion_line": 363,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L363-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 363,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 1}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 1}),\n                       ExpectScalar(1))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "1"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L371-single",
+      "bytes": [
+        8,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1u, 0x88}), ExpectScalar(0x88))",
+        "assertion_line": 371,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L371-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 371,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1u, 0x88}), ExpectScalar(0x88));",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1u, 0x88}), ExpectScalar(0x88))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "136"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L372-single",
+      "bytes": [
+        9,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1s, 0x88}),\n                       ExpectScalar(0xffffff88))",
+        "assertion_line": 372,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L372-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 372,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1s, 0x88}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1s, 0x88}),\n                       ExpectScalar(0xffffff88))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "4294967176"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L374-single",
+      "bytes": [
+        10,
+        71,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2u, 0x47, 0x88}),\n                       ExpectScalar(0x8847))",
+        "assertion_line": 374,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L374-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 374,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2u, 0x47, 0x88}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2u, 0x47, 0x88}),\n                       ExpectScalar(0x8847))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "34887"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L376-single",
+      "bytes": [
+        11,
+        71,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2s, 0x47, 0x88}),\n                       ExpectScalar(0xffff8847))",
+        "assertion_line": 376,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L376-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 376,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2s, 0x47, 0x88}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2s, 0x47, 0x88}),\n                       ExpectScalar(0xffff8847))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "4294936647"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L378-single",
+      "bytes": [
+        12,
+        68,
+        66,
+        71,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const4u, 0x44, 0x42, 0x47, 0x88}),\n                       ExpectScalar(0x88474244))",
+        "assertion_line": 378,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L378-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 378,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const4u, 0x44, 0x42, 0x47, 0x88}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const4u, 0x44, 0x42, 0x47, 0x88}),\n                       ExpectScalar(0x88474244))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "2286371396"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L380-single",
+      "bytes": [
+        13,
+        68,
+        66,
+        71,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const4s, 0x44, 0x42, 0x47, 0x88}),\n                       ExpectScalar(0x88474244))",
+        "assertion_line": 380,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L380-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 380,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const4s, 0x44, 0x42, 0x47, 0x88}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const4s, 0x44, 0x42, 0x47, 0x88}),\n                       ExpectScalar(0x88474244))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "2286371396"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L384-single",
+      "bytes": [
+        14,
+        0,
+        17,
+        34,
+        51,
+        68,
+        66,
+        71,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_const8u, 0x00, 0x11, 0x22, 0x33, 0x44, 0x42, 0x47, 0x88}),\n      ExpectScalar(0x33221100))",
+        "assertion_line": 384,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L384-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 384,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_const8u, 0x00, 0x11, 0x22, 0x33, 0x44, 0x42, 0x47, 0x88}),\n      ExpectScalar(0x33221100))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "857870592"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L387-single",
+      "bytes": [
+        15,
+        0,
+        17,
+        34,
+        51,
+        68,
+        66,
+        71,
+        136
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_const8s, 0x00, 0x11, 0x22, 0x33, 0x44, 0x42, 0x47, 0x88}),\n      ExpectScalar(0x33221100))",
+        "assertion_line": 387,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L387-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 387,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_const8s, 0x00, 0x11, 0x22, 0x33, 0x44, 0x42, 0x47, 0x88}),\n      ExpectScalar(0x33221100))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "857870592"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L401-single",
+      "bytes": [
+        8,
+        66,
+        47,
+        2,
+        0,
+        8,
+        255
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_skip",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1u, 0x42, DW_OP_skip, 0x02, 0x00,\n                                 DW_OP_const1u, 0xff}),\n                       ExpectScalar(0x42))",
+        "assertion_line": 401,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L401-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 401,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1u, 0x42, DW_OP_skip, 0x02, 0x00,",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const1u, 0x42, DW_OP_skip, 0x02, 0x00,\n                                 DW_OP_const1u, 0xff}),\n                       ExpectScalar(0x42))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "66"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L407-single",
+      "bytes": [
+        8,
+        66,
+        8,
+        1,
+        40,
+        2,
+        0,
+        8,
+        255
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_bra",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      // clang-format off\n      Evaluate({\n        DW_OP_const1u, 0x42,     // push 0x42\n        DW_OP_const1u, 0x1,      // push 0x1\n        DW_OP_bra, 0x02, 0x00,   // if 0x1 > 0, then skip 0x0002 opcodes\n        DW_OP_const1u, 0xff,     // push 0xff\n      }),\n      // clang-format on\n      ExpectScalar(0x42))",
+        "assertion_line": 407,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L407-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 407,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      // clang-format off\n      Evaluate({\n        DW_OP_const1u, 0x42,     // push 0x42\n        DW_OP_const1u, 0x1,      // push 0x1\n        DW_OP_bra, 0x02, 0x00,   // if 0x1 > 0, then skip 0x0002 opcodes\n        DW_OP_const1u, 0xff,     // push 0xff\n      }),\n      // clang-format on\n      ExpectScalar(0x42))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "66"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L592-single",
+      "bytes": [
+        49
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 2,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.dwarf_version",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1}, {}, &dwarf2), ExpectScalar(1))",
+        "assertion_line": 592,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L592-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 592,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1}, {}, &dwarf2), ExpectScalar(1));",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1}, {}, &dwarf2), ExpectScalar(1))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "1"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L392-single",
+      "bytes": [
+        16,
+        129,
+        130,
+        132,
+        136,
+        144,
+        160,
+        64
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_constu, 0x81, 0x82, 0x84, 0x88, 0x90, 0xa0, 0x40}),\n      ExpectScalar(0x01010101010101))",
+        "assertion_line": 392,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L392-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 392,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_constu, 0x81, 0x82, 0x84, 0x88, 0x90, 0xa0, 0x40}),\n      ExpectScalar(0x01010101010101))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "282578800148737",
+              "width": 64,
+              "signed": true
+            }
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L395-single",
+      "bytes": [
+        17,
+        129,
+        130,
+        132,
+        136,
+        144,
+        160,
+        64
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_const",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_consts, 0x81, 0x82, 0x84, 0x88, 0x90, 0xa0, 0x40}),\n      ExpectScalar(0xffff010101010101))",
+        "assertion_line": 395,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L395-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 395,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_consts, 0x81, 0x82, 0x84, 0x88, 0x90, 0xa0, 0x40}),\n      ExpectScalar(0xffff010101010101))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "18446463702556279041",
+              "width": 64,
+              "signed": false
+            }
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L365-single",
+      "bytes": [
+        49,
+        48,
+        21,
+        2
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_pick",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 2}),\n                       llvm::Failed())",
+        "assertion_line": 365,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L365-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 365,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 2}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1, DW_OP_lit0, DW_OP_pick, 2}),\n                       llvm::Failed())"
+          },
+          "target": "stopped",
+          "expected": {
+            "position": 2,
+            "stack": [
+              {
+                "value": 1,
+                "type": "g"
+              },
+              {
+                "value": 0,
+                "type": "g"
+              }
+            ],
+            "stable": true
+          },
+          "mapping": "stuck-scene-v1: original source failure assertion and fixture reviewed independently of K output. Original pick 2 has only two stack elements; preserve the exact pre-pick stack and byte offset. Check exact position, complete stack and unchanged full configuration in a larger-budget replay whose native rewrite count is below that budget. No K error category is inferred from incomplete; original source assertion is unchanged."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L418-single",
+      "bytes": [
+        40,
+        1,
+        0
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_bra",
+        "assertion": "EXPECT_THAT_ERROR(Evaluate({DW_OP_bra, 0x01, 0x00}).takeError(),\n                    llvm::Failed())",
+        "assertion_line": 418,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L418-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 418,
+            "text": "  EXPECT_THAT_ERROR(Evaluate({DW_OP_bra, 0x01, 0x00}).takeError(),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_ERROR(Evaluate({DW_OP_bra, 0x01, 0x00}).takeError(),\n                    llvm::Failed())"
+          },
+          "target": "stopped",
+          "expected": {
+            "position": 0,
+            "stack": [],
+            "stable": true
+          },
+          "mapping": "stuck-scene-v1: original source failure assertion and fixture reviewed independently of K output. Original bra has no condition on its empty initial stack. Check exact position, complete stack and unchanged full configuration in a larger-budget replay whose native rewrite count is below that budget. No K error category is inferred from incomplete; original source assertion is unchanged."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L580-single",
+      "bytes": [
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_stack_value",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_stack_value}), llvm::Failed())",
+        "assertion_line": 580,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L580-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 580,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_stack_value}), llvm::Failed());",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_stack_value}), llvm::Failed())"
+          },
+          "target": "stopped",
+          "expected": {
+            "position": 0,
+            "stack": [],
+            "stable": true
+          },
+          "mapping": "stuck-scene-v1: original source failure assertion and fixture reviewed independently of K output. Original stack_value has an empty stack. Check exact position, complete stack and unchanged full configuration in a larger-budget replay whose native rewrite count is below that budget. No K error category is inferred from incomplete; original source assertion is unchanged."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L636-single",
+      "bytes": [
+        48,
+        6
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.DW_OP_deref",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit0, DW_OP_deref}), llvm::Failed())",
+        "assertion_line": 636,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L636-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 636,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit0, DW_OP_deref}), llvm::Failed());",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit0, DW_OP_deref}), llvm::Failed())"
+          },
+          "target": "stopped",
+          "expected": {
+            "position": 1,
+            "stack": [
+              {
+                "value": 0,
+                "type": "g"
+              }
+            ],
+            "stable": true
+          },
+          "mapping": "stuck-scene-v1: original source failure assertion and fixture reviewed independently of K output. Original lit0 succeeds but the mock process has no bytes for deref at address zero. Check exact position, complete stack and unchanged full configuration in a larger-budget replay whose native rewrite count is below that budget. No K error category is inferred from incomplete; original source assertion is unchanged."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L518-single",
+      "bytes": [
+        12,
+        17,
+        34,
+        51,
+        68,
+        168,
+        14,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4u, 0x11, 0x22, 0x33, 0x44, //\n              DW_OP_convert, offs_uint32_t, DW_OP_stack_value}),\n      ExpectScalar(64, 0x44332211, not_signed))",
+        "assertion_line": 518,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "cu_index": 1,
+        "cu_address_width": 64,
+        "extractor_address_width": 32
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L518-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 518,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4u, 0x11, 0x22, 0x33, 0x44, //\n              DW_OP_convert, offs_uint32_t, DW_OP_stack_value}),\n      ExpectScalar(64, 0x44332211, not_signed))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "1144201745",
+              "width": 64,
+              "signed": false
+            }
+          },
+          "mapping": "Original ExpectScalar constructs the expected integer Scalar; ValueMatcher compares numeric values after source-preserving integer promotion, without requiring identical actual type width or signedness."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L524-single",
+      "bytes": [
+        12,
+        17,
+        34,
+        51,
+        68,
+        168,
+        17,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4u, 0x11, 0x22, 0x33, 0x44, //\n              DW_OP_convert, offs_uint64_t, DW_OP_stack_value}),\n      ExpectScalar(64, 0x44332211, not_signed))",
+        "assertion_line": 524,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "cu_index": 1,
+        "cu_address_width": 64,
+        "extractor_address_width": 32
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L524-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 524,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4u, 0x11, 0x22, 0x33, 0x44, //\n              DW_OP_convert, offs_uint64_t, DW_OP_stack_value}),\n      ExpectScalar(64, 0x44332211, not_signed))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "1144201745",
+              "width": 64,
+              "signed": false
+            }
+          },
+          "mapping": "Original ExpectScalar constructs the expected integer Scalar; ValueMatcher compares numeric values after source-preserving integer promotion, without requiring identical actual type width or signedness."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L530-single",
+      "bytes": [
+        13,
+        204,
+        221,
+        238,
+        255,
+        168,
+        20,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4s, 0xcc, 0xdd, 0xee, 0xff, //\n              DW_OP_convert, offs_sint64_t, DW_OP_stack_value}),\n      ExpectScalar(64, 0xffffffffffeeddcc, is_signed))",
+        "assertion_line": 530,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "cu_index": 1,
+        "cu_address_width": 64,
+        "extractor_address_width": 32
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L530-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 530,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4s, 0xcc, 0xdd, 0xee, 0xff, //\n              DW_OP_convert, offs_sint64_t, DW_OP_stack_value}),\n      ExpectScalar(64, 0xffffffffffeeddcc, is_signed))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "18446744073708428748",
+              "width": 64,
+              "signed": true
+            }
+          },
+          "mapping": "Original ExpectScalar constructs the expected integer Scalar; ValueMatcher compares numeric values after source-preserving integer promotion, without requiring identical actual type width or signedness."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L536-single",
+      "bytes": [
+        13,
+        204,
+        221,
+        238,
+        255,
+        168,
+        20,
+        168,
+        14,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4s, 0xcc, 0xdd, 0xee, 0xff, //\n              DW_OP_convert, offs_sint64_t,          //\n              DW_OP_convert, offs_uint32_t, DW_OP_stack_value}),\n      ExpectScalar(32, 0xffeeddcc, not_signed))",
+        "assertion_line": 536,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "cu_index": 1,
+        "cu_address_width": 64,
+        "extractor_address_width": 32
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L536-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 536,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      t.Eval({DW_OP_const4s, 0xcc, 0xdd, 0xee, 0xff, //\n              DW_OP_convert, offs_sint64_t,          //\n              DW_OP_convert, offs_uint32_t, DW_OP_stack_value}),\n      ExpectScalar(32, 0xffeeddcc, not_signed))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "4293844428",
+              "width": 32,
+              "signed": false
+            }
+          },
+          "mapping": "Original ExpectScalar constructs the expected integer Scalar; ValueMatcher compares numeric values after source-preserving integer promotion, without requiring identical actual type width or signedness."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L543-single",
+      "bytes": [
+        13,
+        204,
+        221,
+        238,
+        255,
+        168,
+        20,
+        168,
+        0,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 0xcc, 0xdd, 0xee, 0xff, //\n                               DW_OP_convert, offs_sint64_t,          //\n                               DW_OP_convert, 0x00, DW_OP_stack_value}),\n                       ExpectScalar(32, 0xffeeddcc, not_signed))",
+        "assertion_line": 543,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "cu_index": 1,
+        "cu_address_width": 64,
+        "extractor_address_width": 32
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L543-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 543,
+            "text": "  EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 0xcc, 0xdd, 0xee, 0xff, //",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 0xcc, 0xdd, 0xee, 0xff, //\n                               DW_OP_convert, offs_sint64_t,          //\n                               DW_OP_convert, 0x00, DW_OP_stack_value}),\n                       ExpectScalar(32, 0xffeeddcc, not_signed))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "4293844428",
+              "width": 32,
+              "signed": false
+            }
+          },
+          "mapping": "Original ExpectScalar constructs the expected integer Scalar; ValueMatcher compares numeric values after source-preserving integer promotion, without requiring identical actual type width or signedness."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L549-single",
+      "bytes": [
+        13,
+        65,
+        66,
+        67,
+        68,
+        168,
+        23,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 'A', 'B', 'C', 'D', DW_OP_convert,\n                               offs_uchar, DW_OP_stack_value}),\n                       ExpectScalar(8, 'A', not_signed))",
+        "assertion_line": 549,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "cu_index": 1,
+        "cu_address_width": 64,
+        "extractor_address_width": 32
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L549-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 549,
+            "text": "  EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 'A', 'B', 'C', 'D', DW_OP_convert,",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 'A', 'B', 'C', 'D', DW_OP_convert,\n                               offs_uchar, DW_OP_stack_value}),\n                       ExpectScalar(8, 'A', not_signed))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "65",
+              "width": 8,
+              "signed": false
+            }
+          },
+          "mapping": "Original ExpectScalar constructs the expected integer Scalar; ValueMatcher compares numeric values after source-preserving integer promotion, without requiring identical actual type width or signedness."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L554-single",
+      "bytes": [
+        13,
+        65,
+        66,
+        67,
+        68,
+        168,
+        26,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 'A', 'B', 'C', 'D', DW_OP_convert,\n                               offs_schar, DW_OP_stack_value}),\n                       ExpectScalar(8, 'A', is_signed))",
+        "assertion_line": 554,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "cu_index": 1,
+        "cu_address_width": 64,
+        "extractor_address_width": 32
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L554-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 554,
+            "text": "  EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 'A', 'B', 'C', 'D', DW_OP_convert,",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(t.Eval({DW_OP_const4s, 'A', 'B', 'C', 'D', DW_OP_convert,\n                               offs_schar, DW_OP_stack_value}),\n                       ExpectScalar(8, 'A', is_signed))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "65",
+              "width": 8,
+              "signed": true
+            }
+          },
+          "mapping": "Original ExpectScalar constructs the expected integer Scalar; ValueMatcher compares numeric values after source-preserving integer promotion, without requiring identical actual type width or signedness."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L563-single",
+      "bytes": [
+        9,
+        88,
+        168,
+        0
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_ERROR(Evaluate({DW_OP_const1s, 'X', DW_OP_convert, 0x00}, nullptr,\n                             t.GetDwarfUnit())\n                        .takeError(),\n                    llvm::Failed())",
+        "assertion_line": 563,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L563-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 563,
+            "text": "  EXPECT_THAT_ERROR(Evaluate({DW_OP_const1s, 'X', DW_OP_convert, 0x00}, nullptr,",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_ERROR(Evaluate({DW_OP_const1s, 'X', DW_OP_convert, 0x00}, nullptr,\n                             t.GetDwarfUnit())\n                        .takeError(),\n                    llvm::Failed())"
+          },
+          "target": "uncheckable",
+          "expected": {},
+          "mapping": "Original supplies CU but withholds Module. K does not expose Module presence; native failure is not a K stop predicate."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L569-single",
+      "bytes": [
+        9,
+        88,
+        168,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_ERROR(\n      t.Eval({DW_OP_const1s, 'X', DW_OP_convert, 0x01}).takeError(),\n      llvm::Failed())",
+        "assertion_line": 569,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L569-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 569,
+            "text": "  EXPECT_THAT_ERROR(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_ERROR(\n      t.Eval({DW_OP_const1s, 'X', DW_OP_convert, 0x01}).takeError(),\n      llvm::Failed())"
+          },
+          "target": "stopped",
+          "expected": {
+            "position": 2,
+            "stack": [
+              {
+                "value": 88,
+                "type": "g"
+              }
+            ],
+            "stable": true
+          },
+          "mapping": "stuck-scene-v1: original source failure assertion and fixture reviewed independently of K output. Original convert references CU offset 1, which is not a supplied base type DIE. Check exact position, complete stack and unchanged full configuration in a larger-budget replay whose native rewrite count is below that budget. No K error category is inferred from incomplete; original source assertion is unchanged."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L574-single",
+      "bytes": [
+        9,
+        88,
+        168,
+        29
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_convert",
+        "assertion": "EXPECT_THAT_ERROR(\n      t.Eval({DW_OP_const1s, 'X', DW_OP_convert, 0x1d}).takeError(),\n      llvm::Failed())",
+        "assertion_line": 574,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "types": {
+          "14": {
+            "id": "original-cu1:14",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 32,
+            "byte_size": 4
+          },
+          "17": {
+            "id": "original-cu1:17",
+            "encoding": "DW_ATE_unsigned",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "20": {
+            "id": "original-cu1:20",
+            "encoding": "DW_ATE_signed",
+            "bit_width": 64,
+            "byte_size": 8
+          },
+          "23": {
+            "id": "original-cu1:23",
+            "encoding": "DW_ATE_unsigned_char",
+            "bit_width": 8,
+            "byte_size": 1
+          },
+          "26": {
+            "id": "original-cu1:26",
+            "encoding": "DW_ATE_signed_char",
+            "bit_width": 8,
+            "byte_size": 1
+          }
+        },
+        "raw_types": {
+          "29": {
+            "id": "original-cu1:29",
+            "tag": "DW_TAG_base_type",
+            "encoding": "DW_ATE_numeric_string",
+            "byte_size": 1
+          }
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L574-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 574,
+            "text": "  EXPECT_THAT_ERROR(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_ERROR(\n      t.Eval({DW_OP_const1s, 'X', DW_OP_convert, 0x1d}).takeError(),\n      llvm::Failed())"
+          },
+          "target": "stopped",
+          "expected": {
+            "position": 2,
+            "stack": [
+              {
+                "value": 88,
+                "type": "g"
+              }
+            ],
+            "stable": true
+          },
+          "mapping": "stuck-scene-v1: original source failure assertion and fixture reviewed independently of K output. Original convert references DW_ATE_numeric_string; K has no conversion rule for this encoding. This remains an implementation limitation, not a declaration of invalid DWARF. Check exact position, complete stack and unchanged full configuration in a larger-budget replay whose native rewrite count is below that budget. No K error category is inferred from incomplete; original source assertion is unchanged."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L596-single",
+      "bytes": [
+        49
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.dwarf_version",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1}, {}, &dwarf5),\n                       ExpectLoadAddress(1))",
+        "assertion_line": 596,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L596-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 596,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1}, {}, &dwarf5),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit1}, {}, &dwarf5),\n                       ExpectLoadAddress(1))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 1
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L601-single",
+      "bytes": [
+        10,
+        17,
+        34,
+        147,
+        2,
+        10,
+        51,
+        68,
+        147,
+        2
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_piece",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2u, 0x11, 0x22, DW_OP_piece, 2,\n                                 DW_OP_const2u, 0x33, 0x44, DW_OP_piece, 2}),\n                       ExpectHostAddress({0x11, 0x22, 0x33, 0x44}))",
+        "assertion_line": 601,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "architecture_mapping": "No Target in original helper: i386 models its 32-bit little-endian general-register piece placement; not an original Target identity."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L601-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 601,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2u, 0x11, 0x22, DW_OP_piece, 2,",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_const2u, 0x11, 0x22, DW_OP_piece, 2,\n                                 DW_OP_const2u, 0x33, 0x44, DW_OP_piece, 2}),\n                       ExpectHostAddress({0x11, 0x22, 0x33, 0x44}))"
+          },
+          "target": "object",
+          "expected": {
+            "object_bytes": [
+              17,
+              34,
+              51,
+              68
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L604-single",
+      "bytes": [
+        147,
+        1,
+        8,
+        255,
+        147,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 2,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_piece",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_piece, 1, DW_OP_const1u, 0xff, DW_OP_piece, 1}),\n      // Note that the \"00\" should really be \"undef\", but we can't\n      // represent that yet.\n      ExpectHostAddress({0x00, 0xff}))",
+        "assertion_line": 604,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "architecture_mapping": "No Target in original helper: i386 models its 32-bit little-endian general-register piece placement; not an original Target identity."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L604-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 604,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_piece, 1, DW_OP_const1u, 0xff, DW_OP_piece, 1}),\n      // Note that the \"00\" should really be \"undef\", but we can't\n      // represent that yet.\n      ExpectHostAddress({0x00, 0xff}))"
+          },
+          "target": "object",
+          "expected": {
+            "object_bytes": [
+              0,
+              255
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L615-single",
+      "bytes": [
+        50,
+        159,
+        147,
+        40
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 40,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_piece",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({{DW_OP_lit2, DW_OP_stack_value, DW_OP_piece, 40}}),\n      ExpectHostAddress(expected_host_buffer))",
+        "assertion_line": 615,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "architecture_mapping": "No Target in original helper: i386 models its 32-bit little-endian general-register piece placement; not an original Target identity."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L615-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 615,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({{DW_OP_lit2, DW_OP_stack_value, DW_OP_piece, 40}}),\n      ExpectHostAddress(expected_host_buffer))"
+          },
+          "target": "object",
+          "expected": {
+            "object_bytes": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L623-single",
+      "bytes": [
+        158,
+        4,
+        17,
+        34,
+        51,
+        68
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_implicit_value",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_implicit_value, bytes, 0x11, 0x22, 0x33, 0x44}),\n      ExpectHostAddress({0x11, 0x22, 0x33, 0x44}))",
+        "assertion_line": 623,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L623-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 623,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_implicit_value, bytes, 0x11, 0x22, 0x33, 0x44}),\n      ExpectHostAddress({0x11, 0x22, 0x33, 0x44}))"
+          },
+          "target": "object",
+          "expected": {
+            "object_bytes": [
+              17,
+              34,
+              51,
+              68
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L629-single",
+      "bytes": [
+        255
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpression.DW_OP_unknown",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({0xff}),\n      llvm::FailedWithMessage(\n          \"Unhandled opcode DW_OP_unknown_ff in DWARFExpression\"))",
+        "assertion_line": 629,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L629-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 629,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({0xff}),\n      llvm::FailedWithMessage(\n          \"Unhandled opcode DW_OP_unknown_ff in DWARFExpression\"))"
+          },
+          "target": "uncheckable",
+          "expected": {},
+          "mapping": "Native unknown-opcode diagnostic has no independently mapped K semantic error predicate."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L648-single",
+      "bytes": [
+        52,
+        6,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.DW_OP_deref",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_lit4, DW_OP_deref, DW_OP_stack_value}, {}, {}, &exe_ctx),\n      ExpectScalar(32, 0x07060504, false))",
+        "assertion_line": 648,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L648-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 648,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_lit4, DW_OP_deref, DW_OP_stack_value}, {}, {}, &exe_ctx),\n      ExpectScalar(32, 0x07060504, false))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "scalar": {
+              "bits": "117835012",
+              "width": 32,
+              "signed": false
+            }
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L655-single",
+      "bytes": [
+        52
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.DW_OP_deref",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit4}, {}, {}, &exe_ctx),\n                       ExpectScalar(Scalar(4)))",
+        "assertion_line": 655,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L655-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 655,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit4}, {}, {}, &exe_ctx),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit4}, {}, {}, &exe_ctx),\n                       ExpectScalar(Scalar(4)))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "4"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L652-single",
+      "bytes": [
+        52,
+        6
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.DW_OP_deref",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit4, DW_OP_deref}, {}, {}, &exe_ctx),\n                       ExpectLoadAddress(0x07060504))",
+        "assertion_line": 652,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L652-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 652,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit4, DW_OP_deref}, {}, {}, &exe_ctx),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate({DW_OP_lit4, DW_OP_deref}, {}, {}, &exe_ctx),\n                       ExpectLoadAddress(0x07060504))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 117835012
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L666-single",
+      "bytes": [
+        3,
+        64,
+        0,
+        0,
+        0
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.WASM_DW_OP_addr",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_addr, 0x40, 0x0, 0x0, 0x0}, {}, {}, &exe_ctx),\n      ExpectLoadAddress(0x40))",
+        "assertion_line": 666,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "original_target": "wasm32-unknown-unknown-wasm"
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {},
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L666-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 666,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Evaluate({DW_OP_addr, 0x40, 0x0, 0x0, 0x0}, {}, {}, &exe_ctx),\n      ExpectLoadAddress(0x40))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 64
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L741-single",
+      "bytes": [
+        161,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.WASM_DW_OP_addr_index",
+        "assertion": "EXPECT_THAT_EXPECTED(result, ExpectLoadAddress(0x5678u))",
+        "assertion_line": 741,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "original_target": "wasm32-unknown-unknown-wasm"
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "debug_addr": {
+          "0": 4660,
+          "1": 22136
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L741-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 741,
+            "text": "  EXPECT_THAT_EXPECTED(result, ExpectLoadAddress(0x5678u));",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(result, ExpectLoadAddress(0x5678u))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 22136
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L745-single",
+      "bytes": [
+        3,
+        239,
+        190,
+        173,
+        222
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.WASM_DW_OP_addr_index",
+        "assertion": "EXPECT_THAT_EXPECTED(result, ExpectLoadAddress(0xdeadbeefu))",
+        "assertion_line": 745,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting.",
+        "original_target": "wasm32-unknown-unknown-wasm",
+        "fixture_mutation": "Original Update_DW_OP_addr replaces addrx with addr and embedded address; it explicitly does not modify the read-only table (DWARFExpression.cpp:462-480)."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "debug_addr": {
+          "0": 4660,
+          "1": 22136
+        }
+      },
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L745-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 745,
+            "text": "  EXPECT_THAT_EXPECTED(result, ExpectLoadAddress(0xdeadbeefu));",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(result, ExpectLoadAddress(0xdeadbeefu))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 3735928559
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1169-single",
+      "bytes": [
+        3,
+        64,
+        0,
+        0,
+        0,
+        147,
+        1,
+        3,
+        80,
+        0,
+        0,
+        0,
+        147,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 2,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.DW_OP_piece_file_addr",
+        "assertion": "EXPECT_THAT_EXPECTED(Evaluate(expr, {}, {}, &exe_ctx),\n                       ExpectHostAddress({0x11, 0x22}))",
+        "assertion_line": 1169,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 64,
+            "size": 1,
+            "bytes": [
+              17
+            ]
+          },
+          {
+            "address": 80,
+            "size": 1,
+            "bytes": [
+              34
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1169-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1169,
+            "text": "  EXPECT_THAT_EXPECTED(Evaluate(expr, {}, {}, &exe_ctx),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Evaluate(expr, {}, {}, &exe_ctx),\n                       ExpectHostAddress({0x11, 0x22}))"
+          },
+          "target": "object",
+          "expected": {
+            "object_bytes": [
+              17,
+              34
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1214-single",
+      "bytes": [
+        134,
+        0
+      ],
+      "address_width": 64,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 8,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTestWithAArch.DW_op_deref_no_ptr_fixing",
+        "assertion": "EXPECT_THAT_EXPECTED(result_reg, ExpectLoadAddress(addr))",
+        "assertion_line": 1214,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "22": 42
+        },
+        "memory_requests": [
+          {
+            "address": 42,
+            "size": 8,
+            "bytes": [
+              239,
+              205,
+              171,
+              0,
+              0,
+              0,
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "architecture": "aarch64",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1214-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1214,
+            "text": "  EXPECT_THAT_EXPECTED(result_reg, ExpectLoadAddress(addr));",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(result_reg, ExpectLoadAddress(addr))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 42
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1218-single",
+      "bytes": [
+        134,
+        0,
+        6
+      ],
+      "address_width": 64,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 8,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTestWithAArch.DW_op_deref_no_ptr_fixing",
+        "assertion": "EXPECT_THAT_EXPECTED(result_deref, ExpectLoadAddress(expected_value))",
+        "assertion_line": 1218,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "22": 42
+        },
+        "memory_requests": [
+          {
+            "address": 42,
+            "size": 8,
+            "bytes": [
+              239,
+              205,
+              171,
+              0,
+              0,
+              0,
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "architecture": "aarch64",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1218-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1218,
+            "text": "  EXPECT_THAT_EXPECTED(result_deref, ExpectLoadAddress(expected_value));",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(result_deref, ExpectLoadAddress(expected_value))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 18374686479682883055
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1242-single",
+      "bytes": [
+        80
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_register",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0}),\n                       ExpectScalar(reg_r0, Value::ContextType::RegisterInfo))",
+        "assertion_line": 1242,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "0": 1284
+        },
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "address": 1284,
+            "size": 4,
+            "bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "address": 1285,
+            "size": 4,
+            "bytes": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1242-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1242,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0}),\n                       ExpectScalar(reg_r0, Value::ContextType::RegisterInfo))"
+          },
+          "target": "object",
+          "expected": {
+            "kind": "register",
+            "fields": [
+              {
+                "offset": 0,
+                "size": 32,
+                "bits": 1284
+              }
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1247-single",
+      "bytes": [
+        80,
+        6
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_register",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref}),\n                       ExpectLoadAddress(reg_r0, Value::ContextType::Invalid))",
+        "assertion_line": 1247,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "0": 1284
+        },
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "address": 1284,
+            "size": 4,
+            "bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "address": 1285,
+            "size": 4,
+            "bytes": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1247-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1247,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref}),\n                       ExpectLoadAddress(reg_r0, Value::ContextType::Invalid))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 1284
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1259-single",
+      "bytes": [
+        80,
+        148,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_register",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_reg0, DW_OP_deref_size, 1}),\n      ExpectLoadAddress(reg_r0 & 0xff, Value::ContextType::Invalid))",
+        "assertion_line": 1259,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "0": 1284
+        },
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "address": 1284,
+            "size": 4,
+            "bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "address": 1285,
+            "size": 4,
+            "bytes": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1259-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1259,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_reg0, DW_OP_deref_size, 1}),\n      ExpectLoadAddress(reg_r0 & 0xff, Value::ContextType::Invalid))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 4
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1271-single",
+      "bytes": [
+        112,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_register",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_breg0, 1}),\n      ExpectLoadAddress(reg_r0 + 1, Value::ContextType::Invalid))",
+        "assertion_line": 1271,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "0": 1284
+        },
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "address": 1284,
+            "size": 4,
+            "bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "address": 1285,
+            "size": 4,
+            "bytes": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1271-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1271,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_breg0, 1}),\n      ExpectLoadAddress(reg_r0 + 1, Value::ContextType::Invalid))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 1285
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1276-single",
+      "bytes": [
+        112,
+        1,
+        6
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_register",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_breg0, 1, DW_OP_deref}),\n      ExpectLoadAddress(0x08070605, Value::ContextType::Invalid))",
+        "assertion_line": 1276,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "0": 1284
+        },
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "address": 1284,
+            "size": 4,
+            "bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "address": 1285,
+            "size": 4,
+            "bytes": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1276-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1276,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_breg0, 1, DW_OP_deref}),\n      ExpectLoadAddress(0x08070605, Value::ContextType::Invalid))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 134678021
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1254-single",
+      "bytes": [
+        80,
+        6,
+        147,
+        4
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_register",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref, DW_OP_piece, 4}),\n                       ExpectHostAddress({0xa, 0xb, 0xc, 0xd}))",
+        "assertion_line": 1254,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "0": 1284
+        },
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "address": 1284,
+            "size": 4,
+            "bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "address": 1285,
+            "size": 4,
+            "bytes": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1254-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1254,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref, DW_OP_piece, 4}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref, DW_OP_piece, 4}),\n                       ExpectHostAddress({0xa, 0xb, 0xc, 0xd}))"
+          },
+          "target": "object",
+          "expected": {
+            "object_bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1267-single",
+      "bytes": [
+        80,
+        148,
+        1,
+        147,
+        4
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_register",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref_size, 1, DW_OP_piece, 4}),\n                       ExpectHostAddress({0x1, 0x2, 0x3, 0x4}))",
+        "assertion_line": 1267,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "registers": {
+          "0": 1284
+        },
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "address": 1284,
+            "size": 4,
+            "bytes": [
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          {
+            "address": 1285,
+            "size": 4,
+            "bytes": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1267-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1267,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref_size, 1, DW_OP_piece, 4}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_reg0, DW_OP_deref_size, 1, DW_OP_piece, 4}),\n                       ExpectHostAddress({0x1, 0x2, 0x3, 0x4}))"
+          },
+          "target": "object",
+          "expected": {
+            "object_bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1298-single",
+      "bytes": [
+        52,
+        159
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_implicit_value",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_stack_value}),\n                       ExpectScalar(0x4))",
+        "assertion_line": 1298,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 1,
+            "bytes": [
+              1
+            ]
+          },
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1298-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1298,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_stack_value}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_stack_value}),\n                       ExpectScalar(0x4))"
+          },
+          "target": "stack_top",
+          "expected": {
+            "bits": "4"
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1303-single",
+      "bytes": [
+        52,
+        159,
+        6
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_implicit_value",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_stack_value, DW_OP_deref}),\n                       ExpectLoadAddress(0x4))",
+        "assertion_line": 1303,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 1,
+            "bytes": [
+              1
+            ]
+          },
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1303-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1303,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_stack_value, DW_OP_deref}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_stack_value, DW_OP_deref}),\n                       ExpectLoadAddress(0x4))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 4
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1309-single",
+      "bytes": [
+        16,
+        132,
+        10,
+        159,
+        148,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_implicit_value",
+        "assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_constu, 0x84, 0xa, DW_OP_stack_value, DW_OP_deref_size, 1}),\n      ExpectLoadAddress(0x4))",
+        "assertion_line": 1309,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 1,
+            "bytes": [
+              1
+            ]
+          },
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1309-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1309,
+            "text": "  EXPECT_THAT_EXPECTED(",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(\n      Eval({DW_OP_constu, 0x84, 0xa, DW_OP_stack_value, DW_OP_deref_size, 1}),\n      ExpectLoadAddress(0x4))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 4
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1316-single",
+      "bytes": [
+        52
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_implicit_value",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4}), ExpectLoadAddress(0x4))",
+        "assertion_line": 1316,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 1,
+            "bytes": [
+              1
+            ]
+          },
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1316-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1316,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4}), ExpectLoadAddress(0x4));",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4}), ExpectLoadAddress(0x4))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 4
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1318-single",
+      "bytes": [
+        52,
+        6
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_implicit_value",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_deref}),\n                       ExpectLoadAddress(0x04030201))",
+        "assertion_line": 1318,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 1,
+            "bytes": [
+              1
+            ]
+          },
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1318-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1318,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_deref}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_deref}),\n                       ExpectLoadAddress(0x04030201))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 67305985
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    },
+    {
+      "id": "lldb-22.1.8-L1321-single",
+      "bytes": [
+        52,
+        148,
+        1
+      ],
+      "address_width": 32,
+      "endianness": "little",
+      "dwarf_version": 5,
+      "delegate": true,
+      "object_size": 4,
+      "origin": {
+        "project": "lldb",
+        "version": "22.1.8",
+        "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+        "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+        "test": "DWARFExpressionMockProcessTest.deref_implicit_value",
+        "assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_deref_size, 1}),\n                       ExpectLoadAddress(0x01))",
+        "assertion_line": 1321,
+        "parameter": "single",
+        "migration_kind": "faithful",
+        "migration": "Source-reviewed literal bytes and original fixture; no OP rewriting."
+      },
+      "compare": [
+        "numeric"
+      ],
+      "expected": {},
+      "requirements": [],
+      "backends": [
+        "k"
+      ],
+      "context": {
+        "memory_requests": [
+          {
+            "address": 4,
+            "size": 1,
+            "bytes": [
+              1
+            ]
+          },
+          {
+            "address": 4,
+            "size": 4,
+            "bytes": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "architecture": "i386",
+      "object_format": "bytes",
+      "upstream_assertions": [
+        {
+          "id": "lldb-22.1.8-L1321-single",
+          "source": {
+            "project": "lldb",
+            "version": "22.1.8",
+            "file": "lldb/unittests/Expression/DWARFExpressionTest.cpp",
+            "sha256": "6cdc06cc26de8ffe92b0b88b26461a4e81e3d785f3e9ca0e0d08475215cab1c5",
+            "line": 1321,
+            "text": "  EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_deref_size, 1}),",
+            "parameter": "single",
+            "original_assertion": "EXPECT_THAT_EXPECTED(Eval({DW_OP_lit4, DW_OP_deref_size, 1}),\n                       ExpectLoadAddress(0x01))"
+          },
+          "target": "result",
+          "expected": {
+            "kind": "memory",
+            "integer": 1
+          },
+          "mapping": "Original semantic value predicate; native Scalar/Value bookkeeping is retained as provenance, not invented as a DWARF type identity."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "address_width": 64,
+  "endianness": "little",
+  "types": {
+    "64": {"id": "u8", "encoding": "DW_ATE_unsigned", "bit_width": 8, "byte_size": 1},
+    "96": {"id": "s16", "encoding": "DW_ATE_signed", "bit_width": 16, "byte_size": 2}
+  }
+}

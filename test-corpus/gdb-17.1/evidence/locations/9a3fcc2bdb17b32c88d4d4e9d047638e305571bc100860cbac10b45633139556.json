@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "event": 7,
+  "suite": "clztest",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/clztest/clztest/captured/snapshots/7.json",
+  "snapshot_sha256": "7c915bc38d8057b1b118741b9982d4723b8ecbe2e0332404d332c0338fab41d6",
+  "before": {
+    "pid": 3377588,
+    "pc": "4198457",
+    "level": 0
+  },
+  "registers_before": {
+    "0": "43",
+    "1": "140737353912384",
+    "2": "140737488340296",
+    "3": "0",
+    "4": "140737354131592",
+    "5": "1193046",
+    "6": "0",
+    "7": "140737488340256",
+    "8": "4095",
+    "9": "15",
+    "10": "140737353889888",
+    "11": "518",
+    "12": "4198400",
+    "13": "140737488340272",
+    "14": "0",
+    "15": "0",
+    "16": "4198457"
+  },
+  "observations": [
+    {
+      "id": "gdb-fixed-clztest-e7-f",
+      "variable": "f",
+      "role": "root",
+      "expression": "f",
+      "queries": [
+        {
+          "command": "output/x &(f)",
+          "output": "Address requested for identifier \"f\" which is in register $rax",
+          "error": true
+        },
+        {
+          "command": "info address f",
+          "output": "Symbol \"f\" is a variable in $rax.\n",
+          "error": false
+        }
+      ],
+      "address_expression": "f",
+      "diagnostic": "native value has no address"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3377588,
+    "pc": "4198457",
+    "level": 0
+  },
+  "registers_after": {
+    "0": "43",
+    "1": "140737353912384",
+    "2": "140737488340296",
+    "3": "0",
+    "4": "140737354131592",
+    "5": "1193046",
+    "6": "0",
+    "7": "140737488340256",
+    "8": "4095",
+    "9": "15",
+    "10": "140737353889888",
+    "11": "518",
+    "12": "4198400",
+    "13": "140737488340272",
+    "14": "0",
+    "15": "0",
+    "16": "4198457"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}

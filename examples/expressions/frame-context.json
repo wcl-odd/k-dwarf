@@ -1,0 +1,6 @@
+{
+  "address_width": 64,
+  "endianness": "little",
+  "cfa": 8240,
+  "framebase": 8448
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "gdb-native-shortpiece-e2-s2",
+    "project": "gdb",
+    "assertion_id": "gdb-17.1-shortpiece-L128-0",
+    "source_file": "gdb/testsuite/gdb.dwarf2/shortpiece.exp",
+    "source_line": 128,
+    "source_sha256": "a432fb9d6fef293e4dcb2ad651e69658a47f5827b36fb7dafbb0438bf4c9fdf7",
+    "original_assertions": [
+      {
+        "id": "shortpiece:L128:single",
+        "source": {
+          "project": "gdb",
+          "version": "17.1",
+          "file": "gdb/testsuite/gdb.dwarf2/shortpiece.exp",
+          "sha256": "a432fb9d6fef293e4dcb2ad651e69658a47f5827b36fb7dafbb0438bf4c9fdf7",
+          "line": 128,
+          "text": "gdb_test \"p s2\" \\",
+          "parameter": "single",
+          "native_matchers": [
+            "{p s2} {access outside bounds of object referenced via synthetic pointer}"
+          ],
+          "native_outcomes": [
+            [
+              "pass",
+              "{p s2}"
+            ]
+          ],
+          "original_assertion": "gdb_test \"p s2\" \\\n    \"access outside bounds of object referenced via synthetic pointer\""
+        },
+        "target": "uncheckable",
+        "expected": {},
+        "mapping": "Synthetic-pointer bounds diagnostics are not a K location-result predicate.",
+        "uncheckable": [
+          "Synthetic-pointer bounds diagnostics are not a K location-result predicate."
+        ]
+      }
+    ],
+    "category": "framework_untestable",
+    "reason": "原预期检查 GDB 对象越界诊断；片段总长12字节超过8字节对象。K 因32位来源不能供应8字节片段，在pc=8提前停止，不能将不同停止原因当作原错误已验证。",
+    "disposition": "excluded",
+    "previous_status": "uncheckable",
+    "input_identity": "70eaf84b45f69b2552e9e1b54336b9c53161dff1f275b5d66fb6fdd97ef069ec",
+    "acceptance": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-native-shortpiece-e2-s2/acceptance.json",
+    "final_configuration": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-native-shortpiece-e2-s2/k/stdout.txt",
+    "人工备注": ""
+  },
+  {
+    "id": "gdb-native-shortpiece-e6-s3",
+    "project": "gdb",
+    "assertion_id": "gdb-17.1-shortpiece-L148-0",
+    "source_file": "gdb/testsuite/gdb.dwarf2/shortpiece.exp",
+    "source_line": 148,
+    "source_sha256": "a432fb9d6fef293e4dcb2ad651e69658a47f5827b36fb7dafbb0438bf4c9fdf7",
+    "original_assertions": [
+      {
+        "id": "shortpiece:L148:single",
+        "source": {
+          "project": "gdb",
+          "version": "17.1",
+          "file": "gdb/testsuite/gdb.dwarf2/shortpiece.exp",
+          "sha256": "a432fb9d6fef293e4dcb2ad651e69658a47f5827b36fb7dafbb0438bf4c9fdf7",
+          "line": 148,
+          "text": "gdb_test \"p (int \\[\\]) s3\" [multi_line \\",
+          "parameter": "single",
+          "native_matchers": [
+            "{p (int []) s3} {warning: array element type size does not divide object size in cast\r\n\\$\\d = \\{0\\}}"
+          ],
+          "native_outcomes": [
+            [
+              "pass",
+              "{p (int []) s3}"
+            ]
+          ],
+          "original_assertion": "gdb_test \"p (int \\[\\]) s3\" [multi_line \\\n\t\t\t\t\"warning: array element type size does not divide object size in cast\" \\\n\t\t\t\t\"\\\\$\\\\d = \\\\{0\\\\}\"]"
+        },
+        "target": "object",
+        "expected": {
+          "fields": [
+            {
+              "offset": 0,
+              "size": 32,
+              "integer": 0,
+              "signed": false
+            }
+          ]
+        },
+        "mapping": "Reviewed source semantic predicates applied to the K result using the captured original fixture.",
+        "uncheckable": [
+          "Original additionally requires an array-cast warning; K does not implement C casts or warnings."
+        ]
+      }
+    ],
+    "category": "language_cast",
+    "reason": "原查询 p (int []) s3 检查 C 数组转换及警告，超出本轮表达式语义测试范围；直接 p s3 的字段检查保留。",
+    "disposition": "excluded",
+    "previous_status": "uncheckable",
+    "input_identity": "2cb61c2915cd1001ab2af0924606946f75e2070a4b98c5ff326a83bfcf0b55ed",
+    "acceptance": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-native-shortpiece-e6-s3/acceptance.json",
+    "final_configuration": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-native-shortpiece-e6-s3/k/stdout.txt",
+    "人工备注": ""
+  },
+  {
+    "id": "gdb-fixed-dw2-ref-missing-frame-e15-func_loopfb_var",
+    "project": "gdb",
+    "assertion_id": "gdb-17.1-dw2-ref-missing-frame-L62-0",
+    "source_file": "gdb/testsuite/gdb.dwarf2/dw2-ref-missing-frame.exp",
+    "source_line": 62,
+    "source_sha256": "91b083f7268e98bb65a6869af2c4bbc537893008c385ebdee726052ff379a9b6",
+    "original_assertions": [
+      {
+        "id": "gdb-fixed-dw2-ref-missing-frame-e15-func_loopfb_var-0",
+        "source": {
+          "project": "gdb",
+          "version": "17.1",
+          "file": "gdb/testsuite/gdb.dwarf2/dw2-ref-missing-frame.exp",
+          "sha256": "91b083f7268e98bb65a6869af2c4bbc537893008c385ebdee726052ff379a9b6",
+          "line": 62,
+          "text": "    gdb_test \"p func_loopfb_var\" \"DWARF-2 expression error: Loop detected .*\" \"func_loopfb print\"",
+          "parameter": "gdb.dwarf2/dw2-ref-missing-frame.exp",
+          "original_assertion": "gdb_test \"p func_loopfb_var\" \"DWARF-2 expression error: Loop detected .*\" \"func_loopfb print\""
+        },
+        "target": "uncheckable",
+        "expected": {},
+        "mapping": "Original input is retained; this compound/diagnostic/dynamic-layout predicate still lacks a faithful complete observer."
+      }
+    ],
+    "category": "framework_untestable",
+    "reason": "原预期检查 frame-base 属性自引用循环；固定 framebase 接口无法忠实表达递归依赖和循环检测，按用户决定排除并记录无法检测。",
+    "disposition": "excluded",
+    "previous_status": "uncheckable",
+    "input_identity": "af774e20bdfbaaceef93c9074ea2b00ac8fa1f00ae7340e414864e5fbac03024",
+    "acceptance": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dw2-ref-missing-frame-e15-func_loopfb_var/acceptance.json",
+    "final_configuration": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dw2-ref-missing-frame-e15-func_loopfb_var/k/stdout.txt",
+    "人工备注": ""
+  },
+  {
+    "id": "gdb-fixed-dw2-regno-invalid-e10-bregx",
+    "project": "gdb",
+    "assertion_id": "gdb-17.1-dw2-regno-invalid-L66-0",
+    "source_file": "gdb/testsuite/gdb.dwarf2/dw2-regno-invalid.exp",
+    "source_line": 66,
+    "source_sha256": "8faf6b51e0892de688e5db9a5164976e08ab5026f7212262c43c22d9c0aa410d",
+    "original_assertions": [
+      {
+        "id": "gdb-fixed-dw2-regno-invalid-e10-bregx-0",
+        "source": {
+          "project": "gdb",
+          "version": "17.1",
+          "file": "gdb/testsuite/gdb.dwarf2/dw2-regno-invalid.exp",
+          "sha256": "8faf6b51e0892de688e5db9a5164976e08ab5026f7212262c43c22d9c0aa410d",
+          "line": 66,
+          "text": "gdb_test \"p bregx\"",
+          "parameter": "gdb.dwarf2/dw2-regno-invalid.exp",
+          "original_assertion": "gdb_test \"p bregx\""
+        },
+        "target": "uncheckable",
+        "expected": {},
+        "mapping": "Original input is retained; this compound/diagnostic/dynamic-layout predicate still lacks a faithful complete observer."
+      }
+    ],
+    "category": "robustness_only",
+    "reason": "原 gdb_test p bregx 没有明确结果 matcher，主要验证巨大寄存器编号不引发内部崩溃；健壮性检查不计核心语义测试。",
+    "disposition": "excluded",
+    "previous_status": "uncheckable",
+    "input_identity": "137c46ccf4f93020326aa1c7cf6d1abb553589c947f9384e5cb47f75cacee4ed",
+    "acceptance": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dw2-regno-invalid-e10-bregx/acceptance.json",
+    "final_configuration": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dw2-regno-invalid-e10-bregx/k/stdout.txt",
+    "人工备注": ""
+  },
+  {
+    "id": "gdb-fixed-dynamic-bit-offset-e2-value",
+    "project": "gdb",
+    "assertion_id": "gdb-17.1-dynamic-bit-offset-L94-0",
+    "source_file": "gdb/testsuite/gdb.dwarf2/dynamic-bit-offset.exp",
+    "source_line": 94,
+    "source_sha256": "cf29afeb46902ad7bf69fef49ee22e4d1e29f57c27c073b1f78882bdf7f65ebe",
+    "original_assertions": [
+      {
+        "id": "gdb-fixed-dynamic-bit-offset-e2-value-0",
+        "source": {
+          "project": "gdb",
+          "version": "17.1",
+          "file": "gdb/testsuite/gdb.dwarf2/dynamic-bit-offset.exp",
+          "sha256": "cf29afeb46902ad7bf69fef49ee22e4d1e29f57c27c073b1f78882bdf7f65ebe",
+          "line": 94,
+          "text": "gdb_test \"print value\" \\",
+          "parameter": "gdb.dwarf2/dynamic-bit-offset.exp",
+          "original_assertion": "gdb_test \"print value\" \\\n    [string_to_regexp \" = (disc => 3, nums => (7, 11, 13))\"]"
+        },
+        "target": "uncheckable",
+        "expected": {},
+        "mapping": "Original input is retained; this compound/diagnostic/dynamic-layout predicate still lacks a faithful complete observer."
+      }
+    ],
+    "category": "dwarf_attribute_extension",
+    "reason": "原测试明确将表达式形式 DW_AT_data_bit_offset 标为 DWARF 扩展；DWARF 5 该属性允许 constant，扩展的是属性形式而非新增 opcode。",
+    "disposition": "excluded",
+    "previous_status": "uncheckable",
+    "input_identity": "1c5108fc292038a8747f70844be815266b5ef46af9a891b55fa706c9a3ecd1a3",
+    "acceptance": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dynamic-bit-offset-e2-value/acceptance.json",
+    "final_configuration": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dynamic-bit-offset-e2-value/k/stdout.txt",
+    "人工备注": ""
+  },
+  {
+    "id": "gdb-fixed-symbol_needs_eval_fail-e2-a",
+    "project": "gdb",
+    "assertion_id": "gdb-17.1-symbol_needs_eval_fail-L108-0",
+    "source_file": "gdb/testsuite/gdb.dwarf2/symbol_needs_eval_fail.exp",
+    "source_line": 108,
+    "source_sha256": "f4c9bdc87bb0eabe0300f8da15bfda2a4c02e372592015e06b42dae1acfaf26c",
+    "original_assertions": [
+      {
+        "id": "gdb-fixed-symbol_needs_eval_fail-e2-a-0",
+        "source": {
+          "project": "gdb",
+          "version": "17.1",
+          "file": "gdb/testsuite/gdb.dwarf2/symbol_needs_eval_fail.exp",
+          "sha256": "f4c9bdc87bb0eabe0300f8da15bfda2a4c02e372592015e06b42dae1acfaf26c",
+          "line": 108,
+          "text": "gdb_test \"print/d a\" \"No frame selected.\" \"variable a can't be printed\"",
+          "parameter": "gdb.dwarf2/symbol_needs_eval_fail.exp",
+          "original_assertion": "gdb_test \"print/d a\" \"No frame selected.\" \"variable a can't be printed\""
+        },
+        "target": "uncheckable",
+        "expected": {},
+        "mapping": "Original input is retained; this compound/diagnostic/dynamic-layout predicate still lacks a faithful complete observer."
+      }
+    ],
+    "category": "debugger_interface",
+    "reason": "原预期 No frame selected 检查尚未运行时的调试器选中帧接口，不是 DWARF expression 执行结果。",
+    "disposition": "excluded",
+    "previous_status": "uncheckable",
+    "input_identity": "5e647bdd14b297d11dee7d795f5952cd9fca08d8ac732687ca4db8e0a410ac70",
+    "acceptance": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-symbol_needs_eval_fail-e2-a/acceptance.json",
+    "final_configuration": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-symbol_needs_eval_fail-e2-a/k/stdout.txt",
+    "人工备注": ""
+  },
+  {
+    "id": "gdb-fixed-dw2-entry-value-2-e12-argc",
+    "project": "gdb",
+    "assertion_id": "gdb-17.1-dw2-entry-value-2-L111-0",
+    "source_file": "gdb/testsuite/gdb.dwarf2/dw2-entry-value-2.exp",
+    "source_line": 111,
+    "source_sha256": "1a48905695109a3378c7767efdcc813742efafbf8fe203ff3c55937ac4a20e77",
+    "original_assertions": [
+      {
+        "id": "gdb-fixed-dw2-entry-value-2-e12-argc-0",
+        "source": {
+          "project": "gdb",
+          "version": "17.1",
+          "file": "gdb/testsuite/gdb.dwarf2/dw2-entry-value-2.exp",
+          "sha256": "1a48905695109a3378c7767efdcc813742efafbf8fe203ff3c55937ac4a20e77",
+          "line": 111,
+          "text": "    gdb_test \"p argc\" \" = <optimized out>\"",
+          "parameter": "gdb.dwarf2/dw2-entry-value-2.exp",
+          "original_assertion": "gdb_test \"p argc\" \" = <optimized out>\""
+        },
+        "target": "object",
+        "expected": {
+          "fields": [
+            {
+              "offset": 0,
+              "size": 32,
+              "available": false
+            }
+          ]
+        },
+        "mapping": "Original source semantic predicate, using K-produced locations and archived object/type layout."
+      }
+    ],
+    "category": "fixture_location_oracle_mismatch",
+    "reason": "按用户决定排除单步后的argc。人工DWARF以entry_value{regx5}作位置描述但未追加stack_value；K用保存入口RDI=1返回内存位置1，原查询要求optimized out且GDB无法提供单一位置oracle。该fixture与对象值/可用性预期不能形成可比的位置检查；不据此宣称表达式结构非法，不将排除记为通过。",
+    "disposition": "excluded",
+    "previous_status": "uncheckable",
+    "input_identity": "ac6af8b05aa4fe60b5555f47a6d7d0a17f95f05306b746ff6b6f0cff3e2ac3dd",
+    "acceptance": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dw2-entry-value-2-e12-argc/acceptance.json",
+    "final_configuration": "/home/congleiwang/kframework/build/position-oracles-v1/results/gdb/gdb-fixed-dw2-entry-value-2-e12-argc/k/stdout.txt",
+    "人工备注": ""
+  }
+]

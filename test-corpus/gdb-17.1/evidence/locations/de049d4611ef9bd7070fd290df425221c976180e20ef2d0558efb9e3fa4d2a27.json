@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "event": 5,
+  "suite": "dw2-noloc",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-noloc/dw2-noloc/captured/snapshots/5.json",
+  "snapshot_sha256": "0d24d480034d97617293387a4633c89f5235965a2156da84f2288c7c047cc896",
+  "before": {
+    "pid": 0,
+    "pc": null,
+    "level": 0
+  },
+  "registers_before": {},
+  "observations": [
+    {
+      "id": "gdb-fixed-dw2-noloc-e5-file_locaddr_resolvable",
+      "variable": "file_locaddr_resolvable",
+      "role": "root",
+      "expression": "file_locaddr_resolvable",
+      "queries": [],
+      "address_expression": "file_locaddr_resolvable",
+      "address": "4210712"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 0,
+    "pc": null,
+    "level": 0
+  },
+  "registers_after": {},
+  "same_stop": true,
+  "registers_unchanged": true
+}

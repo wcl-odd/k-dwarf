@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "event": 10,
+  "suite": "dw2-entry-value-2",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/dw2-entry-value-2/dw2-entry-value-2/captured/snapshots/10.json",
+  "snapshot_sha256": "6937cdeb93ead0a8b3542246a5a49defb86b8ae237f95ef09e2e9921b0d4c6e6",
+  "before": {
+    "pid": 3394183,
+    "pc": "4198673",
+    "level": 0
+  },
+  "registers_before": {
+    "0": "4198673",
+    "1": "140737488340088",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340072",
+    "5": "1",
+    "6": "1",
+    "7": "140737488339800",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340072",
+    "13": "4198673",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198673"
+  },
+  "observations": [
+    {
+      "id": "gdb-fixed-dw2-entry-value-2-e10-argc",
+      "variable": "argc",
+      "role": "root",
+      "expression": "argc",
+      "queries": [
+        {
+          "command": "output/x &(argc)",
+          "output": "Address requested for identifier \"argc\" which is in register $rdi",
+          "error": true
+        },
+        {
+          "command": "info address argc",
+          "output": "Symbol \"argc\" is a complex DWARF expression:\n     0: DW_OP_entry_value\n       2: DW_OP_regx 5 [$rdi]\n.\n",
+          "error": false
+        }
+      ],
+      "address_expression": "argc",
+      "diagnostic": "native value has no address"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3394183,
+    "pc": "4198673",
+    "level": 0
+  },
+  "registers_after": {
+    "0": "4198673",
+    "1": "140737488340088",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340072",
+    "5": "1",
+    "6": "1",
+    "7": "140737488339800",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340072",
+    "13": "4198673",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198673"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "event": 24,
+  "suite": "locexpr-data-member-location",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "03a9dfbbdfd78ca28685ea56d134b5aa5a8074a42a058d28ecc56cbe3e903b06",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native-long-and-base/locexpr-data-member-location/locexpr-data-member-location/captured/snapshots/24.json",
+  "snapshot_sha256": "c636c77c02de83b3e75991df598b466d6a46b7dcb454e0dc3311f117e5a26dc7",
+  "before": {
+    "pid": 3692659,
+    "pc": "4198723",
+    "level": 0
+  },
+  "registers_before": {
+    "0": "140737353850944",
+    "1": "140737488339704",
+    "2": "4210112",
+    "3": "0",
+    "4": "140737488339688",
+    "5": "1",
+    "6": "140737488339408",
+    "7": "140737488339392",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353835304",
+    "11": "140737353838841",
+    "12": "140737488339688",
+    "13": "4198710",
+    "14": "4210112",
+    "15": "140737354125376",
+    "16": "4198723"
+  },
+  "observations": [
+    {
+      "id": "gdb-supplement-locexpr-data-member-location-L353",
+      "variable": "@return:B",
+      "role": "base_subobject",
+      "expression": "(A*)$",
+      "queries": [],
+      "address_expression": "(A*)$",
+      "address": "140737353850944"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3692659,
+    "pc": "4198723",
+    "level": 0
+  },
+  "registers_after": {
+    "0": "140737353850944",
+    "1": "140737488339704",
+    "2": "4210112",
+    "3": "0",
+    "4": "140737488339688",
+    "5": "1",
+    "6": "140737488339408",
+    "7": "140737488339392",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353835304",
+    "11": "140737353838841",
+    "12": "140737488339688",
+    "13": "4198710",
+    "14": "4210112",
+    "15": "140737354125376",
+    "16": "4198723"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}

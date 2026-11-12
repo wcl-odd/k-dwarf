@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "event": 17,
+  "suite": "implref-array",
+  "collector_sha256": "f4c72824b77ed616c7d999f4e6ab1b330c1c174f74260ab3a90b11000e0cbfaf",
+  "recipes_sha256": "c582548ef1adad4cd93047046687ae88093fb05908b7824bb1d6f5399c8f422f",
+  "snapshot": "/home/congleiwang/kframework/build/full-recapture-20261109-201227/native/implref-array/implref-array/captured/snapshots/17.json",
+  "snapshot_sha256": "4a10ea2b0501646122d2ffae278974c905d3eaeda4c827ffc4c7f42dfe6ced35",
+  "before": {
+    "pid": 3579868,
+    "pc": "4198666",
+    "level": 0
+  },
+  "registers_before": {
+    "0": "4198662",
+    "1": "140737488340168",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340152",
+    "5": "1",
+    "6": "140737488339872",
+    "7": "140737488339872",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340152",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198666"
+  },
+  "observations": [
+    {
+      "id": "gdb-fixed-implref-array-e17-array",
+      "variable": "array",
+      "role": "root",
+      "expression": "array",
+      "queries": [],
+      "address_expression": "array",
+      "address": "4210704"
+    }
+  ],
+  "settings_restored": true,
+  "after": {
+    "pid": 3579868,
+    "pc": "4198666",
+    "level": 0
+  },
+  "registers_after": {
+    "0": "4198662",
+    "1": "140737488340168",
+    "2": "4210208",
+    "3": "0",
+    "4": "140737488340152",
+    "5": "1",
+    "6": "140737488339872",
+    "7": "140737488339872",
+    "8": "140737352154896",
+    "9": "140737353912384",
+    "10": "140737353890056",
+    "11": "140737353999968",
+    "12": "140737488340152",
+    "13": "4198662",
+    "14": "4210208",
+    "15": "140737354125376",
+    "16": "4198666"
+  },
+  "same_stop": true,
+  "registers_unchanged": true
+}
