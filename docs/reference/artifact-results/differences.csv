@@ -1,0 +1,17 @@
+id,tool,group,verdict,analysis,evidence_key,manual_remarks
+lldb-014,lldb,core,inconsistent,LLDB preserves a 64-bit constu with a 32-bit reader; K truncates the literal to address width (DWARF 5 2.5.1.1).,case:lldb-014,
+lldb-015,lldb,core,inconsistent,"LLDB preserves a wide consts; K truncates only this literal-class value to address width, not all typed stack values.",case:lldb-015,
+lldb-022,lldb,core,inconsistent,Generic32 to signed64: LLDB expects -1122868; K returns 4293844428. Generic source interpretation is unsigned by the documented project choice.,case:lldb-022,
+lldb-027,lldb,auxiliary,uncheckable,The original expects an LLDB API failure caused by missing Module. K receives type metadata and does not model Module object existence (auxiliary).,case:lldb-027,Expected failure; no change.
+lldb-031,lldb,core,inconsistent,"Constants followed by piece, without stack_value: LLDB copies Scalar bytes in the old no-delegate API; K treats them as memory locations and preserves unavailable bits.",case:lldb-031,
+lldb-032,lldb,core,inconsistent,LLDB zero-fills an empty piece; K preserves unknown bits. Debugger zero-fill is not treated as a normative requirement.,case:lldb-032,
+lldb-033,lldb,core,inconsistent,"A 32-bit direct value cannot supply the requested 40-byte piece in K; LLDB zero-extends it. This is a supported-source-size boundary, not proof of invalid input.",case:lldb-033,
+lldb-035,lldb,auxiliary,uncheckable,The original requires diagnostic text for unregistered opcode ff. Safe stopping does not verify LLDB diagnostic text (auxiliary; not extension support).,case:lldb-035,
+lldb-046,lldb,core,inconsistent,A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.,case:lldb-046,Debugger rule extension; retain this case.
+lldb-047,lldb,core,inconsistent,A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.,case:lldb-047,Debugger rule extension; retain this case.
+lldb-050,lldb,core,inconsistent,A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.,case:lldb-050,Debugger rule extension; retain this case.
+lldb-051,lldb,core,inconsistent,A register location is followed by deref/deref_size (and possibly piece). LLDB continues; K enforces the simple-location restriction and stops at reg0.,case:lldb-051,Debugger rule extension; retain this case.
+lldb-053,lldb,core,inconsistent,A nonterminal stack_value is followed by deref/deref_size. LLDB continues; K enforces the terminal value-location restriction and preserves the stopped stack.,case:lldb-053,
+lldb-054,lldb,core,inconsistent,A nonterminal stack_value is followed by deref/deref_size. LLDB continues; K enforces the terminal value-location restriction and preserves the stopped stack.,case:lldb-054,
+gdb-060,gdb,core,inconsistent,"entry_value{regx5}, without stack_value: K returns memory address 1, while independent GDB evidence identifies RDI (DWARF register 5). A suspected GDB issue remains unadjudicated.",case:gdb-060,
+gdb-062,gdb,core,inconsistent,The original expects optimized out; K obtains value 2 using a separately captured entry snapshot. The available historical context differs.,case:gdb-062,Caused by interface extraction; no change.

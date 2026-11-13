@@ -1,0 +1,4241 @@
+[
+  {
+    "id": "test_basic.BasicTests.test_all_111_names_execute_and_preserve_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_all_111_names_execute_and_preserve_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_all_111_names_execute_and_preserve_inputs (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 8.842s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_cli_status_and_configuration",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_cli_status_and_configuration"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_cli_status_and_configuration (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 7.001s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_constant_boundaries",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_constant_boundaries"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_constant_boundaries (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 2.112s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_constant_extensions_and_truncation",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_constant_extensions_and_truncation"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_constant_extensions_and_truncation (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 8.912s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_constant_range_failures",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_constant_range_failures"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_constant_range_failures (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 18.056s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_context_validation",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_context_validation"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_context_validation (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_default_zero_and_typed_address_reads",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_default_zero_and_typed_address_reads"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_default_zero_and_typed_address_reads (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 6.976s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_empty_multi_stack_and_depth_limit",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_empty_multi_stack_and_depth_limit"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_empty_multi_stack_and_depth_limit (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 15.708s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_endianness_and_type_identity",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_endianness_and_type_identity"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_endianness_and_type_identity (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 10.268s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_missing_context_and_size_conditions",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_missing_context_and_size_conditions"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_missing_context_and_size_conditions (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 44.429s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_mixed_type_reordering",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_mixed_type_reordering"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_mixed_type_reordering (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 17.277s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_narrow_types_and_unsigned_boolean_reads",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_narrow_types_and_unsigned_boolean_reads"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_narrow_types_and_unsigned_boolean_reads (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 14.326s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_offsets_wrap",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_offsets_wrap"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_offsets_wrap (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 32.541s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_reject_outside_syntax",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_reject_outside_syntax"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_reject_outside_syntax (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 35.345s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_stack_underflow_and_pick_bounds",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_stack_underflow_and_pick_bounds"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_stack_underflow_and_pick_bounds (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 37.226s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_unbounded_decoded_constants",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_unbounded_decoded_constants"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_unbounded_decoded_constants (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 3.925s\n\nOK\n"
+  },
+  {
+    "id": "test_basic.BasicTests.test_wrapped_addresses_read_memory",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_basic.BasicTests.test_wrapped_addresses_read_memory"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_wrapped_addresses_read_memory (test_basic.BasicTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 5.594s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_bit_offsets_memory_and_partial_unknown",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_bit_offsets_memory_and_partial_unknown"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_bit_offsets_memory_and_partial_unknown (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 37.620s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_cli_complete_incomplete_and_input_error",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_cli_complete_incomplete_and_input_error"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_cli_complete_incomplete_and_input_error (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 14.710s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_fixed_inputs_atomic_failure_and_nonzero_offsets",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_fixed_inputs_atomic_failure_and_nonzero_offsets"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_fixed_inputs_atomic_failure_and_nonzero_offsets (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 11.479s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_implicit_bytes_two_entries_and_arbitrary_stack",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_implicit_bytes_two_entries_and_arbitrary_stack"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_implicit_bytes_two_entries_and_arbitrary_stack (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 47.530s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_local_branches_loops_and_execution_budget",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_local_branches_loops_and_execution_budget"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_local_branches_loops_and_execution_budget (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 32.998s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_mixed_sources_and_clear_entire_stack",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_mixed_sources_and_clear_entire_stack"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_mixed_sources_and_clear_entire_stack (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 9.220s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_piece_order_metadata_and_target_profiles",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_piece_order_metadata_and_target_profiles"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_piece_order_metadata_and_target_profiles (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 15.789s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_source_bounds_nonempty_empty_stack_and_dangling_suffix",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_source_bounds_nonempty_empty_stack_and_dangling_suffix"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_source_bounds_nonempty_empty_stack_and_dangling_suffix (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 50.451s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_truncation_decode_lengths_and_payload_boundaries",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_truncation_decode_lengths_and_payload_boundaries"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_truncation_decode_lengths_and_payload_boundaries (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 50.418s\n\nOK\n"
+  },
+  {
+    "id": "test_composition.CompositionTests.test_zero_size_and_missing_data_are_distinct_from_deref_failure",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_composition.CompositionTests.test_zero_size_and_missing_data_are_distinct_from_deref_failure"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_zero_size_and_missing_data_are_distinct_from_deref_failure (test_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 29.932s\n\nOK\n"
+  },
+  {
+    "id": "test_computations.ComputationTests.test_comparison_views_and_identity",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_computations.ComputationTests.test_comparison_views_and_identity"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_comparison_views_and_identity (test_computations.ComputationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 22.750s\n\nOK\n"
+  },
+  {
+    "id": "test_computations.ComputationTests.test_computation_result_addresses",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_computations.ComputationTests.test_computation_result_addresses"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_computation_result_addresses (test_computations.ComputationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 13.787s\n\nOK\n"
+  },
+  {
+    "id": "test_computations.ComputationTests.test_generic_machine_arithmetic",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_computations.ComputationTests.test_generic_machine_arithmetic"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_generic_machine_arithmetic (test_computations.ComputationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 4.338s\n\nOK\n"
+  },
+  {
+    "id": "test_computations.ComputationTests.test_small_and_wide_generic_widths",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_computations.ComputationTests.test_small_and_wide_generic_widths"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_small_and_wide_generic_widths (test_computations.ComputationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 19.191s\n\nOK\n"
+  },
+  {
+    "id": "test_computations.ComputationTests.test_type_mismatch_and_underflow",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_computations.ComputationTests.test_type_mismatch_and_underflow"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_type_mismatch_and_underflow (test_computations.ComputationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 28.732s\n\nOK\n"
+  },
+  {
+    "id": "test_computations.ComputationTests.test_typed_machine_arithmetic",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_computations.ComputationTests.test_typed_machine_arithmetic"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_typed_machine_arithmetic (test_computations.ComputationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 6.632s\n\nOK\n"
+  },
+  {
+    "id": "test_computations.ComputationTests.test_undefined_arithmetic_preserves_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_computations.ComputationTests.test_undefined_arithmetic_preserves_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_undefined_arithmetic_preserves_state (test_computations.ComputationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 84.972s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_backward_bra_finite_loop_and_rewrite_budget",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_backward_bra_finite_loop_and_rewrite_budget"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_backward_bra_finite_loop_and_rewrite_budget (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 20.456s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_backward_skip_and_target_endianness",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_backward_skip_and_target_endianness"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_backward_skip_and_target_endianness (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 26.275s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_bra_accepts_integer_types_without_boolean_conversion",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_bra_accepts_integer_types_without_boolean_conversion"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_bra_accepts_integer_types_without_boolean_conversion (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 29.708s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_bra_conditions_and_comparison",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_bra_conditions_and_comparison"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_bra_conditions_and_comparison (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 28.654s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_declared_offsets_negative_end_and_no_pc_wrapping",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_declared_offsets_negative_end_and_no_pc_wrapping"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_declared_offsets_negative_end_and_no_pc_wrapping (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 8.003s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_displacement_source_range_is_signed_16_bits",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_displacement_source_range_is_signed_16_bits"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_displacement_source_range_is_signed_16_bits (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 30.315s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_forward_skip_and_end_do_not_execute_skipped_operations",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_forward_skip_and_end_do_not_execute_skipped_operations"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_forward_skip_and_end_do_not_execute_skipped_operations (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 23.596s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_invalid_targets_and_truncation_preserve_full_scene",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_invalid_targets_and_truncation_preserve_full_scene"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_invalid_targets_and_truncation_preserve_full_scene (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 81.007s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_nop_preserves_mixed_stack_and_allows_empty_stack",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_nop_preserves_mixed_stack_and_allows_empty_stack"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_nop_preserves_mixed_stack_and_allows_empty_stack (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 19.416s\n\nOK\n"
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_self_loop_and_reached_stack_value_restriction",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_control_flow.ControlFlowTests.test_self_loop_and_reached_stack_value_restriction"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_self_loop_and_reached_stack_value_restriction (test_control_flow.ControlFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 21.188s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_both_opcodes_decode_and_leb_boundaries",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_both_opcodes_decode_and_leb_boundaries"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_both_opcodes_decode_and_leb_boundaries (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 45.585s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_budget_positions_and_fixed_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_budget_positions_and_fixed_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_budget_positions_and_fixed_inputs (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 10.096s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_convert_failures_keep_entire_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_convert_failures_keep_entire_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_convert_failures_keep_entire_state (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 31.808s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_convert_numeric_preservation",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_convert_numeric_preservation"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_convert_numeric_preservation (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 37.155s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_generic_literal_conversion_uses_address_width",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_generic_literal_conversion_uses_address_width"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_generic_literal_conversion_uses_address_width (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 22.884s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_generic_unsigned_convert_and_budget",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_generic_unsigned_convert_and_budget"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_generic_unsigned_convert_and_budget (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 10.296s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_generic_unsigned_widening_and_representatives",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_generic_unsigned_widening_and_representatives"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_generic_unsigned_widening_and_representatives (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 61.645s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_integer_narrowing_and_generic_source_interpretation",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_integer_narrowing_and_generic_source_interpretation"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_integer_narrowing_and_generic_source_interpretation (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 20.649s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_nonzero_offsets_and_cli_exit_codes",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_nonzero_offsets_and_cli_exit_codes"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_nonzero_offsets_and_cli_exit_codes (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 13.554s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_reinterpret_bits_identity_and_storage_size",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_reinterpret_bits_identity_and_storage_size"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_reinterpret_bits_identity_and_storage_size (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 56.309s\n\nOK\n"
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_typed_reads_then_conversion_and_composition",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_conversions.ConversionTests.test_typed_reads_then_conversion_and_composition"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_typed_reads_then_conversion_and_composition (test_conversions.ConversionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 15.673s\n\nOK\n"
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_bad_suffix_boundaries_and_prepared_nested_code",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core_separation.CoreSeparationTests.test_bad_suffix_boundaries_and_prepared_nested_code"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_bad_suffix_boundaries_and_prepared_nested_code (test_core_separation.CoreSeparationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 63.813s\n\nOK\n"
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_core_dependency_closure_excludes_frontend",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core_separation.CoreSeparationTests.test_core_dependency_closure_excludes_frontend"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_core_dependency_closure_excludes_frontend (test_core_separation.CoreSeparationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n"
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_direct_algebraic_input_and_budget",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core_separation.CoreSeparationTests.test_direct_algebraic_input_and_budget"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_direct_algebraic_input_and_budget (test_core_separation.CoreSeparationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 21.124s\n\nOK\n"
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_text_declared_positions_and_unavailable_operands",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core_separation.CoreSeparationTests.test_text_declared_positions_and_unavailable_operands"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_text_declared_positions_and_unavailable_operands (test_core_separation.CoreSeparationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 36.495s\n\nOK\n"
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_three_entries_and_fixed_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core_separation.CoreSeparationTests.test_three_entries_and_fixed_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_three_entries_and_fixed_inputs (test_core_separation.CoreSeparationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 19.088s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_cli_exposes_diagnostic_and_keeps_exit_one",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_cli_exposes_diagnostic_and_keeps_exit_one"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_cli_exposes_diagnostic_and_keeps_exit_one (test_decode_diagnostics.DecodeDiagnosticIntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 3.894s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_missing_memory_and_valid_instruction_budget_stop_are_not_decode_errors",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_missing_memory_and_valid_instruction_budget_stop_are_not_decode_errors"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_missing_memory_and_valid_instruction_budget_stop_are_not_decode_errors (test_decode_diagnostics.DecodeDiagnosticIntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 7.513s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_nested_failure_uses_active_child_byte_evidence",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_nested_failure_uses_active_child_byte_evidence"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_nested_failure_uses_active_child_byte_evidence (test_decode_diagnostics.DecodeDiagnosticIntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 3.845s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_reached_truncated_operand_preserves_state_and_budget",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_reached_truncated_operand_preserves_state_and_budget"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_reached_truncated_operand_preserves_state_and_budget (test_decode_diagnostics.DecodeDiagnosticIntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 5.827s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_skipped_bad_suffix_does_not_prevent_normal_completion",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_skipped_bad_suffix_does_not_prevent_normal_completion"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_skipped_bad_suffix_does_not_prevent_normal_completion (test_decode_diagnostics.DecodeDiagnosticIntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 2.014s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_arbitrary_core_gaps_and_operand_positions_are_not_decode_errors",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_arbitrary_core_gaps_and_operand_positions_are_not_decode_errors"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_arbitrary_core_gaps_and_operand_positions_are_not_decode_errors (test_decode_diagnostics.DecodeDiagnosticObservationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_decoded_current_instruction_is_not_a_decoding_failure",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_decoded_current_instruction_is_not_a_decoding_failure"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_decoded_current_instruction_is_not_a_decoding_failure (test_decode_diagnostics.DecodeDiagnosticObservationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_end_and_completed_or_uninitialized_states_are_not_decode_errors",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_end_and_completed_or_uninitialized_states_are_not_decode_errors"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_end_and_completed_or_uninitialized_states_are_not_decode_errors (test_decode_diagnostics.DecodeDiagnosticObservationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_partial_prefix_exposes_bytes_without_guessing_operand_shape",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_partial_prefix_exposes_bytes_without_guessing_operand_shape"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_partial_prefix_exposes_bytes_without_guessing_operand_shape (test_decode_diagnostics.DecodeDiagnosticObservationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_text_and_unavailable_byte_evidence_do_not_gain_a_diagnosis",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_text_and_unavailable_byte_evidence_do_not_gain_a_diagnosis"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_text_and_unavailable_byte_evidence_do_not_gain_a_diagnosis (test_decode_diagnostics.DecodeDiagnosticObservationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_unknown_and_unterminated_encodings_are_not_claimed_invalid",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_unknown_and_unterminated_encodings_are_not_claimed_invalid"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_unknown_and_unterminated_encodings_are_not_claimed_invalid (test_decode_diagnostics.DecodeDiagnosticObservationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_all_111_raw_and_text_names",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_all_111_raw_and_text_names"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_all_111_raw_and_text_names (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 14.787s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_fixed_width_endianness_and_addresses",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_fixed_width_endianness_and_addresses"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_fixed_width_endianness_and_addresses (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 40.465s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_format_cli_and_input_errors",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_format_cli_and_input_errors"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_format_cli_and_input_errors (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 19.566s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_input_structure_rejection",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_input_structure_rejection"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_input_structure_rejection (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 63.302s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_leb128_values_lengths_and_nonminimal",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_leb128_values_lengths_and_nonminimal"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_leb128_values_lengths_and_nonminimal (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 17.362s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_multi_operand_memory_and_missing_context",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_multi_operand_memory_and_missing_context"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_multi_operand_memory_and_missing_context (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 24.501s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_results_and_rewrite_budget",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_results_and_rewrite_budget"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_results_and_rewrite_budget (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 48.880s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_text_numbers_and_declared_positions",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_text_numbers_and_declared_positions"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_text_numbers_and_declared_positions (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 27.944s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_truncated_and_unsupported_preserve_current_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_truncated_and_unsupported_preserve_current_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_truncated_and_unsupported_preserve_current_state (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 206.326s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_truncated_operands_with_available_context",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_truncated_operands_with_available_context"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_truncated_operands_with_available_context (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 25.342s\n\nOK\n"
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_wide_signed_decoding_and_leb128",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_decoding.DecodingTests.test_wide_signed_decoding_and_leb128"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_wide_signed_decoding_and_leb128 (test_decoding.DecodingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 14.863s\n\nOK\n"
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_context_errors",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_external_values.ExternalValueTests.test_context_errors"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_context_errors (test_external_values.ExternalValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_indices_object_and_two_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_external_values.ExternalValueTests.test_indices_object_and_two_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_indices_object_and_two_inputs (test_external_values.ExternalValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 19.150s\n\nOK\n"
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_large_sparse_context_keeps_complete_configuration",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_external_values.ExternalValueTests.test_large_sparse_context_keeps_complete_configuration"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_large_sparse_context_keeps_complete_configuration (test_external_values.ExternalValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 8.136s\n\nOK\n"
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_missing_or_invalid_operation_is_atomic",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_external_values.ExternalValueTests.test_missing_or_invalid_operation_is_atomic"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_missing_or_invalid_operation_is_atomic (test_external_values.ExternalValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 58.499s\n\nOK\n"
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_value_mode_and_budget",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_external_values.ExternalValueTests.test_value_mode_and_budget"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_value_mode_and_budget (test_external_values.ExternalValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 30.958s\n\nOK\n"
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_conflicting_request_memory_and_composition",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_fixture_contexts.FixtureContextTests.test_conflicting_request_memory_and_composition"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_conflicting_request_memory_and_composition (test_fixture_contexts.FixtureContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 13.652s\n\nOK\n"
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_raw_types_are_resolved_in_k",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_fixture_contexts.FixtureContextTests.test_raw_types_are_resolved_in_k"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_raw_types_are_resolved_in_k (test_fixture_contexts.FixtureContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 18.384s\n\nOK\n"
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_standard_pieces_with_wide_mock_registers",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_fixture_contexts.FixtureContextTests.test_standard_pieces_with_wide_mock_registers"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_standard_pieces_with_wide_mock_registers (test_fixture_contexts.FixtureContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 11.960s\n\nOK\n"
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_stuck_consumes_no_failure_rewrite_and_budget_can_resume",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_fixture_contexts.FixtureContextTests.test_stuck_consumes_no_failure_rewrite_and_budget_can_resume"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_stuck_consumes_no_failure_rewrite_and_budget_can_resume (test_fixture_contexts.FixtureContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 18.163s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_all_float_comparisons_and_nan",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_all_float_comparisons_and_nan"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_all_float_comparisons_and_nan (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 154.845s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_conversions_and_reinterpretation",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_conversions_and_reinterpretation"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_conversions_and_reinterpretation (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 170.042s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_four_formats_arithmetic_and_unary",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_four_formats_arithmetic_and_unary"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_four_formats_arithmetic_and_unary (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 101.370s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_generic_unsigned_source_to_float",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_generic_unsigned_source_to_float"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_generic_unsigned_source_to_float (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 63.374s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_ieee_specials_subnormal_rounding_and_overflow",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_ieee_specials_subnormal_rounding_and_overflow"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_ieee_specials_subnormal_rounding_and_overflow (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 163.712s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_integer_only_ops_stop_and_preserve_all_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_integer_only_ops_stop_and_preserve_all_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_integer_only_ops_stop_and_preserve_all_state (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 64.084s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_raw_float_metadata_resolves_and_budget_edges",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_raw_float_metadata_resolves_and_budget_edges"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_raw_float_metadata_resolves_and_budget_edges (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 13.329s\n\nOK\n"
+  },
+  {
+    "id": "test_floating.FloatingTests.test_typed_transport_raw_decode_and_endianness",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating.FloatingTests.test_typed_transport_raw_decode_and_endianness"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_typed_transport_raw_decode_and_endianness (test_floating.FloatingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 116.249s\n\nOK\n"
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_conversion_and_integer_precondition_failures_are_atomic",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating_extra.FloatingContextTests.test_conversion_and_integer_precondition_failures_are_atomic"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_conversion_and_integer_precondition_failures_are_atomic (test_floating_extra.FloatingContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 32.356s\n\nOK\n"
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_float_address_operands_rejected_before_memory_read",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating_extra.FloatingContextTests.test_float_address_operands_rejected_before_memory_read"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_float_address_operands_rejected_before_memory_read (test_floating_extra.FloatingContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 65.394s\n\nOK\n"
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_unrecognized_encodings_do_not_fall_back_to_integer",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating_extra.FloatingContextTests.test_unrecognized_encodings_do_not_fall_back_to_integer"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_unrecognized_encodings_do_not_fall_back_to_integer (test_floating_extra.FloatingContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 14.302s\n\nOK\n"
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_wide_registers_address_spaces_value_and_pieces",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_floating_extra.FloatingContextTests.test_wide_registers_address_spaces_value_and_pieces"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_wide_registers_address_spaces_value_and_pieces (test_floating_extra.FloatingContextTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 80.881s\n\nOK\n"
+  },
+  {
+    "id": "test_frames.FrameTests.test_context_validation_and_no_parameter_syntax",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_frames.FrameTests.test_context_validation_and_no_parameter_syntax"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_context_validation_and_no_parameter_syntax (test_frames.FrameTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 1.834s\n\nOK\n"
+  },
+  {
+    "id": "test_frames.FrameTests.test_memory_and_composition",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_frames.FrameTests.test_memory_and_composition"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_memory_and_composition (test_frames.FrameTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 10.867s\n\nOK\n"
+  },
+  {
+    "id": "test_frames.FrameTests.test_missing_inputs_and_failure_atomicity",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_frames.FrameTests.test_missing_inputs_and_failure_atomicity"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_missing_inputs_and_failure_atomicity (test_frames.FrameTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 25.788s\n\nOK\n"
+  },
+  {
+    "id": "test_frames.FrameTests.test_positions_budget_and_fixed_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_frames.FrameTests.test_positions_budget_and_fixed_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_positions_budget_and_fixed_state (test_frames.FrameTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 17.503s\n\nOK\n"
+  },
+  {
+    "id": "test_frames.FrameTests.test_two_entries_and_independent_frame_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_frames.FrameTests.test_two_entries_and_independent_frame_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_two_entries_and_independent_frame_inputs (test_frames.FrameTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 70.674s\n\nOK\n"
+  },
+  {
+    "id": "test_locations.LocationTests.test_direct_value_results",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_locations.LocationTests.test_direct_value_results"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_direct_value_results (test_locations.LocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 39.373s\n\nOK\n"
+  },
+  {
+    "id": "test_locations.LocationTests.test_empty_descriptions_and_empty_final_stack",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_locations.LocationTests.test_empty_descriptions_and_empty_final_stack"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_empty_descriptions_and_empty_final_stack (test_locations.LocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 17.786s\n\nOK\n"
+  },
+  {
+    "id": "test_locations.LocationTests.test_location_cli",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_locations.LocationTests.test_location_cli"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_location_cli (test_locations.LocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 15.823s\n\nOK\n"
+  },
+  {
+    "id": "test_locations.LocationTests.test_location_depth_limits",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_locations.LocationTests.test_location_depth_limits"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_location_depth_limits (test_locations.LocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 22.838s\n\nOK\n"
+  },
+  {
+    "id": "test_locations.LocationTests.test_memory_results",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_locations.LocationTests.test_memory_results"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_memory_results (test_locations.LocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 25.007s\n\nOK\n"
+  },
+  {
+    "id": "test_locations.LocationTests.test_stack_value_failures_preserve_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_locations.LocationTests.test_stack_value_failures_preserve_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_stack_value_failures_preserve_state (test_locations.LocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 31.747s\n\nOK\n"
+  },
+  {
+    "id": "test_paper_names.PaperNamesTests.test_all_public_result_kinds_agree_with_core",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_paper_names.PaperNamesTests.test_all_public_result_kinds_agree_with_core"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_all_public_result_kinds_agree_with_core (test_paper_names.PaperNamesTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 59.014s\n\nOK\n"
+  },
+  {
+    "id": "test_paper_names.PaperNamesTests.test_prepared_kast_runs_in_core",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_paper_names.PaperNamesTests.test_prepared_kast_runs_in_core"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_prepared_kast_runs_in_core (test_paper_names.PaperNamesTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 6.875s\n\nOK\n"
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_all_33_names_and_name_inventory",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_register_locations.RegisterLocationTests.test_all_33_names_and_name_inventory"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_all_33_names_and_name_inventory (test_register_locations.RegisterLocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 278.516s\n\nOK\n"
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_context_and_arbitrary_initial_stack_preserved",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_register_locations.RegisterLocationTests.test_context_and_arbitrary_initial_stack_preserved"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_context_and_arbitrary_initial_stack_preserved (test_register_locations.RegisterLocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 30.015s\n\nOK\n"
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_declared_offsets_and_one_rewrite_completion",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_register_locations.RegisterLocationTests.test_declared_offsets_and_one_rewrite_completion"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_declared_offsets_and_one_rewrite_completion (test_register_locations.RegisterLocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 19.889s\n\nOK\n"
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_failed_parameters_and_truncated_bytes_preserve_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_register_locations.RegisterLocationTests.test_failed_parameters_and_truncated_bytes_preserve_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_failed_parameters_and_truncated_bytes_preserve_state (test_register_locations.RegisterLocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 34.678s\n\nOK\n"
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_nonstandalone_descriptions_keep_preoperation_state",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_register_locations.RegisterLocationTests.test_nonstandalone_descriptions_keep_preoperation_state"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_nonstandalone_descriptions_keep_preoperation_state (test_register_locations.RegisterLocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 81.499s\n\nOK\n"
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_register_cli",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_register_locations.RegisterLocationTests.test_register_cli"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_register_cli (test_register_locations.RegisterLocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 17.624s\n\nOK\n"
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_regx_arbitrary_precision_nonminimal_and_endianness",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_register_locations.RegisterLocationTests.test_regx_arbitrary_precision_nonminimal_and_endianness"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_regx_arbitrary_precision_nonminimal_and_endianness (test_register_locations.RegisterLocationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 46.023s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_address_space_order_width_endianness_and_missing_data",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_address_space_order_width_endianness_and_missing_data"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_address_space_order_width_endianness_and_missing_data (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 15.057s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_calls_share_stack_and_preserve_root_input",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_calls_share_stack_and_preserve_root_input"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_calls_share_stack_and_preserve_root_input (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 26.467s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_empty_missing_and_recursive_calls",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_empty_missing_and_recursive_calls"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_empty_missing_and_recursive_calls (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 14.773s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_entry_failure_keeps_callee_and_suspended_caller",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_entry_failure_keeps_callee_and_suspended_caller"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_entry_failure_keeps_callee_and_suspended_caller (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 23.677s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_entry_register_and_expression_use_independent_snapshot",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_entry_register_and_expression_use_independent_snapshot"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_entry_register_and_expression_use_independent_snapshot (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 12.902s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_failed_nested_calls_keep_shared_stack_and_return_chain",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_failed_nested_calls_keep_shared_stack_and_return_chain"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_failed_nested_calls_keep_shared_stack_and_return_chain (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 7.039s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_implicit_pointer_preserves_reference_identity_and_offset",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_implicit_pointer_preserves_reference_identity_and_offset"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_implicit_pointer_preserves_reference_identity_and_offset (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 10.411s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_nested_calls_switch_cu_and_ref_width",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_nested_calls_switch_cu_and_ref_width"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_nested_calls_switch_cu_and_ref_width (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 21.572s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_tls_lookup_is_explicit_and_failure_keeps_stack",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_tls_lookup_is_explicit_and_failure_keeps_stack"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_tls_lookup_is_explicit_and_failure_keeps_stack (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 14.840s\n\nOK\n"
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_typed_address_space_read_can_exceed_address_width",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_runtime.RuntimeTests.test_typed_address_space_read_can_exceed_address_width"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_typed_address_space_read_can_exceed_address_width (test_runtime.RuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 6.304s\n\nOK\n"
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_all_removed_raw_ops_preserve_prefix_and_fixed_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_standard_only.StandardOnlyTests.test_all_removed_raw_ops_preserve_prefix_and_fixed_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_all_removed_raw_ops_preserve_prefix_and_fixed_inputs (test_standard_only.StandardOnlyTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 102.576s\n\nOK\n"
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_all_removed_text_names_are_input_errors",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_standard_only.StandardOnlyTests.test_all_removed_text_names_are_input_errors"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_all_removed_text_names_are_input_errors (test_standard_only.StandardOnlyTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 29.264s\n\nOK\n"
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_cli_distinguishes_text_input_error_and_raw_unsupported_opcode",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_standard_only.StandardOnlyTests.test_cli_distinguishes_text_input_error_and_raw_unsupported_opcode"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_cli_distinguishes_text_input_error_and_raw_unsupported_opcode (test_standard_only.StandardOnlyTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 6.465s\n\nOK\n"
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_extensions_inside_entry_and_called_code_keep_actual_scene",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_standard_only.StandardOnlyTests.test_extensions_inside_entry_and_called_code_keep_actual_scene"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_extensions_inside_entry_and_called_code_keep_actual_scene (test_standard_only.StandardOnlyTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 8.727s\n\nOK\n"
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_raw_extension_at_start_and_incomplete_operands_do_not_advance",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_standard_only.StandardOnlyTests.test_raw_extension_at_start_and_incomplete_operands_do_not_advance"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_raw_extension_at_start_and_incomplete_operands_do_not_advance (test_standard_only.StandardOnlyTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 59.747s\n\nOK\n"
+  },
+  {
+    "id": "test_stuck.StuckTests.test_abs_minimum_is_stuck_in_both_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_stuck.StuckTests.test_abs_minimum_is_stuck_in_both_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_abs_minimum_is_stuck_in_both_inputs (test_stuck.StuckTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 82.400s\n\nOK\n"
+  },
+  {
+    "id": "test_stuck.StuckTests.test_decode_and_missing_context_preserve_executable_prefix",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_stuck.StuckTests.test_decode_and_missing_context_preserve_executable_prefix"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_decode_and_missing_context_preserve_executable_prefix (test_stuck.StuckTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 42.837s\n\nOK\n"
+  },
+  {
+    "id": "test_stuck.StuckTests.test_native_statistics_have_no_failure_step",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_stuck.StuckTests.test_native_statistics_have_no_failure_step"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_native_statistics_have_no_failure_step (test_stuck.StuckTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 4.234s\n\nOK\n"
+  },
+  {
+    "id": "test_stuck.StuckTests.test_stuck_cli_exits_one_without_error_constructor",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_stuck.StuckTests.test_stuck_cli_exits_one_without_error_constructor"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_stuck_cli_exits_one_without_error_constructor (test_stuck.StuckTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 5.942s\n\nOK\n"
+  },
+  {
+    "id": "test_stuck.StuckTests.test_typed_abs_uses_type_width_not_address_width",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_stuck.StuckTests.test_typed_abs_uses_type_width_not_address_width"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_typed_abs_uses_type_width_not_address_width (test_stuck.StuckTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 35.444s\n\nOK\n"
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_budget_and_fixed_inputs",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_typed_values.TypedValueTests.test_budget_and_fixed_inputs"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_budget_and_fixed_inputs (test_typed_values.TypedValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 10.075s\n\nOK\n"
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_constants_both_entries_width_identity_and_byte_order",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_typed_values.TypedValueTests.test_constants_both_entries_width_identity_and_byte_order"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_constants_both_entries_width_identity_and_byte_order (test_typed_values.TypedValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 21.254s\n\nOK\n"
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_invalid_sizes_references_and_truncations_preserve_prefix",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_typed_values.TypedValueTests.test_invalid_sizes_references_and_truncations_preserve_prefix"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_invalid_sizes_references_and_truncations_preserve_prefix (test_typed_values.TypedValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 56.700s\n\nOK\n"
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_register_values_physical_width_and_missing_values",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_typed_values.TypedValueTests.test_register_values_physical_width_and_missing_values"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_register_values_physical_width_and_missing_values (test_typed_values.TypedValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 38.141s\n\nOK\n"
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_raw_float_metadata_does_not_block_unrelated_integer_execution",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_unsupported_types.UnsupportedTypeTests.test_raw_float_metadata_does_not_block_unrelated_integer_execution"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_raw_float_metadata_does_not_block_unrelated_integer_execution (test_unsupported_types.UnsupportedTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 9.899s\n\nOK\n"
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_strict_float_types_and_initial_values_are_input_errors",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_unsupported_types.UnsupportedTypeTests.test_strict_float_types_and_initial_values_are_input_errors"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_strict_float_types_and_initial_values_are_input_errors (test_unsupported_types.UnsupportedTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.053s\n\nOK\n"
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_typed_operations_reject_raw_float_without_consuming_the_scene",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_unsupported_types.UnsupportedTypeTests.test_typed_operations_reject_raw_float_without_consuming_the_scene"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_typed_operations_reject_raw_float_without_consuming_the_scene (test_unsupported_types.UnsupportedTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 57.368s\n\nOK\n"
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_uninterpreted_object_bytes_and_lazy_locations_are_preserved",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_unsupported_types.UnsupportedTypeTests.test_uninterpreted_object_bytes_and_lazy_locations_are_preserved"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_uninterpreted_object_bytes_and_lazy_locations_are_preserved (test_unsupported_types.UnsupportedTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 13.902s\n\nOK\n"
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_arithmetic_and_reinterpret_use_the_base_type_width",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_wide_types.WideTypeTests.test_arithmetic_and_reinterpret_use_the_base_type_width"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_arithmetic_and_reinterpret_use_the_base_type_width (test_wide_types.WideTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 11.216s\n\nOK\n"
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_mixed_stack_preserves_wide_values_and_type_identity",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_wide_types.WideTypeTests.test_mixed_stack_preserves_wide_values_and_type_identity"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_mixed_stack_preserves_wide_values_and_type_identity (test_wide_types.WideTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 7.421s\n\nOK\n"
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_validation_uses_type_storage_not_address_width",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_wide_types.WideTypeTests.test_validation_uses_type_storage_not_address_width"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_validation_uses_type_storage_not_address_width (test_wide_types.WideTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_wide_direct_value_piece_keeps_all_bits",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_wide_types.WideTypeTests.test_wide_direct_value_piece_keeps_all_bits"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_wide_direct_value_piece_keeps_all_bits (test_wide_types.WideTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 5.694s\n\nOK\n"
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_wide_typed_read_both_entries_and_byte_orders",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_wide_types.WideTypeTests.test_wide_typed_read_both_entries_and_byte_orders"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_wide_typed_read_both_entries_and_byte_orders (test_wide_types.WideTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 19.969s\n\nOK\n"
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_widening_and_generic_narrowing_have_separate_conditions",
+    "command": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_wide_types.WideTypeTests.test_widening_and_generic_narrowing_have_separate_conditions"
+      ],
+      "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics",
+      "timeout": 1800,
+      "environment_overrides": {
+        "PYTHONPATH": "/tmp/scratch/kframework-artifact-20261112-r1/standalone:/tmp/scratch/kframework-artifact-20261112-r1/standalone/tests/semantics"
+      },
+      "stdin": null,
+      "merge_stderr": false,
+      "queue_seconds": 0,
+      "timeout_scope": "child lifetime"
+    },
+    "exit": {
+      "returncode": 0
+    },
+    "stdout": "",
+    "stderr": "test_widening_and_generic_narrowing_have_separate_conditions (test_wide_types.WideTypeTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 11.070s\n\nOK\n"
+  }
+]

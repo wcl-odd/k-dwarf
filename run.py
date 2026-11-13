@@ -21,7 +21,7 @@ from functools import wraps
 # JSON representation; subsequent cell/map traversal is iterative. Compact CLI
 # output avoids quadratic indentation for those complete configurations.
 sys.setrecursionlimit(max(sys.getrecursionlimit(),100000))
-ROOT = Path(__file__).resolve().parent
+from verification.common import ROOT
 DEFAULT_DEFINITION = ROOT / "build/llvm-kompiled"
 ENCODINGS = {
     "DW_ATE_address", "DW_ATE_boolean", "DW_ATE_signed", "DW_ATE_signed_char",
@@ -760,7 +760,7 @@ def _evaluate(expression, context, definition, depth, input_format, statistics, 
         encoded_context = serialize_output_term(prepared_context)
     definition = Path(definition).resolve()
     if not (definition / "compiled.bin").exists():
-        raise ValueError(f"compiled definition not found at {definition}; see semantics/README.md")
+        raise ValueError(f"compiled definition not found at {definition}; see README.md")
     # Both source formats are parsed by K. Its KORE output is passed through
     # unchanged; Python does not inspect expression tokens or decoded operands.
     main_module = "DWARF-CORE" if input_format == "decoded" else "DWARF"
@@ -773,7 +773,7 @@ def _evaluate(expression, context, definition, depth, input_format, statistics, 
     # limits and sometimes writing startup warnings into its KORE stdout.
     # Respect an explicitly supplied processor limit.
     environment = os.environ.copy()
-    input_tmp = Path(os.environ.get("DWARF_INPUT_TMPDIR", str(Path(tempfile.gettempdir()) / "scratch" / f"kframework-run-{os.getpid()}")))
+    input_tmp = Path(os.environ.get("DWARF_INPUT_TMPDIR", str(ROOT / "build" / "tmp" / f"run-{os.getpid()}")))
     input_tmp.mkdir(parents=True, exist_ok=True)
     environment["TMPDIR"] = str(input_tmp)
     java_options = environment.get("JAVA_TOOL_OPTIONS", "")
@@ -802,7 +802,7 @@ def _evaluate(expression, context, definition, depth, input_format, statistics, 
     if statistics and (definition / "interpreter").is_file():
         command.append("--statistics")
     (ROOT / "build").mkdir(exist_ok=True)
-    input_tmp = Path(os.environ.get("DWARF_INPUT_TMPDIR", str(Path(tempfile.gettempdir()) / "scratch" / f"kframework-run-{os.getpid()}")))
+    input_tmp = Path(os.environ.get("DWARF_INPUT_TMPDIR", str(ROOT / "build" / "tmp" / f"run-{os.getpid()}")))
     input_tmp.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="input-", dir=input_tmp) as directory:
         program = Path(directory) / "program.kore"

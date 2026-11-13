@@ -8,6 +8,7 @@
 | selection/ | Final reviewed selection, exclusions, scope and unextracted query |
 | differences.json | Reviewed explanations for existing differences and auxiliary checks |
 | manual-notes.json | Preserved expression-identity note inventory |
+| [artifact-validation/](artifact-validation/README.md) | Standalone copy, fresh LLVM replay, regression and packaging receipts |
 
 These are source-controlled review/reference inputs, separate from machine-generated K results. Original source versions, selection hashes and upstream assertion mappings remain in [test-corpus/](../../test-corpus/README.md). Selection records can contain historical absolute paths as provenance; they are not runtime dependencies. Code references in support catalogs are repository-relative; validation_evidence paths in the floating catalog are repository-relative and require the local output/ package.
 

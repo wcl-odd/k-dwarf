@@ -20,9 +20,8 @@ def validate_assertions(items):
                 or not isinstance(item["mapping"], str) or not item["mapping"]):
             raise ValueError("invalid upstream assertion")
         source = item["source"]
-        if (not isinstance(source, dict) or not {"project", "version", "file", "sha256", "line", "text", "parameter"} <= source.keys()
+        if (not isinstance(source, dict) or not {"project", "version", "file", "line", "text", "parameter"} <= source.keys()
                 or type(source["line"]) is not int or source["line"] <= 0
-                or not isinstance(source["sha256"], str) or not re.fullmatch(r"[0-9a-f]{64}",source["sha256"])
                 or source["project"] not in {"gdb","lldb"}
                 or not isinstance(source["file"],str) or PurePosixPath(source["file"]).is_absolute()
                 or ".." in PurePosixPath(source["file"]).parts):

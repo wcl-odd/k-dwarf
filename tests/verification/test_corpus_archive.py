@@ -11,7 +11,8 @@ import unittest
 from unittest.mock import patch
 from verification import assertions
 from verification.corpus import load_cases
-from verification.corpus_archive import PATH_FORMAT, canonical_hash, digest, input_identity, local_path, read_prepared, validate_archive, evaluate_scope, scope_summary
+from verification.corpus_archive import PATH_FORMAT, local_path, read_prepared, evaluate_scope, scope_summary
+from verification.corpus_integrity import canonical_hash, digest, input_identity, validate_archive
 from verification.model import Case
 SCRATCH = Path('/tmp/scratch') / ('kframework-portable-tests-' + str(os.getpid()))
 
@@ -84,10 +85,10 @@ class PortableCorpusTests(unittest.TestCase):
         document['cases'][0]['upstream_assertions'][0]['expected']['fields'][0]['integer'] = 14
         p.write_text(json.dumps(document))
         with self.assertRaisesRegex(ValueError, 'file changed'):
-            read_prepared(self.base)
+            validate_archive(self.root)
         seal(self.root)
         with self.assertRaisesRegex(ValueError, 'assertion identity'):
-            read_prepared(self.base)
+            validate_archive(self.root)
 
     def test_context_drift_rejected_after_inventory_reseal(self):
         p = self.base / 'cases.json'
@@ -96,7 +97,7 @@ class PortableCorpusTests(unittest.TestCase):
         p.write_text(json.dumps(document))
         seal(self.root)
         with self.assertRaisesRegex(ValueError, 'input or assertion identity'):
-            read_prepared(self.base)
+            validate_archive(self.root)
 
     def test_missing_or_drifting_source_or_snapshot_is_rejected(self):
         p = self.base / 'evidence/snapshot.json'
@@ -195,7 +196,7 @@ class PortableCorpusTests(unittest.TestCase):
         document['datasets']['gdb']['version'] = '18.1'
         document['archive_sha256'] = canonical_hash({k: v for (k, v) in document.items() if k != 'archive_sha256'})
         p.write_text(json.dumps(document))
-        with self.assertRaisesRegex(ValueError, 'input or assertion identity'):
+        with self.assertRaisesRegex(ValueError, 'source or version'):
             read_prepared(self.base)
         seal(self.root)
         p = self.root / 'scope.json'
@@ -225,5 +226,23 @@ class PortableCorpusTests(unittest.TestCase):
         records = [{**record, 'corpus_evaluation': result}]
         self.assertEqual(scope_summary(records)['exit_code'], 0)
         self.assertEqual(scope_summary(records, True)['exit_code'], 1)
+    def test_runtime_reader_keeps_hashes_as_inert_provenance(self):
+        p=self.root/'scope.json';doc=json.loads(p.read_text())
+        doc['cases'][0].update(input_identity='historical',assertions_sha256='historical')
+        write(p,doc)
+        cases,_,scope=read_prepared(self.base)
+        self.assertEqual(cases[0].bytes,[49]);self.assertEqual(scope['a']['input_identity'],'historical')
+
+    def test_runtime_reader_rejects_missing_evidence(self):
+        (self.base/'evidence/snapshot.json').unlink()
+        with self.assertRaisesRegex(ValueError,'missing'):read_prepared(self.base)
+
+    def test_runtime_keeps_exact_source_assertion_anchor(self):
+        from verification.corpus import source_evidence
+        roots={'gdb':self.base/'sources/gdb'}
+        self.assertEqual(source_evidence(self.case,roots)['status'],'match')
+        (roots['gdb']/'suite.exp').write_text('changed assertion\n')
+        self.assertEqual(source_evidence(self.case,roots)['status'],'changed')
+
 if __name__ == '__main__':
     unittest.main()

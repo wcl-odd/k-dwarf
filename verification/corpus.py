@@ -1,5 +1,4 @@
 """Load manually audited cases, without interpreting C++, Tcl or DWARF."""
-import hashlib
 import json
 import re
 from pathlib import Path
@@ -168,10 +167,15 @@ def source_evidence(case, roots):
     root = roots.get(origin["project"])
     if root is None:
         return {"status": "source_not_supplied"}
-    file = Path(root) / origin["file"]
+    from .corpus_archive import local_path
+    file = local_path(root, origin["file"])
     if not file.is_file():
         return {"status": "source_file_missing", "path": str(file)}
-    actual = hashlib.sha256(file.read_bytes()).hexdigest()
-    recorded = origin.get("sha256")
-    return {"status": "match" if recorded == actual else "changed" if recorded else "unverified",
-            "path": str(file), "recorded_sha256": recorded, "actual_sha256": actual}
+    from .corpus_archive import local_path
+    for assertion in case.upstream_assertions:
+        source = assertion['source']
+        anchor = local_path(roots[source['project']], source['file'])
+        lines = anchor.read_text().splitlines()
+        if not 0 < source['line'] <= len(lines) or lines[source['line']-1] != source['text']:
+            return {'status':'changed', 'path':str(anchor)}
+    return {'status':'match', 'path':str(file)}

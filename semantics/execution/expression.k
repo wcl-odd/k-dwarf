@@ -1,6 +1,6 @@
 requires "computations.k"
 
-// Fixed execution input E: operations and operands are decoded; code queries do not depend on runtime context.
+// Fixed expression E: operations and operands are decoded; code queries do not depend on the external input interface.
 // The final ByteBlock preserves raw-byte identity only; text or direct inputs use .Bytes.
 // It is audit data and takes no part in operation, boundary, or computation queries.
 module DWARF-EXPRESSION

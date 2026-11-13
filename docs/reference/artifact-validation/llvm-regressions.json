@@ -1,0 +1,787 @@
+[
+  {
+    "id": "test_basic.BasicTests.test_all_111_names_execute_and_preserve_inputs",
+    "returncode": 0,
+    "seconds": 8.919329691678286
+  },
+  {
+    "id": "test_basic.BasicTests.test_cli_status_and_configuration",
+    "returncode": 0,
+    "seconds": 7.078282747417688
+  },
+  {
+    "id": "test_basic.BasicTests.test_constant_boundaries",
+    "returncode": 0,
+    "seconds": 2.190952066332102
+  },
+  {
+    "id": "test_basic.BasicTests.test_constant_extensions_and_truncation",
+    "returncode": 0,
+    "seconds": 8.989790964871645
+  },
+  {
+    "id": "test_basic.BasicTests.test_constant_range_failures",
+    "returncode": 0,
+    "seconds": 18.127929661422968
+  },
+  {
+    "id": "test_basic.BasicTests.test_context_validation",
+    "returncode": 0,
+    "seconds": 0.07375285401940346
+  },
+  {
+    "id": "test_basic.BasicTests.test_default_zero_and_typed_address_reads",
+    "returncode": 0,
+    "seconds": 7.054286744445562
+  },
+  {
+    "id": "test_basic.BasicTests.test_empty_multi_stack_and_depth_limit",
+    "returncode": 0,
+    "seconds": 15.781099889427423
+  },
+  {
+    "id": "test_basic.BasicTests.test_endianness_and_type_identity",
+    "returncode": 0,
+    "seconds": 10.343000192195177
+  },
+  {
+    "id": "test_basic.BasicTests.test_missing_context_and_size_conditions",
+    "returncode": 0,
+    "seconds": 44.50278529897332
+  },
+  {
+    "id": "test_basic.BasicTests.test_mixed_type_reordering",
+    "returncode": 0,
+    "seconds": 17.353843472898006
+  },
+  {
+    "id": "test_basic.BasicTests.test_narrow_types_and_unsigned_boolean_reads",
+    "returncode": 0,
+    "seconds": 14.399746995419264
+  },
+  {
+    "id": "test_basic.BasicTests.test_offsets_wrap",
+    "returncode": 0,
+    "seconds": 32.6122276596725
+  },
+  {
+    "id": "test_basic.BasicTests.test_reject_outside_syntax",
+    "returncode": 0,
+    "seconds": 35.41983852162957
+  },
+  {
+    "id": "test_basic.BasicTests.test_stack_underflow_and_pick_bounds",
+    "returncode": 0,
+    "seconds": 37.29806638136506
+  },
+  {
+    "id": "test_basic.BasicTests.test_unbounded_decoded_constants",
+    "returncode": 0,
+    "seconds": 3.999019831418991
+  },
+  {
+    "id": "test_basic.BasicTests.test_wrapped_addresses_read_memory",
+    "returncode": 0,
+    "seconds": 5.670358527451754
+  },
+  {
+    "id": "test_composition.CompositionTests.test_bit_offsets_memory_and_partial_unknown",
+    "returncode": 0,
+    "seconds": 37.69481037929654
+  },
+  {
+    "id": "test_composition.CompositionTests.test_cli_complete_incomplete_and_input_error",
+    "returncode": 0,
+    "seconds": 14.785415891557932
+  },
+  {
+    "id": "test_composition.CompositionTests.test_fixed_inputs_atomic_failure_and_nonzero_offsets",
+    "returncode": 0,
+    "seconds": 11.55667494237423
+  },
+  {
+    "id": "test_composition.CompositionTests.test_implicit_bytes_two_entries_and_arbitrary_stack",
+    "returncode": 0,
+    "seconds": 47.60880787298083
+  },
+  {
+    "id": "test_composition.CompositionTests.test_local_branches_loops_and_execution_budget",
+    "returncode": 0,
+    "seconds": 33.076476149261
+  },
+  {
+    "id": "test_composition.CompositionTests.test_mixed_sources_and_clear_entire_stack",
+    "returncode": 0,
+    "seconds": 9.29401433095336
+  },
+  {
+    "id": "test_composition.CompositionTests.test_piece_order_metadata_and_target_profiles",
+    "returncode": 0,
+    "seconds": 15.86446475610137
+  },
+  {
+    "id": "test_composition.CompositionTests.test_source_bounds_nonempty_empty_stack_and_dangling_suffix",
+    "returncode": 0,
+    "seconds": 50.52688463404775
+  },
+  {
+    "id": "test_composition.CompositionTests.test_truncation_decode_lengths_and_payload_boundaries",
+    "returncode": 0,
+    "seconds": 50.49471037462354
+  },
+  {
+    "id": "test_composition.CompositionTests.test_zero_size_and_missing_data_are_distinct_from_deref_failure",
+    "returncode": 0,
+    "seconds": 30.04916601255536
+  },
+  {
+    "id": "test_computations.ComputationTests.test_comparison_views_and_identity",
+    "returncode": 0,
+    "seconds": 22.824468038976192
+  },
+  {
+    "id": "test_computations.ComputationTests.test_computation_result_addresses",
+    "returncode": 0,
+    "seconds": 13.861929401755333
+  },
+  {
+    "id": "test_computations.ComputationTests.test_generic_machine_arithmetic",
+    "returncode": 0,
+    "seconds": 4.413356773555279
+  },
+  {
+    "id": "test_computations.ComputationTests.test_small_and_wide_generic_widths",
+    "returncode": 0,
+    "seconds": 19.27069655433297
+  },
+  {
+    "id": "test_computations.ComputationTests.test_type_mismatch_and_underflow",
+    "returncode": 0,
+    "seconds": 28.809548672288656
+  },
+  {
+    "id": "test_computations.ComputationTests.test_typed_machine_arithmetic",
+    "returncode": 0,
+    "seconds": 6.7072094939649105
+  },
+  {
+    "id": "test_computations.ComputationTests.test_undefined_arithmetic_preserves_state",
+    "returncode": 0,
+    "seconds": 85.0510685518384
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_backward_bra_finite_loop_and_rewrite_budget",
+    "returncode": 0,
+    "seconds": 20.533512249588966
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_backward_skip_and_target_endianness",
+    "returncode": 0,
+    "seconds": 26.362483851611614
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_bra_accepts_integer_types_without_boolean_conversion",
+    "returncode": 0,
+    "seconds": 29.78638106957078
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_bra_conditions_and_comparison",
+    "returncode": 0,
+    "seconds": 28.727535031735897
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_declared_offsets_negative_end_and_no_pc_wrapping",
+    "returncode": 0,
+    "seconds": 8.078528940677643
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_displacement_source_range_is_signed_16_bits",
+    "returncode": 0,
+    "seconds": 30.390965659171343
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_forward_skip_and_end_do_not_execute_skipped_operations",
+    "returncode": 0,
+    "seconds": 23.670627675950527
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_invalid_targets_and_truncation_preserve_full_scene",
+    "returncode": 0,
+    "seconds": 81.08574698865414
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_nop_preserves_mixed_stack_and_allows_empty_stack",
+    "returncode": 0,
+    "seconds": 19.48978641629219
+  },
+  {
+    "id": "test_control_flow.ControlFlowTests.test_self_loop_and_reached_stack_value_restriction",
+    "returncode": 0,
+    "seconds": 21.26160565391183
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_both_opcodes_decode_and_leb_boundaries",
+    "returncode": 0,
+    "seconds": 45.65926657244563
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_budget_positions_and_fixed_inputs",
+    "returncode": 0,
+    "seconds": 10.172748189419508
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_convert_failures_keep_entire_state",
+    "returncode": 0,
+    "seconds": 31.882394939661026
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_convert_numeric_preservation",
+    "returncode": 0,
+    "seconds": 37.233295146375895
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_generic_literal_conversion_uses_address_width",
+    "returncode": 0,
+    "seconds": 22.96064906567335
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_generic_unsigned_convert_and_budget",
+    "returncode": 0,
+    "seconds": 10.370851382613182
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_generic_unsigned_widening_and_representatives",
+    "returncode": 0,
+    "seconds": 61.72254994139075
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_integer_narrowing_and_generic_source_interpretation",
+    "returncode": 0,
+    "seconds": 20.72871469706297
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_nonzero_offsets_and_cli_exit_codes",
+    "returncode": 0,
+    "seconds": 13.632476482540369
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_reinterpret_bits_identity_and_storage_size",
+    "returncode": 0,
+    "seconds": 56.384898126125336
+  },
+  {
+    "id": "test_conversions.ConversionTests.test_typed_reads_then_conversion_and_composition",
+    "returncode": 0,
+    "seconds": 15.749157596379519
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_bad_suffix_boundaries_and_prepared_nested_code",
+    "returncode": 0,
+    "seconds": 63.89203905314207
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_core_dependency_closure_excludes_frontend",
+    "returncode": 0,
+    "seconds": 0.0769641250371933
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_direct_algebraic_input_and_budget",
+    "returncode": 0,
+    "seconds": 21.19778783619404
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_text_declared_positions_and_unavailable_operands",
+    "returncode": 0,
+    "seconds": 36.56884276866913
+  },
+  {
+    "id": "test_core_separation.CoreSeparationTests.test_three_entries_and_fixed_inputs",
+    "returncode": 0,
+    "seconds": 19.161547139286995
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_cli_exposes_diagnostic_and_keeps_exit_one",
+    "returncode": 0,
+    "seconds": 3.970918733626604
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_missing_memory_and_valid_instruction_budget_stop_are_not_decode_errors",
+    "returncode": 0,
+    "seconds": 7.587859828025103
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_nested_failure_uses_active_child_byte_evidence",
+    "returncode": 0,
+    "seconds": 3.922546047717333
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_reached_truncated_operand_preserves_state_and_budget",
+    "returncode": 0,
+    "seconds": 5.901367850601673
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticIntegrationTests.test_skipped_bad_suffix_does_not_prevent_normal_completion",
+    "returncode": 0,
+    "seconds": 2.089107684791088
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_arbitrary_core_gaps_and_operand_positions_are_not_decode_errors",
+    "returncode": 0,
+    "seconds": 0.07286307588219643
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_decoded_current_instruction_is_not_a_decoding_failure",
+    "returncode": 0,
+    "seconds": 0.07240797951817513
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_end_and_completed_or_uninitialized_states_are_not_decode_errors",
+    "returncode": 0,
+    "seconds": 0.07409071922302246
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_partial_prefix_exposes_bytes_without_guessing_operand_shape",
+    "returncode": 0,
+    "seconds": 0.07192518189549446
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_text_and_unavailable_byte_evidence_do_not_gain_a_diagnosis",
+    "returncode": 0,
+    "seconds": 0.07212544977664948
+  },
+  {
+    "id": "test_decode_diagnostics.DecodeDiagnosticObservationTests.test_unknown_and_unterminated_encodings_are_not_claimed_invalid",
+    "returncode": 0,
+    "seconds": 0.07375781238079071
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_all_111_raw_and_text_names",
+    "returncode": 0,
+    "seconds": 14.86212333664298
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_fixed_width_endianness_and_addresses",
+    "returncode": 0,
+    "seconds": 40.54113746061921
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_format_cli_and_input_errors",
+    "returncode": 0,
+    "seconds": 19.642831705510616
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_input_structure_rejection",
+    "returncode": 0,
+    "seconds": 63.378880970180035
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_leb128_values_lengths_and_nonminimal",
+    "returncode": 0,
+    "seconds": 17.43861450627446
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_multi_operand_memory_and_missing_context",
+    "returncode": 0,
+    "seconds": 24.57879577204585
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_results_and_rewrite_budget",
+    "returncode": 0,
+    "seconds": 48.96502209827304
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_text_numbers_and_declared_positions",
+    "returncode": 0,
+    "seconds": 28.021350782364607
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_truncated_and_unsupported_preserve_current_state",
+    "returncode": 0,
+    "seconds": 206.4060677625239
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_truncated_operands_with_available_context",
+    "returncode": 0,
+    "seconds": 25.418658327311277
+  },
+  {
+    "id": "test_decoding.DecodingTests.test_wide_signed_decoding_and_leb128",
+    "returncode": 0,
+    "seconds": 14.941898208111525
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_context_errors",
+    "returncode": 0,
+    "seconds": 0.07866954803466797
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_indices_object_and_two_inputs",
+    "returncode": 0,
+    "seconds": 19.234539054334164
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_large_sparse_context_keeps_complete_configuration",
+    "returncode": 0,
+    "seconds": 8.211489479988813
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_missing_or_invalid_operation_is_atomic",
+    "returncode": 0,
+    "seconds": 58.57636088132858
+  },
+  {
+    "id": "test_external_values.ExternalValueTests.test_value_mode_and_budget",
+    "returncode": 0,
+    "seconds": 31.033238515257835
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_conflicting_request_memory_and_composition",
+    "returncode": 0,
+    "seconds": 13.72939395159483
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_raw_types_are_resolved_in_k",
+    "returncode": 0,
+    "seconds": 18.458436746150255
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_standard_pieces_with_wide_mock_registers",
+    "returncode": 0,
+    "seconds": 12.052883345633745
+  },
+  {
+    "id": "test_fixture_contexts.FixtureContextTests.test_stuck_consumes_no_failure_rewrite_and_budget_can_resume",
+    "returncode": 0,
+    "seconds": 18.237806051969528
+  },
+  {
+    "id": "test_floating.FloatingTests.test_all_float_comparisons_and_nan",
+    "returncode": 0,
+    "seconds": 154.9369759298861
+  },
+  {
+    "id": "test_floating.FloatingTests.test_conversions_and_reinterpretation",
+    "returncode": 0,
+    "seconds": 170.12331679090858
+  },
+  {
+    "id": "test_floating.FloatingTests.test_four_formats_arithmetic_and_unary",
+    "returncode": 0,
+    "seconds": 101.44654384627938
+  },
+  {
+    "id": "test_floating.FloatingTests.test_generic_unsigned_source_to_float",
+    "returncode": 0,
+    "seconds": 63.46264127269387
+  },
+  {
+    "id": "test_floating.FloatingTests.test_ieee_specials_subnormal_rounding_and_overflow",
+    "returncode": 0,
+    "seconds": 163.80546774715185
+  },
+  {
+    "id": "test_floating.FloatingTests.test_integer_only_ops_stop_and_preserve_all_state",
+    "returncode": 0,
+    "seconds": 64.16032334417105
+  },
+  {
+    "id": "test_floating.FloatingTests.test_raw_float_metadata_resolves_and_budget_edges",
+    "returncode": 0,
+    "seconds": 13.40797595307231
+  },
+  {
+    "id": "test_floating.FloatingTests.test_typed_transport_raw_decode_and_endianness",
+    "returncode": 0,
+    "seconds": 116.32810578867793
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_conversion_and_integer_precondition_failures_are_atomic",
+    "returncode": 0,
+    "seconds": 32.437580551952124
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_float_address_operands_rejected_before_memory_read",
+    "returncode": 0,
+    "seconds": 65.47005306556821
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_unrecognized_encodings_do_not_fall_back_to_integer",
+    "returncode": 0,
+    "seconds": 14.37919606640935
+  },
+  {
+    "id": "test_floating_extra.FloatingContextTests.test_wide_registers_address_spaces_value_and_pieces",
+    "returncode": 0,
+    "seconds": 80.95735779032111
+  },
+  {
+    "id": "test_frames.FrameTests.test_context_validation_and_no_parameter_syntax",
+    "returncode": 0,
+    "seconds": 1.9175325520336628
+  },
+  {
+    "id": "test_frames.FrameTests.test_memory_and_composition",
+    "returncode": 0,
+    "seconds": 10.946634333580732
+  },
+  {
+    "id": "test_frames.FrameTests.test_missing_inputs_and_failure_atomicity",
+    "returncode": 0,
+    "seconds": 25.864602245390415
+  },
+  {
+    "id": "test_frames.FrameTests.test_positions_budget_and_fixed_state",
+    "returncode": 0,
+    "seconds": 17.579317778348923
+  },
+  {
+    "id": "test_frames.FrameTests.test_two_entries_and_independent_frame_inputs",
+    "returncode": 0,
+    "seconds": 70.74983233585954
+  },
+  {
+    "id": "test_locations.LocationTests.test_direct_value_results",
+    "returncode": 0,
+    "seconds": 39.45017657056451
+  },
+  {
+    "id": "test_locations.LocationTests.test_empty_descriptions_and_empty_final_stack",
+    "returncode": 0,
+    "seconds": 17.866084814071655
+  },
+  {
+    "id": "test_locations.LocationTests.test_location_cli",
+    "returncode": 0,
+    "seconds": 15.900239933282137
+  },
+  {
+    "id": "test_locations.LocationTests.test_location_depth_limits",
+    "returncode": 0,
+    "seconds": 22.915076673030853
+  },
+  {
+    "id": "test_locations.LocationTests.test_memory_results",
+    "returncode": 0,
+    "seconds": 25.085236325860023
+  },
+  {
+    "id": "test_locations.LocationTests.test_stack_value_failures_preserve_state",
+    "returncode": 0,
+    "seconds": 31.828177332878113
+  },
+  {
+    "id": "test_paper_names.PaperNamesTests.test_all_public_result_kinds_agree_with_core",
+    "returncode": 0,
+    "seconds": 59.09206121042371
+  },
+  {
+    "id": "test_paper_names.PaperNamesTests.test_prepared_kast_runs_in_core",
+    "returncode": 0,
+    "seconds": 6.952668868005276
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_all_33_names_and_name_inventory",
+    "returncode": 0,
+    "seconds": 278.59400045499206
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_context_and_arbitrary_initial_stack_preserved",
+    "returncode": 0,
+    "seconds": 30.090763360261917
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_declared_offsets_and_one_rewrite_completion",
+    "returncode": 0,
+    "seconds": 19.97188762575388
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_failed_parameters_and_truncated_bytes_preserve_state",
+    "returncode": 0,
+    "seconds": 34.75547232106328
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_nonstandalone_descriptions_keep_preoperation_state",
+    "returncode": 0,
+    "seconds": 81.5821822322905
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_register_cli",
+    "returncode": 0,
+    "seconds": 17.701247293502092
+  },
+  {
+    "id": "test_register_locations.RegisterLocationTests.test_regx_arbitrary_precision_nonminimal_and_endianness",
+    "returncode": 0,
+    "seconds": 46.10493674129248
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_address_space_order_width_endianness_and_missing_data",
+    "returncode": 0,
+    "seconds": 15.132537391036749
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_calls_share_stack_and_preserve_root_input",
+    "returncode": 0,
+    "seconds": 26.541835859417915
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_empty_missing_and_recursive_calls",
+    "returncode": 0,
+    "seconds": 14.85038335621357
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_entry_failure_keeps_callee_and_suspended_caller",
+    "returncode": 0,
+    "seconds": 23.75593016296625
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_entry_register_and_expression_use_independent_snapshot",
+    "returncode": 0,
+    "seconds": 12.976643092930317
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_failed_nested_calls_keep_shared_stack_and_return_chain",
+    "returncode": 0,
+    "seconds": 7.115115512162447
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_implicit_pointer_preserves_reference_identity_and_offset",
+    "returncode": 0,
+    "seconds": 10.49000720307231
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_nested_calls_switch_cu_and_ref_width",
+    "returncode": 0,
+    "seconds": 21.646781973540783
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_tls_lookup_is_explicit_and_failure_keeps_stack",
+    "returncode": 0,
+    "seconds": 14.922465533018112
+  },
+  {
+    "id": "test_runtime.RuntimeTests.test_typed_address_space_read_can_exceed_address_width",
+    "returncode": 0,
+    "seconds": 6.386118575930595
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_all_removed_raw_ops_preserve_prefix_and_fixed_inputs",
+    "returncode": 0,
+    "seconds": 102.65473471209407
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_all_removed_text_names_are_input_errors",
+    "returncode": 0,
+    "seconds": 29.34227691963315
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_cli_distinguishes_text_input_error_and_raw_unsupported_opcode",
+    "returncode": 0,
+    "seconds": 6.54236226901412
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_extensions_inside_entry_and_called_code_keep_actual_scene",
+    "returncode": 0,
+    "seconds": 8.80492813885212
+  },
+  {
+    "id": "test_standard_only.StandardOnlyTests.test_raw_extension_at_start_and_incomplete_operands_do_not_advance",
+    "returncode": 0,
+    "seconds": 59.825867831707
+  },
+  {
+    "id": "test_stuck.StuckTests.test_abs_minimum_is_stuck_in_both_inputs",
+    "returncode": 0,
+    "seconds": 82.47863645851612
+  },
+  {
+    "id": "test_stuck.StuckTests.test_decode_and_missing_context_preserve_executable_prefix",
+    "returncode": 0,
+    "seconds": 42.911642514169216
+  },
+  {
+    "id": "test_stuck.StuckTests.test_native_statistics_have_no_failure_step",
+    "returncode": 0,
+    "seconds": 4.309668503701687
+  },
+  {
+    "id": "test_stuck.StuckTests.test_stuck_cli_exits_one_without_error_constructor",
+    "returncode": 0,
+    "seconds": 6.018755704164505
+  },
+  {
+    "id": "test_stuck.StuckTests.test_typed_abs_uses_type_width_not_address_width",
+    "returncode": 0,
+    "seconds": 35.52014594897628
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_budget_and_fixed_inputs",
+    "returncode": 0,
+    "seconds": 10.158284813165665
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_constants_both_entries_width_identity_and_byte_order",
+    "returncode": 0,
+    "seconds": 21.328815400600433
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_invalid_sizes_references_and_truncations_preserve_prefix",
+    "returncode": 0,
+    "seconds": 56.773866541683674
+  },
+  {
+    "id": "test_typed_values.TypedValueTests.test_register_values_physical_width_and_missing_values",
+    "returncode": 0,
+    "seconds": 38.21392687782645
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_raw_float_metadata_does_not_block_unrelated_integer_execution",
+    "returncode": 0,
+    "seconds": 9.975959047675133
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_strict_float_types_and_initial_values_are_input_errors",
+    "returncode": 0,
+    "seconds": 0.12717323377728462
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_typed_operations_reject_raw_float_without_consuming_the_scene",
+    "returncode": 0,
+    "seconds": 57.44811125844717
+  },
+  {
+    "id": "test_unsupported_types.UnsupportedTypeTests.test_uninterpreted_object_bytes_and_lazy_locations_are_preserved",
+    "returncode": 0,
+    "seconds": 13.987310949712992
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_arithmetic_and_reinterpret_use_the_base_type_width",
+    "returncode": 0,
+    "seconds": 11.294921614229679
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_mixed_stack_preserves_wide_values_and_type_identity",
+    "returncode": 0,
+    "seconds": 7.499877151101828
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_validation_uses_type_storage_not_address_width",
+    "returncode": 0,
+    "seconds": 0.07552395388484001
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_wide_direct_value_piece_keeps_all_bits",
+    "returncode": 0,
+    "seconds": 5.769875697791576
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_wide_typed_read_both_entries_and_byte_orders",
+    "returncode": 0,
+    "seconds": 20.04396877810359
+  },
+  {
+    "id": "test_wide_types.WideTypeTests.test_widening_and_generic_narrowing_have_separate_conditions",
+    "returncode": 0,
+    "seconds": 11.143823634833097
+  }
+]

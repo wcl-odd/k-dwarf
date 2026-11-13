@@ -26,7 +26,7 @@ module DWARF-EXECUTION
   imports DWARF-STATE
   // Reading these rules: opAt(E,P) queries a decoded operation; next(E,P) queries its fixed next boundary.
   // E is the fixed decoded expression; execution rules import neither byte nor text decoders.
-  // ctx(...) #as C extracts the required fields while binding the whole read-only context to C.
+  // ctx(...) #as C extracts the required fields while binding the whole read-only interface to C.
   // old => new in <pc>/<stack> updates both cells in the same rewrite; omitted contents remain unchanged.
   // :=K matches operation shapes; #let binds operands within its own #in without introducing an execution phase.
   // requires checks all preconditions; failure gives no transition (natural stuckness) and preserves every actual cell.
@@ -57,7 +57,7 @@ module DWARF-EXECUTION
        <pc> END => NEXT </pc>
        <fragments> _ => F </fragments>
 
-  // Entry uses a separate entry snapshot and empty stack. Current-state data never fill missing entry registers.
+  // Entry uses independently supplied function-entry state and an empty stack. Current-state data never fill missing entry registers.
   rule [Entry]:
        <expr> evaluate(E, C, END, PURPOSE) =>
          (#let entryValueOp(B) = opAt(E, P)
@@ -374,7 +374,7 @@ module DWARF-EXECUTION
 
   // BraTrue: [S,N:T] -> [S] for nonzero N; T need not be Boolean or generic.
   // The target must be an operation start or END; pop the condition and update the position only after all preconditions succeed.
-  // An unavailable target does not consume the condition; the fixed expression and context remain unchanged.
+  // An unavailable target does not consume the condition; the fixed expression and interface remain unchanged.
   rule [BraTrue]:
        <expr> evaluate(E, C, END, _:Purpose) ... </expr>
        <fragments> fragments(START, noLocation, _, _, _) </fragments>

@@ -1,17 +1,20 @@
 """Execute frozen expressions with K and check original requirements offline."""
 import argparse
 from collections import Counter
+from contextlib import contextmanager
 import csv
 from datetime import datetime, timezone
 import json
 import os
+import re
 from pathlib import Path
 import sys
 import tempfile
+import shutil
 from types import SimpleNamespace
 
 from . import acceptance
-from .common import ROOT, fingerprint, workspace_lock
+from .common import ROOT, BUILD_COMMAND, workspace_lock
 from .corpus_archive import validate_archive
 from .input import write_json
 from .metrics import count
@@ -45,7 +48,7 @@ def summarize(reports):
     return summaries, rows
 
 
-def write_tables(output, summaries, rows):
+def write_tables(output, summaries, rows, experiment=None):
     columns = ['id','source','scope','execution','entered_k','fully_checked','status',
                'budget_exhausted','input_identity']
     with (output/'expressions.csv').open('x', newline='') as stream:
@@ -69,19 +72,82 @@ def write_tables(output, summaries, rows):
         lines.append(f"| {project} | {c['total']} | {s['pass']} | {s['fail']} | {s['uncheckable']} | {s['not_run']} | {s['tool_error']} |")
     lines.extend(['', 'A completed K evaluation is not automatically a passing check. Incomplete execution can satisfy only a reviewed, independently checked stopped-state predicate.', '',
                   'See `summary.json`, `expressions.csv`, `checks.csv` and each source report for auxiliary checks, dependencies, commands and full configurations.'])
+    if experiment is not None:
+        lines.extend(['', f"Experiment completion exit code: {experiment['exit_code']}. "
+                      f"Original assertion-check exit code: {experiment['assertion_exit_code']}. "
+                      f"Execution faults: {len(experiment['execution_faults'])}.", '',
+                      'Semantic differences and uncheckable requirements remain in the tables; '
+                      'they do not by themselves mean that the experiment failed to run. '
+                      'No saved project results were read or compared.'])
     (output/'README.md').write_text('\n'.join(lines)+'\n')
 
 
-def run(options):
-    manifest, _ = validate_archive(options.corpus)
+def execution_faults(reports, output, scope):
+    """Inspect this run's tasks and all K call receipts, including dependencies.
+
+    A natural incomplete state is not a tool fault. Rewrite counts and each
+    call's own budget distinguish it from budget exhaustion, including probes.
+    """
+    faults = {}
+    def add(project, name, call, kind, diagnostic):
+        faults[project, name, call, kind] = {'source': project, 'id': name,
+            'call': call, 'kind': kind, 'diagnostic': diagnostic}
+    for project, report in reports.items():
+        records = report['cases']
+        actual = {r['id'] for r in records}
+        if len(actual) != len(records):
+            raise ValueError('duplicate experiment task: ' + project)
+        expected = {name for name, row in scope.items() if row['project'] == project}
+        if actual - expected:
+            raise ValueError('unexpected experiment task: ' + project)
+        for name in sorted(expected - actual):
+            add(project, name, '', 'not_run', 'required frozen task has no report')
+        for record in records:
+            name = record['id']
+            base = output/project/name
+            if record['execution'] in {'tool_error', 'not_run'}:
+                add(project, name, 'k', record['execution'], record.get('diagnostic', ''))
+            if record.get('budget_exhausted'):
+                add(project, name, 'k', 'budget_exhausted', 'root rewrite budget exhausted')
+            receipts = sorted(p for p in base.rglob('exit.json') if p.parent.name == 'k')
+            if not (base/'k/exit.json').is_file() and record['execution'] not in {'tool_error', 'not_run'}:
+                add(project, name, 'k', 'not_run', 'root expression has no execution receipt')
+            for path in receipts:
+                call = path.parent.relative_to(base).as_posix()
+                try:
+                    receipt = json.loads(path.read_text())
+                    if receipt.get('timeout'):
+                        add(project, name, call, 'timeout', 'K invocation timed out')
+                    elif receipt.get('interrupted'):
+                        add(project, name, call, 'interrupted', 'K invocation was interrupted')
+                    elif receipt.get('launch_error') or receipt.get('returncode') not in (0, 1):
+                        add(project, name, call, 'tool_error', receipt.get('launch_error', 'invalid K invocation exit code'))
+                    elif receipt['returncode'] == 1:
+                        command = json.loads((path.parent/'command.json').read_text())['argv']
+                        budget = int(command[command.index('--depth') + 1])
+                        statistics = (path.parent/'stderr.txt').read_text()
+                        steps = re.search(r'([0-9]+)\s+(?:steps|rewrites)', statistics, re.I)
+                        if steps is None:
+                            add(project, name, call, 'tool_error', 'rewrite statistics missing for incomplete K invocation')
+                        elif int(steps[1]) >= budget:
+                            add(project, name, call, 'budget_exhausted', 'K invocation rewrite budget exhausted')
+                except (OSError, ValueError, KeyError, TypeError, IndexError) as error:
+                    add(project, name, call, 'tool_error', 'invalid K invocation receipt: ' + str(error))
+    return list(faults.values())
+
+
+def run(options, *, experiment=False):
+    manifest, scope = validate_archive(options.corpus)
     output = options.output.absolute()
     if os.path.lexists(output):
         raise ValueError('output must not exist: '+str(output))
     if not (options.definition/'compiled.bin').is_file():
-        raise ValueError('compiled K definition missing; run make llvm or specify --definition')
+        raise ValueError('compiled K definition missing; run '+BUILD_COMMAND+' or specify --definition')
     if output == options.corpus or output.is_relative_to(options.corpus):
         raise ValueError('output cannot be inside the frozen corpus')
     output.mkdir(parents=True)
+    if getattr(options, 'environment', None) is not None:
+        write_json(output/'environment.json', options.environment)
     reports = {}
     for project, dataset in manifest['datasets'].items():
         if options.source not in ('all', project):
@@ -94,16 +160,46 @@ def run(options):
     summaries, rows = summarize(reports)
     result = {'schema':1, 'unit':'original expression case', 'new_execution':True,
         'date':datetime.now(timezone.utc).isoformat(), 'corpus_sha256':manifest['archive_sha256'],
-        'definition':fingerprint(options.definition/'compiled.bin'),
-        'rule_source_sha256':{str(p.relative_to(ROOT)):fingerprint(p)['sha256'] for p in sorted((ROOT/'semantics').rglob('*.k'))},
-        'checker_source_sha256':{str(p.relative_to(ROOT)):fingerprint(p)['sha256'] for p in [ROOT/'verify.py',ROOT/'run.py',*sorted((ROOT/'verification').rglob('*.py'))] if 'tests' not in p.parts},
+        'definition':str(options.definition),
         'settings':{'timeout':options.timeout,'depth':options.depth,'jobs':options.jobs},
         'sources':summaries, 'exit_code':int(any(r['summary']['exit_code'] for r in reports.values()))}
+    if experiment:
+        faults = execution_faults(reports, output, scope)
+        result.update(assertion_exit_code=result['exit_code'],
+                      exit_code=int(bool(faults)), execution_faults=faults)
     write_json(output/'summary.json', result)
-    write_tables(output, summaries, rows)
+    write_tables(output, summaries, rows, result if experiment else None)
     for project, summary in summaries.items():
         print(project, json.dumps(summary['core'], sort_keys=True), flush=True)
     return result['exit_code']
+
+
+@contextmanager
+def execution_environment():
+    """Keep runtime scratch and locks local, restoring the caller's environment."""
+    temp_root = ROOT/'build/tmp'
+    temp_root.mkdir(parents=True, exist_ok=True)
+    scratch = tempfile.mkdtemp(prefix='verification-', dir=temp_root)
+    settings = dict(TMPDIR=scratch, DWARF_INPUT_TMPDIR=scratch, OMP_NUM_THREADS='1',
+                    OPENBLAS_NUM_THREADS='1', GHCRTS='-N1', K_OPTS='-Xmx512m -Xss8m',
+                    PYTHONDONTWRITEBYTECODE='1')
+    previous = {key: os.environ.get(key) for key in settings}
+    affinity = os.sched_getaffinity(0) if hasattr(os, 'sched_getaffinity') else None
+    try:
+        os.environ.update(settings)
+        if affinity is not None:
+            os.sched_setaffinity(0, sorted(affinity)[:16])
+        with workspace_lock():
+            yield
+    finally:
+        if affinity is not None:
+            os.sched_setaffinity(0, affinity)
+        for key, value in previous.items():
+            if value is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = value
+        shutil.rmtree(scratch)
 
 
 def main(argv=None):
@@ -126,12 +222,7 @@ def main(argv=None):
             return 0
         if options.output is None:
             parser.error('--output is required unless --check-corpus is used')
-        Path('/tmp/scratch').mkdir(exist_ok=True)
-        scratch = tempfile.mkdtemp(prefix='kframework-verify-', dir='/tmp/scratch')
-        os.environ.update(TMPDIR=scratch,DWARF_INPUT_TMPDIR=scratch,OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',GHCRTS='-N1',K_OPTS='-Xmx512m -Xss8m',PYTHONDONTWRITEBYTECODE='1')
-        if hasattr(os,'sched_getaffinity'):
-            os.sched_setaffinity(0,sorted(os.sched_getaffinity(0))[:16])
-        with workspace_lock():
+        with execution_environment():
             return run(options)
     except KeyboardInterrupt:
         from .process import stop_children

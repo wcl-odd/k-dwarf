@@ -65,8 +65,10 @@ class LocationTests(unittest.TestCase):
                 with self.subTest(changed=changed), self.assertRaises(ValueError):
                     verify_binding(evidence, path, snapshot, {**target, **changed})
             path.write_text(json.dumps({**snapshot, 'registers': {'0': '999'}}))
-            with self.assertRaisesRegex(ValueError, 'snapshot identity'):
-                verify_binding(evidence, path, snapshot, target)
+            # Historical snapshot digests are inert; stop identity is checked directly.
+            verify_binding(evidence, path, snapshot, target)
+            with self.assertRaisesRegex(ValueError, 'program counter'):
+                verify_binding(evidence,path,{**snapshot,'frame':{'pc':'129'}},target)
 
     def test_oracle_mutation_fails_but_unrelated_metadata_is_ignored(self):
         actual = {'kind': 'register', 'register': 19}

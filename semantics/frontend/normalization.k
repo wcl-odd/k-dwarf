@@ -243,6 +243,6 @@ module DWARF-NORMALIZATION
   rule literalBytes((N:Literal REST:ByteLiterals)) => byteCons(number(N), literalBytes(REST))
   // Every declared OP has a normalization result; unmet conditions retain unavailableOperation.
   // [owise] applies only when other equations do not; unknown OP names are rejected earlier during syntax parsing.
-  // Thus invalid source operands, like missing context, cannot be misreported as normal completion.
+  // Thus invalid source operands, like missing interface data, cannot be misreported as normal completion.
   rule normalize(O, _) => unavailableOperation [owise]
 endmodule

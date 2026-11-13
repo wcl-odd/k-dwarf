@@ -11,7 +11,7 @@ import re
 from urllib.parse import unquote
 
 from .common import ROOT, workspace_lock
-from .corpus_archive import canonical_hash, digest, validate_archive
+from .corpus_integrity import canonical_hash, digest, validate_archive
 from .metrics import count
 
 FILES={'README.md','results.md','methodology.md','limitations.md','results.csv','summary.json'}

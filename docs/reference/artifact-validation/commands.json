@@ -1,0 +1,46 @@
+{
+  "LLVM_replay_build": {
+    "argv": [
+      "/usr/bin/make",
+      "llvm",
+      "LLVM_DEFINITION=/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/build/reproduction/definition/llvm-kompiled"
+    ],
+    "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final",
+    "timeout": 1800,
+    "environment_overrides": {},
+    "stdin": null,
+    "merge_stderr": false,
+    "queue_seconds": 0,
+    "timeout_scope": "child lifetime"
+  },
+  "LLVM_replay_build_exit": {
+    "returncode": 0
+  },
+  "verifier": {
+    "argv": [
+      "/usr/bin/python3",
+      "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/verify.py",
+      "--definition",
+      "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/build/reproduction/definition/llvm-kompiled",
+      "--output",
+      "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/build/reproduction/verification",
+      "--timeout",
+      "120",
+      "--depth",
+      "10000",
+      "--jobs",
+      "4"
+    ],
+    "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final",
+    "timeout": null,
+    "environment_overrides": {},
+    "stdin": null,
+    "merge_stderr": false,
+    "queue_seconds": 0,
+    "timeout_scope": "child lifetime"
+  },
+  "verifier_exit": {
+    "returncode": 1
+  },
+  "regression_driver_sha256": "26edbd5cc57c4bb862220913e34b741191d32595a01f6e5771db9f2824db5aab"
+}

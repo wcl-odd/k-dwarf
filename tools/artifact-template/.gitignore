@@ -1,0 +1,17 @@
+# Rebuilt definitions and newly generated experiment runs.
+/build/
+*-kompiled/
+input-parse-cache/
+.kompile-*/
+.krun-*/
+.kprove-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/.venv/
+.env
+/.vscode/
+/.idea/
+*.swp
+*~
+# results/ and test-corpus/ are intentionally versioned.

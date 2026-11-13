@@ -1,6 +1,5 @@
 import sys
 import json
-import hashlib
 from pathlib import Path
 
 from ..model import Observation
@@ -8,7 +7,7 @@ from ..process import ToolFailure, execute, read_payload
 from ..input import write_json
 import run as dwarf
 
-ROOT = Path(__file__).resolve().parents[2]
+from ..common import ROOT, RUNNER
 
 
 def run(case, directory, options):
@@ -18,7 +17,7 @@ def run(case, directory, options):
         write_json(directory / "context.json", {"address_width":case.address_width,
             "endianness":case.endianness, **({"architecture":case.architecture} if case.architecture else {}),
             **(case.context or {})})
-    command = [sys.executable, ROOT / "run.py", directory / "expression.hex",
+    command = [sys.executable, RUNNER, directory / "expression.hex",
         "--format", "hex", "--context", directory / "context.json",
         "--definition", options.definition, "--purpose", case.purpose]
     if getattr(options, "depth", None) is not None:
@@ -57,7 +56,6 @@ def run(case, directory, options):
                  and dwarf.label(final_purpose).startswith(case.purpose+'Purpose_'))
     write_json(directory / "k/input-evidence.json", {"unchanged": unchanged, "observed_hex": tokens,
         'observed_purpose':dwarf.label(final_purpose),
-        'decoded_input_sha256': hashlib.sha256(repr(dwarf.canonical_term(decoded_program)).encode()).hexdigest() if decoded_program else None,
         'byte_evidence_role': 'inert provenance; execution queries decoded operations' if decoded_program else 'legacy source input'})
     if not unchanged:
         raise ToolFailure("K final expression differs from supplied raw bytes")

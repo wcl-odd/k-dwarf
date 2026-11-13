@@ -44,7 +44,7 @@ Semantics supports 164 standard DWARF OP names with documented premises, includi
 
 ## Source control and complete evidence
 
-Commit rules, tools, tests, examples, test-corpus/ and docs/. build/ and output/ are ignored: build/ is regenerable; output/ is the locally retained, complete recorded result package. The submission artifact includes output/ explicitly. Frozen bytes, contexts, original expectations and selection evidence are versioned independently of saved K results.
+Commit rules, tools, tests, examples, test-corpus/ and docs/. build/ and output/ are ignored: build/ is regenerable; output/ is the locally retained, complete recorded result package. The submission artifact carries compact tables and complete compressed K evidence in its own results/ directory. Frozen bytes, contexts, original expectations and selection evidence are versioned independently of saved K results.
 
 A clone without output/ can build, validate the corpus and run fresh evaluations. Recorded-result integration tests explicitly skip only when the entire optional package is absent; a present but damaged package fails validation. To inspect full recorded configurations or regenerate paper tables, restore the complete output/ package and run:
 
@@ -53,3 +53,18 @@ python3 -m verification.paper_results --output build/paper-reference
 ```
 
 The exporter preserves canonical methodology and manual notes from docs/evaluation/; --notes can import another notes table. Existing destinations are refused. This layout migration does not create a new experiment: execution identities and raw receipts retain their original provenance. Selection and semantic mapping involved human/AI review; frozen replay requires no AI.
+
+## Standalone submission copy
+
+`artifact/` is the minimal paper companion: K sources, frozen inputs, internal reproduction code and four compact result files. It is tracked separately from ignored development builds/results. Generate or synchronize it with `make artifact`; authenticate its contents and source correspondence with `make artifact-check`. The copier refuses independently edited or unknown files; local build outputs survive synchronization. Development builds also check that an existing artifact has identical K sources; synchronize it before building changed rules.
+
+```bash
+make artifact
+make artifact-check
+make -C artifact
+python3 artifact/validate.py --output artifact/build/reproduction
+# From a standalone copy of artifact/:
+python3 validate.py --output build/reproduction
+```
+
+See [artifact/README.md](artifact/README.md) for installation, fresh LLVM replay and reproduction exit codes. Development sources remain canonical; do not edit rule copies independently. No existing compiled definitions, debugger installations or upstream working trees are included.

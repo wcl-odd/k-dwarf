@@ -5,7 +5,8 @@ selection hash, archived source/dependency identities, and quoted anchors;
 it does not reimplement source selection or infer new review decisions.
 """
 import json
-from .corpus_archive import canonical_hash, digest, local_path
+from .corpus_integrity import canonical_hash, digest
+from .corpus_archive import local_path
 
 def validate_selection(frozen, base):
     selection = frozen['selection']

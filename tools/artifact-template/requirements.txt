@@ -1,0 +1,4 @@
+# Python 3.10 or newer. This artifact uses only the Python standard library.
+# There are no third-party pip requirements.
+# K, Java, LLVM and native build dependencies are not pip packages.
+# See requirements-system.md before running make llvm or reproduce.py.

@@ -31,7 +31,7 @@ class FinalResultsTests(unittest.TestCase):
     def test_export_refuses_existing_directory(self):
         with self.assertRaises(FileExistsError):export(ROOT/'docs/evaluation')
     def test_result_drift_rejected(self):
-        from verification.corpus_archive import digest
+        from verification.corpus_integrity import digest
         original=digest
         with patch('verification.paper_results.digest',side_effect=lambda p:'changed' if Path(p).name=='expressions.json' else original(p)):
             with self.assertRaisesRegex(ValueError,'missing or changed'):load_bundle(ROOT/'output/manifest.json')

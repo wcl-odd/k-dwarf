@@ -1,0 +1,17 @@
+mkdir -p /tmp/scratch
+package_tmp=$(mktemp -d /tmp/scratch/kframework-packaging-tests-XXXXXX); TMPDIR=$package_tmp PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests/packaging -v
+test_add_update_remove_k_files (test_artifact_package.PublicationTests) ... ok
+test_cache_files_are_not_published (test_artifact_package.PublicationTests) ... ok
+test_destination_edits_are_never_overwritten_or_retired (test_artifact_package.PublicationTests) ... ok
+test_empty_source_rules_refused_before_retiring_anything (test_artifact_package.PublicationTests) ... ok
+test_first_and_repeat_are_real_deterministic_copies (test_artifact_package.PublicationTests) ... ok
+test_source_drift_before_publication_rejected (test_artifact_package.PublicationTests) ... ok
+test_source_overlap_and_absent_rule_check (test_artifact_package.PublicationTests) ... ok
+test_symlinks_and_path_escape_rejected (test_artifact_package.PublicationTests) ... ok
+test_unmanaged_collision_and_unknown_destination_rejected (test_artifact_package.PublicationTests) ... ok
+test_unmanaged_files_and_builds_survive (test_artifact_package.PublicationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.158s
+
+OK

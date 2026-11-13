@@ -6,14 +6,14 @@ module DWARF-DOMAINS
   imports STRING
   imports MAP
 
-  // Contexts allow Maps inside Maps. Explicit brackets prevent the K 7.1 data unparser
+  // External input interfaces allow Maps inside Maps. Explicit brackets prevent the K 7.1 data unparser
   // from repeatedly attempting KItem brackets for nested Map concatenation. This is not an execution rule.
   syntax Map ::= "(" Map ")" [bracket]
 
   // g is the address-width generic type; its signed interpretation depends on the operation.
   // base(id, encoding, bit_width, byte_size) preserves type identity and attributes.
   // Distinct base-type IDs remain distinct even when width and encoding agree.
-  // [symbol(...)] assigns stable KAST constructor names used by run.py to recognize results.
+  // [symbol(...)] assigns stable KAST constructor names used by Python to observe K outcomes.
   syntax Ty ::= "g" [symbol(genericType)]
               | base(String, String, Int, Int) [symbol(baseType)]
   // The Int in val is a numeric carrier, not a built-in K machine integer.
@@ -66,7 +66,7 @@ module DWARF-DOMAINS
   // Legacy Int entries still denote address-width registers; high bits of wide registers must not be globally truncated.
   syntax RegisterContent ::= registerBits(Int, Int) [symbol(registerBits)]
                            | unavailableRegister(Int) [symbol(unavailableRegister)]
-  // Retain only the data constructor for old archived contexts; no current Wasm operation or slot-read rule exists.
+  // Retain the Wasm data constructor for input compatibility; no Wasm operation or slot-read rule exists.
   syntax WasmSlot ::= wasmSlot(Int, Int) [symbol(wasmSlot)]
   syntax MemoryRequest ::= memoryRequest(Int, Int) [symbol(memoryRequest)]
                          | "requestMemoryMode" [symbol(requestMemoryMode)]
@@ -78,7 +78,7 @@ module DWARF-DOMAINS
   // ctx(A, E, TS, RS, M, FB, CFA, ARCH, DEBUGADDR, BIAS, OBJECT): address width in bits, byte order, type and register tables,
   // byte-addressed memory, optional frame base/CFA, architecture, address table, load bias, and optional object address. JSON validates well-formedness.
   // A known frame base is someInt(FB), with 0 <= FB < 2^A; an unknown one is noInt.
-  // Evaluation only reads the context; Maps are indexed by type references, register numbers, and numeric addresses as appropriate.
+  // Evaluation only reads the interface; Maps are indexed by type references, register numbers, and numeric addresses as appropriate.
   syntax Architecture ::= "unspecified" | "i386" | "x86_64" | "aarch64"
   // DEBUGADDR is the current CU's address table; BIAS applies only to addrx, not to constx.
   // OBJECT is the optional current-object address, independent of frame base and CFA.
@@ -86,8 +86,8 @@ module DWARF-DOMAINS
 
 
   // Optional runtime metadata use the separate string key runtime in the type table; integer DIE references keep their namespace.
-  // The ctx argument list stays unchanged; if an old archive lacks this key, the additional lookups return unknown.
-  // dieBody is the supplied archival record; preparedDIE wraps read-only decoded code. The core never executes raw bytes.
+  // The ctx argument list stays unchanged; if the interface omits this key, the additional lookups return unknown.
+  // dieBody contains supplied DIE metadata; preparedDIE wraps read-only decoded code. The core never executes raw bytes.
   syntax DecodedExpression
   syntax DIEBody ::= dieBody(ByteBlock, Int, Int, Int, Map, Map, OptionalInt, Int, Int) [symbol(dieBody)]
                    | preparedDIE(DIEBody, DecodedExpression) [symbol(preparedDIE)]
@@ -253,7 +253,7 @@ module DWARF-DOMAINS
 
   // S is a byte count and A an address width: generic permits zero bytes but no more than A bits.
   // Typed reads require exactly the type's byte_size, not the rounded-up bit_width.
-  // Context well-formedness ensures byte_size > 0; the instruction's 0..255 size-field limit is checked separately.
+  // Interface well-formedness ensures byte_size > 0; the operation's 0..255 size-field limit is checked separately.
   syntax Bool ::= validReadSize(Int, Ty, Int) [function]
   rule validReadSize(S, g, A) => 0 <=Int S andBool (8 *Int S) <=Int A
   rule validReadSize(S, (base(_, _, _, B) #as T), _) => supportedType(T) andBool S ==Int B
@@ -274,7 +274,7 @@ module DWARF-DOMAINS
       andBool (SIZE ==Int 0 orBool (0 <=Int ADDR andBool ADDR +Int SIZE <=Int (2 ^Int A)))
   rule readMemory(_, _, _) => noInt [owise]
   // The original LLDB mock returns data by (address, read length); overlapping reads can disagree.
-  // This explicit fixture mode neither merges nor zero-fills data, and different lengths do not share default bytes.
+  // This memory-input mode preserves the fixture's behavior: it neither merges nor zero-fills data, and different lengths do not share default bytes.
   syntax OptionalInt ::= readRequest(Map, Int, Int, ByteOrder) [function]
   rule readRequest(_, _, 0, _) => someInt(0)
   rule readRequest((memoryRequest(ADDR, SIZE) |-> B:ByteBlock) _REST:Map, ADDR, SIZE, E) => someInt(blockUnsigned(B, E))
@@ -283,7 +283,7 @@ module DWARF-DOMAINS
 
   // Only DerefType uses this helper: the second argument is a byte count and the third a type-lookup result.
   // After checking the size, read the same memory integer and interpret effective bits and sign while retaining type identity.
-  // #as C binds the whole ctx pattern, allowing access to width A while passing the original context to readMemory.
+  // #as C binds the whole ctx pattern, allowing access to width A while passing the original interface to readMemory.
   syntax OptionalValue ::= readTypedValue(Context, Int, OptionalType, Int) [function]
                          | interpretRead(OptionalInt, Ty) [function]
   rule readTypedValue(ctx(A, _, _, _, _, _, _:OptionalInt, _:Architecture, _:Map, _:Int, _:OptionalInt) #as C, SIZE, someType(T), ADDR) =>

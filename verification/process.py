@@ -18,15 +18,34 @@ _children = set()
 _children_lock = threading.Lock()
 
 
+def kill_tree(child):
+    """Stop owned descendants even when a nested verifier creates new sessions."""
+    pending = [child.pid]
+    descendants = []
+    while pending:
+        pid = pending.pop()
+        descendants.append(pid)
+        try:
+            pending.extend(int(p) for p in Path(f"/proc/{pid}/task/{pid}/children").read_text().split())
+        except (OSError, ValueError):
+            pass
+    for pid in reversed(descendants):
+        try:
+            os.kill(pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+    try:
+        os.killpg(child.pid, signal.SIGKILL)
+    except ProcessLookupError:
+        pass
+
+
 def stop_children():
     """Cancel only child process groups launched by this adapter instance."""
     with _children_lock:
         children = list(_children)
     for child in children:
-        try:
-            os.killpg(child.pid, signal.SIGKILL)
-        except ProcessLookupError:
-            pass
+        kill_tree(child)
 
 
 def execute(command, directory, timeout, *, stdin=None, env=None, merge_stderr=False, cwd=None):
@@ -67,10 +86,7 @@ def _execute(command, directory, timeout, *, stdin, env, merge_stderr, cwd, queu
     except (subprocess.TimeoutExpired, KeyboardInterrupt) as error:
         # K and compilers spawn children. Stop the whole invocation, not only
         # its Python/JVM parent, and preserve any output already produced.
-        try:
-            os.killpg(child.pid, signal.SIGKILL)
-        except ProcessLookupError:
-            pass
+        kill_tree(child)
         stdout, stderr = child.communicate()
         with _children_lock:
             _children.discard(child)

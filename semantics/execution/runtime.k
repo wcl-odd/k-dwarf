@@ -16,7 +16,7 @@ module DWARF-RUNTIME
   syntax DecodedExpression ::= dieCode(DIEBody) [function]
   rule dieCode(preparedDIE(_, E)) => E
   syntax Context ::= dieContext(Context, DIEBody) [function]
-  // Registers, memory, frame data, and load bias come from the source snapshot; CU/types/address tables come from the called DIE.
+  // Registers, memory, frame data, and load bias come from the caller's interface; CU/types/address tables come from the called DIE.
   // runtime retains all referenced objects; switching CUs preserves repeated-call and cross-CU reference lookup.
   rule dieContext(C, preparedDIE(D, _)) => dieContext(C, D)
   rule dieContext(ctx(_, ORDER, _, RS, M, FB, CFA, ARCH, _, BIAS, OBJ) #as C,

@@ -94,7 +94,7 @@ module DWARF-TEXT-SYNTAX
               | "DW_OP_bregx" Literal Literal
               | "DW_OP_fbreg" Literal
               | "DW_OP_call_frame_cfa"
-              // K interprets call references, entry snapshots, and external address spaces.
+              // K evaluates call references and uses function-entry state and external address spaces.
               | "DW_OP_call2" Literal | "DW_OP_call4" Literal | "DW_OP_call_ref" Literal
               | "DW_OP_entry_value" "[" ByteLiterals "]"
               | "DW_OP_xderef" | "DW_OP_xderef_size" Literal | "DW_OP_xderef_type" Literal Literal
@@ -104,7 +104,7 @@ module DWARF-TEXT-SYNTAX
               | "DW_OP_deref"
               | "DW_OP_deref_size" Literal
               | "DW_OP_deref_type" Literal Literal
-              // Type reference 0 means generic; execution resolves other references through the type context.
+              // Type reference 0 means generic; evaluation resolves other references through the interface.
               | "DW_OP_convert" Literal
               | "DW_OP_reinterpret" Literal
               // Only pick among these stack operations takes an operand, a zero-based depth from the top.

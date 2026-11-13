@@ -7,7 +7,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from verification.corpus_archive import digest
+from verification.corpus_integrity import digest
 from verification.paper_results import load_bundle, main, reference_path
 
 class ResultBoundaryTests(unittest.TestCase):

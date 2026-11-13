@@ -1,0 +1,379 @@
+{
+  "schema": 1,
+  "kind": "standalone-artifact-validation",
+  "date": "2026-11-12",
+  "tested_publication_sha256": "3a3f9429c046497ee0831e359759a3fc409924f3ce9c0ee38a5c8b6870b6865f",
+  "publication_note": "Final publication adds validation receipts, documentation and the byte-identical parallel regression driver; tested replay sources and frozen data are unchanged.",
+  "fresh_LLVM_replay": {
+    "schema": 1,
+    "raw_verifier_exit_code": 1,
+    "reproduction_exit_code": 0,
+    "tasks": 326,
+    "matched": 326,
+    "differences": 0,
+    "k_invocations_compared": 584
+  },
+  "baseline": {
+    "publication_sha256": "3a3f9429c046497ee0831e359759a3fc409924f3ce9c0ee38a5c8b6870b6865f",
+    "corpus_sha256": "0237e39afe8a8dffcfcacb64535fe9552bae8dc60d84b13f0c58f3e074bfb7af",
+    "result_sha256": "6a1c6fdd318db227c17ff7ef1d85b8213433679ac425ac30dab5136c6a73d5a4",
+    "tasks": 326,
+    "sources": {
+      "lldb": {
+        "core": {
+          "total": 55,
+          "entered_k": 55,
+          "fully_checked": 55,
+          "status": {
+            "pass": 43,
+            "fail": 12,
+            "uncheckable": 0,
+            "not_run": 0,
+            "tool_error": 0
+          },
+          "pass_rate": 0.7818181818181819,
+          "pass_rate_checked": 0.7818181818181819
+        },
+        "auxiliary": {
+          "total": 2,
+          "entered_k": 2,
+          "fully_checked": 0,
+          "status": {
+            "pass": 0,
+            "fail": 0,
+            "uncheckable": 2,
+            "not_run": 0,
+            "tool_error": 0
+          },
+          "pass_rate": 0.0,
+          "pass_rate_checked": null
+        },
+        "execution": {
+          "success": 43,
+          "incomplete": 14
+        },
+        "attribute_invocations": 0,
+        "exit_code": 1
+      },
+      "gdb": {
+        "core": {
+          "total": 269,
+          "entered_k": 269,
+          "fully_checked": 269,
+          "status": {
+            "pass": 267,
+            "fail": 2,
+            "uncheckable": 0,
+            "not_run": 0,
+            "tool_error": 0
+          },
+          "pass_rate": 0.9925650557620818,
+          "pass_rate_checked": 0.9925650557620818
+        },
+        "auxiliary": {
+          "total": 0,
+          "entered_k": 0,
+          "fully_checked": 0,
+          "status": {
+            "pass": 0,
+            "fail": 0,
+            "uncheckable": 0,
+            "not_run": 0,
+            "tool_error": 0
+          },
+          "pass_rate": null,
+          "pass_rate_checked": null
+        },
+        "execution": {
+          "success": 265,
+          "incomplete": 4
+        },
+        "attribute_invocations": 248,
+        "exit_code": 1
+      }
+    },
+    "op_names": 62,
+    "op_families": 46,
+    "location_categories": 7
+  },
+  "fresh_sources": {
+    "lldb": {
+      "core": {
+        "total": 55,
+        "entered_k": 55,
+        "fully_checked": 55,
+        "status": {
+          "pass": 43,
+          "fail": 12,
+          "uncheckable": 0,
+          "not_run": 0,
+          "tool_error": 0
+        },
+        "pass_rate": 0.7818181818181819,
+        "pass_rate_checked": 0.7818181818181819
+      },
+      "auxiliary": {
+        "total": 2,
+        "entered_k": 2,
+        "fully_checked": 0,
+        "status": {
+          "pass": 0,
+          "fail": 0,
+          "uncheckable": 2,
+          "not_run": 0,
+          "tool_error": 0
+        },
+        "pass_rate": 0.0,
+        "pass_rate_checked": null
+      },
+      "execution": {
+        "success": 43,
+        "incomplete": 14
+      },
+      "attribute_invocations": 0,
+      "exit_code": 1
+    },
+    "gdb": {
+      "core": {
+        "total": 269,
+        "entered_k": 269,
+        "fully_checked": 269,
+        "status": {
+          "pass": 267,
+          "fail": 2,
+          "uncheckable": 0,
+          "not_run": 0,
+          "tool_error": 0
+        },
+        "pass_rate": 0.9925650557620818,
+        "pass_rate_checked": 0.9925650557620818
+      },
+      "auxiliary": {
+        "total": 0,
+        "entered_k": 0,
+        "fully_checked": 0,
+        "status": {
+          "pass": 0,
+          "fail": 0,
+          "uncheckable": 0,
+          "not_run": 0,
+          "tool_error": 0
+        },
+        "pass_rate": null,
+        "pass_rate_checked": null
+      },
+      "execution": {
+        "success": 265,
+        "incomplete": 4
+      },
+      "attribute_invocations": 248,
+      "exit_code": 1
+    }
+  },
+  "LLVM_regressions": {
+    "tasks": 157,
+    "completed": 157,
+    "pass": 157,
+    "fail": 0,
+    "jobs": 4,
+    "ids_unique": true,
+    "all_expected_ids_executed": true
+  },
+  "verification_tests": {
+    "tests": 108,
+    "reported_seconds": 601.796,
+    "status": "pass",
+    "log_sha256": "77ef10144522896701117ded47de8aa5efde8e485cbbc47a08bbf03d72e80aab"
+  },
+  "generator_tests": {
+    "tests": 10,
+    "reported_seconds": 0.158,
+    "status": "pass",
+    "log_sha256": "83876266081a3530c80544ae7ba4db9d13f968c53d61fad44a95d260c45672d7"
+  },
+  "unit_test_timing_note": "The isolated unit suite waited for the shared workspace lock; its wall time is not a checker performance measurement.",
+  "isolation": {
+    "method": "Linux mount namespace; development tree and upstream source installations hidden using empty tmpfs mounts",
+    "hidden_paths": [
+      "/home/congleiwang/kframework",
+      "/home/congleiwang/binutils-gdb",
+      "/home/congleiwang/gdb-17.1",
+      "/home/congleiwang/gdb-17.2",
+      "/home/congleiwang/llvm-project",
+      "/home/congleiwang/llvm-project-23",
+      "/home/congleiwang/llvm-project-llvmorg-22.1.8",
+      "/home/congleiwang/llvm-project-llvmorg-23.1.4"
+    ],
+    "no_existing_K_definition_in_relocated_copy": true
+  },
+  "check_only_without_K_on_PATH": {
+    "status": "pass",
+    "PATH": "/usr/bin:/bin",
+    "log_sha256": "67ee5da36214dcba506647faf75e8ef37fd13c023564d51f0c60be0061a261f6"
+  },
+  "proof_requires": {
+    "status": "pass",
+    "checks": [
+      {
+        "spec": "tests/proofs/basic-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/composition-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/control-flow-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/conversion-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/decoding-spec.k",
+        "requires": "../../semantics/dwarf.k",
+        "target": "semantics/dwarf.k",
+        "sha256": "5800ebc95e909166c8a98aa6a6e7dacc7d30828aa115646f8ccc2c351cf8475d"
+      },
+      {
+        "spec": "tests/proofs/external-values-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/floating-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/frame-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/register-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/runtime-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/stuck-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      },
+      {
+        "spec": "tests/proofs/upstream-fixtures-spec.k",
+        "requires": "../../semantics/execution/core.k",
+        "target": "semantics/execution/core.k",
+        "sha256": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14"
+      }
+    ],
+    "proof_execution": false
+  },
+  "not_executed_this_validation": [
+    "Haskell regressions",
+    "symbolic proof execution",
+    "native debugger tests or recollection"
+  ],
+  "unchanged_inputs": {
+    "corpus_manifest_sha256": "dfebcd305a64c21165e9c20757bf4551cae7debf4373c3acb780d51c16c0327a",
+    "recorded_result_manifest_sha256": "ccbc08b2ee2a7719b4b5ea239e6c6694aa8fb961ae88af059a6abee8109d2812",
+    "manual_notes_sha256": "acda4bf76a9689d2f1733e6fc83c2c20529bcb625b7532c7a2900b8da84cccbb",
+    "paper_notes_sha256": "849a222cef3204367b0e4848776f484cf6eb6ff8c16367601df81aaaaf89ab37"
+  },
+  "tested_replay_files": {
+    "Makefile": "1c68cf5c841adf2a9e766bd1c4dc36aee80f93220f2b8ca6528a979f3937c6f3",
+    "reproduce.py": "f3061d3ed57f1e3a5b8acd2d48f3824ba36cee00724036221e918b51d27be174",
+    "requirements-system.md": "9de8a055af730aaf4baedac3086b0cd6ad7d0a22083302ff0ae795be2fa7a0c5",
+    "requirements.txt": "63d7b9d29c8ba6e7f6e2162072ce06e49dcefdc33da8d22561ca22e503564ab3",
+    "run.py": "67bac0b932dd458aa8633adbc29e505d6e23182d3b119414782397edd726cfc4",
+    "semantics/README-CN.md": "9149a93fb98758849f6901b64ebe9fe3448e8ba4523df29c2d8849ad6519e5e6",
+    "semantics/README.md": "cd6222fcf79a9ffea653d52292b0b6c31dd8928669f4520b0dc1b77e0e61c2e4",
+    "semantics/domains/dwarf-domains.k": "b8cc8de90ea528bc7acb2571dcf673bf2a5cf7cf33f7335c83c4358f0d26a350",
+    "semantics/dwarf.k": "5800ebc95e909166c8a98aa6a6e7dacc7d30828aa115646f8ccc2c351cf8475d",
+    "semantics/execution/composition.k": "0358f7570c28f4eacf7d8285627cdd00be446c297692f684444316471bf043d9",
+    "semantics/execution/computations.k": "ae73a81daa14770de4a04820f700d720d6e08f2c4079d7b9281dcc267478ff23",
+    "semantics/execution/core.k": "6d829c86a556216eb40e1cda022ac3b240062a1e67484d71b18086686395fa14",
+    "semantics/execution/expression.k": "22fcd998413115098b1b9a9e19493f2f04775693852d64fdaace6df4c29a96bb",
+    "semantics/execution/floating.k": "889bee23e9507cd008c0176614a5637edd01887e7b72fc54933a1b0b27a9dd0c",
+    "semantics/execution/runtime.k": "33de98ac02e354052c89162563ed6a84ae6472de54677f4a5961af2ae462d620",
+    "semantics/frontend/decoding.k": "e788ed461b2537c46eb990b25af6549a766b874b190e3bc8170d0e3f27d0d721",
+    "semantics/frontend/frontend.k": "2aeddbe24b293ab40c0f9e3e8fc177c45abd9ced4710479ee8b3e91b2bcaea46",
+    "semantics/frontend/normalization.k": "72e94451cb88db7238712e1117f8db91e0bb5acb509aea1a86fc03c922337460",
+    "semantics/frontend/syntax.k": "7114ffa7c159cace6b0bfbff40bfaa5dd1071f26ad8c64f47f3f9fa8b4520a50",
+    "semantics/paper-naming-audit.md": "dd044066a276f35a087316642a80ad4778dac0dcf453ab620227d4986ccc6d90",
+    "verification/README.md": "8d624c14590e67edf89c3af8b231d12abb20925959cd46f1dfdabf5959be8832",
+    "verification/__init__.py": "22e48e197330e5af6d2b9ef928696b3cb22523ce2ec9d625cbb36eb49ed1f451",
+    "verification/acceptance.py": "8ee69da8784b946df577ea0ca1fd966b4567e1546ed2c99baceda3d3dc1da530",
+    "verification/assertions.py": "22d709aef08064e6f93e616bd68cb047d756fdc2a6ac1d7adf64e1e4fda37747",
+    "verification/backends/__init__.py": "6f31ae9ed57cb1bc4df4299861399b409902e9becc823ce89db0353fe3c8899f",
+    "verification/backends/k.py": "fc671c51fa1cc125c3326ff62fca35ef4bf81f05dbfd1fd4d288d4a1fc2005a0",
+    "verification/cli.py": "6d119456621f13193ebbc7827082fa543bb4c684e79900ec87656bf2dce3d06f",
+    "verification/common.py": "69004a179f91158edc6e9642abb50dc2e519b3ac375864636a6e9e33ccf9a764",
+    "verification/context.py": "e4e13ee4af30f74d9c2ef5bf7c806a0cbb0d62217abf90c2d1cbb7ac4c53eed3",
+    "verification/corpus.py": "b0dcd040e6289e933b48815f902cd4b046ddb081c7d54521d5d5d20518e5b58c",
+    "verification/corpus_archive.py": "732f421c740cd301a95cf26922b31dc1654722d5623743f21362b58419fd16bb",
+    "verification/dependencies.py": "19cb75bd9db0155b50a27e295707b8caa27a2e4609f5af389aa44084dd2fc80c",
+    "verification/input.py": "1937c1ca6a64f7701e31da030d040b39c92fa6c53425db25a0227a74bc3dfaaf",
+    "verification/locations.py": "0c801db68bd5978ddc7be0193517069334c4be9fe363d2929dbe37c31729641e",
+    "verification/metrics.py": "46234fea6e897f3274f0c941e476f1e687b46c2bc35c6226c19c55f0872cb068",
+    "verification/model.py": "4a1bd7dba04532bec5bfe928ebf642d995c445b2f1ced85e54d8c1cb13850f57",
+    "verification/objects.py": "ca5b64da1677f56cdfa13d4c0333ee0f4bf96c3ec9ac52157408cb6378c9c50b",
+    "verification/paper_coverage.py": "22fc2ee0628a90a8623e7e957d46468545df752cc8d3fde17bf0418fba7a0de0",
+    "verification/paper_results.py": "cc4e89bc55837886003c6f8beec6bc2eef64c8765d4588e50b1d563371be82bd",
+    "verification/process.py": "58430379a7449666e4372b71e62f44df67919b60217c8ba61a01825c23273de4",
+    "verification/reproduction.py": "af84595b301aa342a449bfedc39fc726265b9f16fdb0ffe48f56679070c89485",
+    "verification/scope.py": "97973020be6f4b2c8bb34e32f09fa79a3e69c7aae8048db61262ab94b8bfe542",
+    "verification/selection.py": "9278e5250f15ed46d1577c23eec3ee91b1e57f3f1077a24819174ae4f2dba5b5",
+    "verify.py": "7951627ec4d3424a29d91f9d6e3b37e60221ade5742ccad0fdac4c303ccc1c0f"
+  },
+  "definitions": {
+    "replay_LLVM": {
+      "sha256": "3af959d864b5b99a49958a5bc3fbc6a3716daf88f8e142e1c774ff2d63919254",
+      "provenance_path": "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/build/reproduction/definition/llvm-kompiled/compiled.bin"
+    },
+    "regression_LLVM": {
+      "sha256": "4a727723c76156ef1ed1d79d8396bc2a8b7b9861139355af6124e06f6adbf731",
+      "provenance_path": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/build/reproduction-complete/definition/llvm-kompiled/compiled.bin"
+    },
+    "regression_core_LLVM": {
+      "sha256": "88bcfa9cdb130c638dfbb2d13b236e81c853b791e9126ed0c59574b3f0967283",
+      "provenance_path": "/tmp/scratch/kframework-artifact-20261112-r1/standalone/build/reproduction-complete/definition/core-llvm-kompiled/compiled.bin"
+    }
+  },
+  "tools": {
+    "k": {
+      "stdout": "K version:    v7.1.337\nBuild date:   Thu Jun 18 20:59:56 CST 2026\n",
+      "stderr": ""
+    },
+    "java": {
+      "stdout": "",
+      "stderr": "openjdk version \"21.0.13.0.3\" 2026-10-24\nOpenJDK Runtime Environment (build 21.0.13.0.3+1-1-22.04.1-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.13.0.3+1-1-22.04.1-Ubuntu, mixed mode, sharing)\n"
+    },
+    "compiler": {
+      "stdout": "c++ (GCC) 17.0.0 20261003 (experimental)\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    }
+  },
+  "AI_role": "Implemented copier, reproduction orchestration, defensive checks and tests; reviewed evidence and wrote documentation. No frozen input, upstream expected answer, rule or manual note was changed.",
+  "human_review_inheritance": "Dataset selection and semantic mapping retain the reviewed human/AI decisions recorded in methodology and output/validation/script-ai-roles.md."
+}

@@ -64,3 +64,17 @@ check: test prove
 verification-test:
 	mkdir -p /tmp/scratch
 	artifact_test_tmp=$$(mktemp -d /tmp/scratch/kframework-adapter-tests-XXXXXX); TMPDIR=$$artifact_test_tmp DWARF_INPUT_TMPDIR=$$artifact_test_tmp PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -B -m unittest discover -s tests/verification -v
+
+# BEGIN DEVELOPMENT ARTIFACT TARGETS
+.PHONY: artifact artifact-check artifact-source-check artifact-test
+artifact:
+	$(PYTHON) tools/package_artifact.py
+artifact-check:
+	$(PYTHON) tools/package_artifact.py --check
+artifact-source-check:
+	$(PYTHON) tools/package_artifact.py --rules-only --if-present
+artifact-test:
+	mkdir -p /tmp/scratch
+	package_tmp=$$(mktemp -d /tmp/scratch/kframework-packaging-tests-XXXXXX); TMPDIR=$$package_tmp PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -B -m unittest discover -s tests/packaging -v
+$(LLVM_DEFINITION)/compiled.bin $(HASKELL_DEFINITION)/compiled.bin $(CORE_LLVM_DEFINITION)/compiled.bin $(CORE_HASKELL_DEFINITION)/compiled.bin: | artifact-source-check
+# END DEVELOPMENT ARTIFACT TARGETS

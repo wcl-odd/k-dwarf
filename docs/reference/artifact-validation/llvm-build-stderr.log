@@ -1,0 +1,256 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8 -XX:+UseSerialGC -Djava.io.tmpdir=/tmp/scratch/kframework-kompile-aHJi8E
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8 -XX:+UseSerialGC -Djava.io.tmpdir=/tmp/scratch/kframework-kompile-aHJi8E
+[Warning] Compiler: Variable 'C0' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(80,71,80,73)
+	80 |	       <expr> evaluate(E0, (ctx(A, _, _, RS, _, _, _, _, _, _, _) #as
+C0), END, entryPurpose)
+	   .	                                                                      ^~
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(136,114,136,115)
+	136 |	       <expr> evaluate(E, (ctx(A, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(147,74,147,75)
+	147 |	       <expr> evaluate(E, (ctx(_, ORDER, TS, _, _, _, _, _, _, _, _) #as
+C), END, _:Purpose) ... </expr>
+	    .	                                                                        
+^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(159,71,159,72)
+	159 |	       <expr> evaluate(E, (ctx(A, _, TS, RS, _, _, _, _, _, _, _) #as
+C), END, _:Purpose) ... </expr>
+	    .	                                                                      ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(170,73,170,74)
+	170 |	       <expr> evaluate(E, (ctx(A, _, _, _, _, _, _, _, DA, BIAS, _) #as
+C), END, _:Purpose) ... </expr>
+	    .	                                                                       
+^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(179,70,179,71)
+	179 |	       <expr> evaluate(E, (ctx(A, _, _, _, _, _, _, _, DA, _, _) #as C),
+END, _:Purpose) ... </expr>
+	    .	                                                                     ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(189,81,189,82)
+	189 |	       <expr> evaluate(E, (ctx(_, _, _, _, _, _, _, _, _, _,
+someInt(ADDR)) #as C), END, _:Purpose) ... </expr>
+	    .	                                                                        
+       ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(198,115,198,116)
+	198 |	       <expr> evaluate(E, (ctx(A, _, _, RS, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                         ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(209,124,209,125)
+	209 |	       <expr> evaluate(E, (ctx(A, _, _, _, _, someInt(FB),
+_:OptionalInt, _:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END,
+_:Purpose) ... </expr>
+	    .	                                                                        
+                                                  ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(219,113,219,114)
+	219 |	       <expr> evaluate(E, (ctx(_, _, _, _, _, _, someInt(CFA),
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                       ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(257,114,257,115)
+	257 |	       <expr> evaluate(E, (ctx(_, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(268,114,268,115)
+	268 |	       <expr> evaluate(E, (ctx(_, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(276,114,276,115)
+	276 |	       <expr> evaluate(E, (ctx(_, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(285,114,285,115)
+	285 |	       <expr> evaluate(E, (ctx(_, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(294,114,294,115)
+	294 |	       <expr> evaluate(E, (ctx(A, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(306,114,306,115)
+	306 |	       <expr> evaluate(E, (ctx(A, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(318,114,318,115)
+	318 |	       <expr> evaluate(E, (ctx(A, _, _, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                        ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(331,115,331,116)
+	331 |	       <expr> evaluate(E, (ctx(A, _, TS, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                         ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(345,115,345,116)
+	345 |	       <expr> evaluate(E, (ctx(A, _, TS, _, _, _, _:OptionalInt,
+_:Architecture, _:Map, _:Int, _:OptionalInt) #as C), END, _:Purpose) ...
+</expr>
+	    .	                                                                        
+                                         ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(358,27,358,28)
+	358 |	       <expr> evaluate(E, C, END, _:Purpose) ... </expr>
+	    .	                          ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(367,27,367,28)
+	367 |	       <expr> evaluate(E, C, END, _:Purpose) ... </expr>
+	    .	                          ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(379,27,379,28)
+	379 |	       <expr> evaluate(E, C, END, _:Purpose) ... </expr>
+	    .	                          ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(391,27,391,28)
+	391 |	       <expr> evaluate(E, C, END, _:Purpose) ... </expr>
+	    .	                          ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(468,27,468,28)
+	468 |	       <expr> evaluate(E, C, END, locationPurpose) ... </expr>
+	    .	                          ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(478,27,478,28)
+	478 |	       <expr> evaluate(E, C, END, locationPurpose) ... </expr>
+	    .	                          ^
+[Warning] Compiler: Variable 'C' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/execution/core.k)
+	Location(488,27,488,28)
+	488 |	       <expr> evaluate(E, C, END, locationPurpose) ... </expr>
+	    .	                          ^
+[Warning] Compiler: Variable 'UNIT' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/frontend/frontend.k)
+	Location(58,46,58,50)
+	58 |	  rule prepareDIEs((R:Int |-> (dieBody(B, A, UNIT, OS, TS, DA, CONST,
+SIZE, TREF) #as D)) REST:Map, E) =>
+	   .	                                             ^~~~
+[Warning] Compiler: Variable 'TS' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/frontend/frontend.k)
+	Location(58,56,58,58)
+	58 |	  rule prepareDIEs((R:Int |-> (dieBody(B, A, UNIT, OS, TS, DA, CONST,
+SIZE, TREF) #as D)) REST:Map, E) =>
+	   .	                                                       ^~
+[Warning] Compiler: Variable 'DA' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/frontend/frontend.k)
+	Location(58,60,58,62)
+	58 |	  rule prepareDIEs((R:Int |-> (dieBody(B, A, UNIT, OS, TS, DA, CONST,
+SIZE, TREF) #as D)) REST:Map, E) =>
+	   .	                                                           ^~
+[Warning] Compiler: Variable 'CONST' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/frontend/frontend.k)
+	Location(58,64,58,69)
+	58 |	  rule prepareDIEs((R:Int |-> (dieBody(B, A, UNIT, OS, TS, DA, CONST,
+SIZE, TREF) #as D)) REST:Map, E) =>
+	   .	                                                               ^~~~~
+[Warning] Compiler: Variable 'SIZE' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/frontend/frontend.k)
+	Location(58,71,58,75)
+	58 |	  rule prepareDIEs((R:Int |-> (dieBody(B, A, UNIT, OS, TS, DA, CONST,
+SIZE, TREF) #as D)) REST:Map, E) =>
+	   .	                                                                     
+^~~~
+[Warning] Compiler: Variable 'TREF' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/frontend/frontend.k)
+	Location(58,77,58,81)
+	58 |	  rule prepareDIEs((R:Int |-> (dieBody(B, A, UNIT, OS, TS, DA, CONST,
+SIZE, TREF) #as D)) REST:Map, E) =>
+	   .	                                                                         
+  ^~~~
+[Warning] Compiler: Variable 'O' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/tmp/scratch/kframework-artifact-20261112-r1/standalone-final/semantics/frontend/normalization.k)
+	Location(247,18,247,19)
+	247 |	  rule normalize(O, _) => unavailableOperation [owise]
+	    .	                 ^

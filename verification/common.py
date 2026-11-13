@@ -1,23 +1,17 @@
 """Small shared file/identity utilities; no collection or native backends."""
 from contextlib import contextmanager
 import fcntl
-import hashlib
+import os
 from pathlib import Path
-ROOT = Path(__file__).resolve().parents[1]
-
-def fingerprint(path):
-    path = Path(path)
-    if not path.is_file():
-        return {"path": str(path), "exists": False}
-    h = hashlib.sha256()
-    with path.open("rb") as stream:
-        for block in iter(lambda: stream.read(1 << 20), b""):
-            h.update(block)
-    return {"path": str(path.resolve()), "sha256": h.hexdigest(), "size": path.stat().st_size}
+CODE_ROOT = Path(__file__).resolve().parent
+RUNNER = CODE_ROOT.parent / 'run.py'
+# The standalone entry fixes its own root before importing this package.
+ROOT = Path(os.environ.get('DWARF_PROJECT_ROOT', CODE_ROOT.parent)).resolve()
+BUILD_COMMAND = 'make' if CODE_ROOT.parent != ROOT else 'make llvm'
 
 @contextmanager
 def workspace_lock():
-    Path('/tmp/locks').mkdir(exist_ok=True)
-    with open('/tmp/locks/kframework.lock', 'a') as stream:
+    (ROOT/'build').mkdir(exist_ok=True)
+    with (ROOT/'build/verification.lock').open('a') as stream:
         fcntl.flock(stream, fcntl.LOCK_EX)
         yield

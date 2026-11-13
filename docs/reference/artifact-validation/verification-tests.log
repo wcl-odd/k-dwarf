@@ -1,0 +1,121 @@
+{"argv": ["bwrap", "--die-with-parent", "--bind", "/", "/", "--dev-bind", "/dev", "/dev", "--tmpfs", "/home/congleiwang/kframework", "--tmpfs", "/home/congleiwang/binutils-gdb", "--tmpfs", "/home/congleiwang/gdb-17.1", "--tmpfs", "/home/congleiwang/gdb-17.2", "--tmpfs", "/home/congleiwang/llvm-project", "--tmpfs", "/home/congleiwang/llvm-project-23", "--tmpfs", "/home/congleiwang/llvm-project-llvmorg-22.1.8", "--tmpfs", "/home/congleiwang/llvm-project-llvmorg-23.1.4", "--chdir", "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final", "make", "verification-test"], "cwd": "/tmp/scratch/kframework-artifact-20261112-r1/standalone-final", "hidden": ["/home/congleiwang/kframework", "/home/congleiwang/binutils-gdb", "/home/congleiwang/gdb-17.1", "/home/congleiwang/gdb-17.2", "/home/congleiwang/llvm-project", "/home/congleiwang/llvm-project-23", "/home/congleiwang/llvm-project-llvmorg-22.1.8", "/home/congleiwang/llvm-project-llvmorg-23.1.4"]}
+mkdir -p /tmp/scratch
+artifact_test_tmp=$(mktemp -d /tmp/scratch/kframework-adapter-tests-XXXXXX); TMPDIR=$artifact_test_tmp DWARF_INPUT_TMPDIR=$artifact_test_tmp PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests/verification -v
+test_dependency_bind_and_assignment_are_k_results (test_artifact.ArtifactTests) ... ok
+test_dependency_missing_cycle_and_guard (test_artifact.ArtifactTests) ... ok
+test_implicit_reference_missing_and_cycle (test_artifact.ArtifactTests) ... ok
+test_interruption_cleanup_returns_130 (test_artifact.ArtifactTests) ... ok
+test_invalid_parameters_and_input_return_two (test_artifact.ArtifactTests) ... ok
+test_process_keyboard_interrupt_kills_child (test_artifact.ArtifactTests) ... ok
+test_process_timeout_preserves_receipts_and_kills_group (test_artifact.ArtifactTests) ... ok
+test_refuse_overwrite_or_missing_definition (test_artifact.ArtifactTests) ... ok
+test_source_selection_and_auxiliary_denominator (test_artifact.ArtifactTests) ... lldb {"entered_k": 1, "fully_checked": 1, "pass_rate": 1.0, "pass_rate_checked": 1.0, "status": {"fail": 0, "not_run": 0, "pass": 1, "tool_error": 0, "uncheckable": 0}, "total": 1}
+gdb {"entered_k": 1, "fully_checked": 1, "pass_rate": 1.0, "pass_rate_checked": 1.0, "status": {"fail": 0, "not_run": 0, "pass": 1, "tool_error": 0, "uncheckable": 0}, "total": 1}
+lldb {"entered_k": 1, "fully_checked": 1, "pass_rate": 1.0, "pass_rate_checked": 1.0, "status": {"fail": 0, "not_run": 0, "pass": 1, "tool_error": 0, "uncheckable": 0}, "total": 1}
+gdb {"entered_k": 1, "fully_checked": 1, "pass_rate": 1.0, "pass_rate_checked": 1.0, "status": {"fail": 0, "not_run": 0, "pass": 1, "tool_error": 0, "uncheckable": 0}, "total": 1}
+ok
+test_bad_expectation_and_missing_source_identity_are_rejected (test_assertions.AssertionTests) ... ok
+test_error_incomplete_is_not_an_equivalent_error (test_assertions.AssertionTests) ... ok
+test_exact_byte_buffer_assertion_checks_extent (test_assertions.AssertionTests) ... ok
+test_failure_site_and_stack_are_both_checked (test_assertions.AssertionTests) ... ok
+test_large_objects_and_signed_nonbyte_fields (test_assertions.AssertionTests) ... ok
+test_live_memory_collection_gap_is_not_a_k_failure (test_assertions.AssertionTests) ... ok
+test_mathematical_integer_and_bit_pattern_are_distinct (test_assertions.AssertionTests) ... ok
+test_memory_mutation_missing_bytes_and_big_endian (test_assertions.AssertionTests) ... ok
+test_partial_semantic_success_is_not_whole_assertion_pass (test_assertions.AssertionTests) ... ok
+test_predicate_for_another_target_cannot_silently_pass (test_assertions.AssertionTests) ... ok
+test_register_identity_accepts_decimal_transport (test_assertions.AssertionTests) ... ok
+test_register_result_materializes_from_saved_fixture (test_assertions.AssertionTests) ... ok
+test_scalar_signedness_is_not_invented_for_generic (test_assertions.AssertionTests) ... ok
+test_type_identity_and_effective_width_are_preserved (test_assertions.AssertionTests) ... ok
+test_unknown_bits_are_not_wildcards (test_assertions.AssertionTests) ... ok
+test_wide_register_object_is_an_observation_gap_not_invented_unknown_bits (test_assertions.AssertionTests) ... ok
+test_context_drift_rejected_after_inventory_reseal (test_corpus_archive.PortableCorpusTests) ... ok
+test_dataset_version_and_scope_denominator_drift_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_escape_paths_rejected_even_after_reseal (test_corpus_archive.PortableCorpusTests) ... ok
+test_expected_memory_and_register_mutations_are_detected (test_corpus_archive.PortableCorpusTests) ... ok
+test_extra_file_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_input_and_expectation_drift_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_location_oracle_mutation_and_negative_control (test_corpus_archive.PortableCorpusTests) ... ok
+test_manifest_drift_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_missing_file_and_unexpected_file_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_missing_or_drifting_source_or_snapshot_is_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_missing_rule_still_difference_and_auxiliary_separate (test_corpus_archive.PortableCorpusTests) ... ok
+test_mutated_expected_value_fails_with_unchanged_K_output (test_corpus_archive.PortableCorpusTests) ... ok
+test_portable_replay_uses_final_comparison_scope (test_corpus_archive.PortableCorpusTests) ... a success {'uncheckable': 1}
+ok
+test_source_root_escape_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_symlinks_cannot_supply_evidence (test_corpus_archive.PortableCorpusTests) ... ok
+test_two_relocations_resolve_local_evidence_only (test_corpus_archive.PortableCorpusTests) ... ok
+test_unknown_profile_and_scope_membership_rejected (test_corpus_archive.PortableCorpusTests) ... ok
+test_counts_from_rows_and_coverage_denominators (test_final_results.FinalResultsTests) ... ok
+test_export_notes_and_english_six_file_contract (test_final_results.FinalResultsTests) ... ok
+test_export_refuses_existing_directory (test_final_results.FinalResultsTests) ... ok
+test_result_drift_rejected (test_final_results.FinalResultsTests) ... ok
+test_absent_package_has_actionable_message (test_layout.ResultBoundaryTests) ... ok
+test_corrupt_existing_manifest_is_rejected (test_layout.ResultBoundaryTests) ... ok
+test_export_cli_missing_package_returns_two_without_output (test_layout.ResultBoundaryTests) ... ok
+test_present_incomplete_package_is_not_an_optional_absence (test_layout.ResultBoundaryTests) ... ok
+test_reference_cannot_be_a_symlink (test_layout.ResultBoundaryTests) ... ok
+test_reference_hash_and_docs_boundary (test_layout.ResultBoundaryTests) ... ok
+test_base_subobject_keeps_k_result_and_nonbyte_target_is_rejected (test_locations.LocationTests) ... ok
+test_derived_element_uses_k_data_and_bounds_not_root_descriptor (test_locations.LocationTests) ... ok
+test_disassembly_and_unknown_register_are_not_oracles (test_locations.LocationTests) ... ok
+test_location_comparison_does_not_use_object_contents (test_locations.LocationTests) ... ok
+test_native_pointer_and_register_storage (test_locations.LocationTests) ... ok
+test_offline_oracle_identity_and_projection (test_locations.LocationTests) ... ok
+test_oracle_mutation_fails_but_unrelated_metadata_is_ignored (test_locations.LocationTests) ... ok
+test_snapshot_frame_and_query_mutations_are_detected (test_locations.LocationTests) ... ok
+test_inconsistent_name_counts_or_result_denominators_are_rejected (test_paper_coverage.CombinedCoverageTests) ... ok
+test_numbered_family_ranges_do_not_merge_x_or_const_variants (test_paper_coverage.CombinedCoverageTests) ... ok
+test_numbered_family_union_and_denominator_are_recomputed_together (test_paper_coverage.CombinedCoverageTests) ... ok
+test_scalar_and_stopped_states_do_not_expand_location_kinds (test_paper_coverage.CombinedCoverageTests) ... ok
+test_union_is_not_sum_and_dependencies_only_add_new_names (test_paper_coverage.CombinedCoverageTests) ... ok
+test_no_public_result_never_becomes_a_location_kind (test_paper_coverage.CoverageAccountingTests) ... ok
+test_root_results_pieces_and_dependencies_have_different_denominators (test_paper_coverage.CoverageAccountingTests) ... ok
+test_boundary_and_name_drift_fail_closed (test_paper_coverage.InstructionEvidenceTests) ... ok
+test_branch_input_presence_does_not_claim_execution (test_paper_coverage.InstructionEvidenceTests) ... ok
+test_nested_only_when_prepared_by_k_and_payload_identity_checked (test_paper_coverage.InstructionEvidenceTests) ... ok
+test_normalization_does_not_merge_original_const_names (test_paper_coverage.InstructionEvidenceTests) ... ok
+test_operands_and_implicit_bytes_are_not_instructions (test_paper_coverage.InstructionEvidenceTests) ... ok
+test_unknown_or_truncated_suffix_is_a_gap_not_byte_scanned (test_paper_coverage.InstructionEvidenceTests) ... ok
+test_genuinely_typed_final_float_is_observed_but_arithmetic_not_inferred (test_paper_coverage.TypeAndFloatEvidenceTests) ... ok
+test_metadata_final_identity_and_static_type_are_independent (test_paper_coverage.TypeAndFloatEvidenceTests) ... ok
+test_unknown_initial_type_and_decode_gaps_prevent_false_absence_proof (test_paper_coverage.TypeAndFloatEvidenceTests) ... ok
+test_width_sign_encoding_and_storage_basis_are_recorded (test_paper_coverage.TypeAndFloatEvidenceTests) ... ok
+test_changed_k_final_state_or_dependency_invocation_is_detected (test_reproduction.ReproductionTests) ... ok
+test_changed_task_input_budget_and_tool_errors_do_not_match (test_reproduction.ReproductionTests) ... ok
+test_check_only_never_runs_k_and_interruption_cleans_up (test_reproduction.ReproductionTests) ... ok
+test_compile_timeout_is_a_tool_failure (test_reproduction.ReproductionTests) ... ok
+test_expected_inconsistencies_match_and_paths_are_ignored (test_reproduction.ReproductionTests) ... ok
+test_extra_rule_and_symlink_path_rejected (test_reproduction.ReproductionTests) ... ok
+test_invalid_new_output_is_a_reproduction_difference (test_reproduction.ReproductionTests) ... ok
+test_invalid_parameters_and_existing_output_return_two (test_reproduction.ReproductionTests) ... ok
+test_manifest_integrity_missing_drift_and_extra_rules (test_reproduction.ReproductionTests) ... ok
+test_missing_dependencies_are_explicit (test_reproduction.ReproductionTests) ... ok
+test_output_may_not_follow_a_symlink_into_frozen_inputs (test_reproduction.ReproductionTests) ... ok
+test_parent_segments_cannot_hide_an_input_directory (test_reproduction.ReproductionTests) ... ok
+test_timeout_kills_descendant_with_its_own_session (test_reproduction.ReproductionTests) ... ok
+test_missing_pointer_snapshot_is_a_gap_not_zero (test_runtime_observation.RuntimeObservationTests) ... ok
+test_reference_constant_and_offset_use_original_metadata (test_runtime_observation.RuntimeObservationTests) ... ok
+test_referenced_location_is_not_evaluated_by_python (test_runtime_observation.RuntimeObservationTests) ... ok
+test_uninitialized_predicate_is_independent_of_object_bits (test_runtime_observation.RuntimeObservationTests) ... ok
+test_generic_signedness_only_blocks_sensitive_comparisons (test_scalar_observation.ScalarObservationTests) ... ok
+test_invalid_scalar_predicates_rejected (test_scalar_observation.ScalarObservationTests) ... ok
+test_partial_array_preserves_exact_unknown_tail (test_scalar_observation.ScalarObservationTests) ... ok
+test_scalar_predicate_and_strict_width_remain_distinct (test_scalar_observation.ScalarObservationTests) ... ok
+test_signed_source_extends_before_comparison (test_scalar_observation.ScalarObservationTests) ... ok
+test_unsigned_widening_is_equality_not_actual_width_requirement (test_scalar_observation.ScalarObservationTests) ... ok
+test_changed_or_completed_probe_and_nonincreased_budget_fail (test_stuck_observation.StuckObservationTests) ... ok
+test_equal_configuration_at_periodic_loop_budget_cannot_pass (test_stuck_observation.StuckObservationTests) ... ok
+test_exact_scene_and_verified_stability_pass (test_stuck_observation.StuckObservationTests) ... ok
+test_legacy_reason_requirement_is_not_silently_ignored (test_stuck_observation.StuckObservationTests) ... ok
+test_malformed_stability_predicates_rejected (test_stuck_observation.StuckObservationTests) ... ok
+test_missing_replay_evidence_cannot_pass (test_stuck_observation.StuckObservationTests) ... ok
+test_position_and_stack_changes_fail (test_stuck_observation.StuckObservationTests) ... ok
+test_probe_preserves_options_and_saves_actual_configuration_evidence (test_stuck_observation.StuckObservationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 108 tests in 601.796s
+
+OK

@@ -17,9 +17,9 @@ Options --source lldb|gdb, --corpus, --definition, --timeout, --depth and --jobs
 
 ## Fresh Git clone versus complete result package
 
-The Git repository contains rules, checker code, tests, examples, reviewed metadata and frozen inputs. It does not contain build/ or output/. Nothing in a fresh replay reads a prior K result. Frozen evidence is corpus-relative and independent of installed GDB/LLDB sources. Recorded-result tests skip explicitly when output/ is absent; ordinary tests and corpus authentication still run. A partial or corrupt output/ package is an error.
+The development repository contains rules, checker code, tests, examples, reviewed metadata and frozen inputs. Its root build/ and output/ directories are ignored. The minimal standalone artifact versions its results/ tables and compressed complete K evidence; new builds and caches are ignored. Nothing in a fresh replay reads a prior K result. Frozen evidence is corpus-relative and independent of installed GDB/LLDB sources. Recorded-result tests skip explicitly when output/ is absent; ordinary tests and corpus authentication still run. A partial or corrupt output/ package is an error.
 
-The submission artifact additionally includes the complete local [output package](../output/README.md). Restore it to inspect full final configurations and original run receipts or to export paper tables:
+The development-only [output package](../output/README.md) retains original run receipts and supports paper-table export. The submission artifact instead stores complete K configurations and checks in results/evidence.jsonl.gz; it does not ship the developer exporter. To export tables in the development checkout:
 
 ```bash
 python3 -m verification.paper_results --output build/paper-reference
